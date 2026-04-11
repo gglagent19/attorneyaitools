@@ -119,7 +119,7 @@ export function generateLocalBusinessSchema(city: string, state: string) {
 // OpenGraph meta generators
 export function generateToolMeta(tool: AITool) {
   return {
-    title: `${tool.name} - AI Tool for Lawyers | ${SITE_NAME}`,
+    title: `${tool.name} - AI Tool for Lawyers`,
     description: tool.description || `${tool.name} is an AI-powered ${tool.category.toLowerCase()} tool for legal professionals. Read reviews, compare features, and find alternatives.`,
     openGraph: {
       title: `${tool.name} - AI Tool for Lawyers`,
@@ -133,7 +133,7 @@ export function generateToolMeta(tool: AITool) {
 
 export function generateAttorneyMeta(attorney: Attorney) {
   return {
-    title: `${attorney.name} - ${attorney.practice_areas?.[0] || 'Attorney'} in ${attorney.city}, ${attorney.state} | ${SITE_NAME}`,
+    title: `${attorney.name} - ${attorney.practice_areas?.[0] || 'Attorney'} in ${attorney.city}, ${attorney.state}`,
     description: attorney.description || `${attorney.name} is a ${attorney.practice_areas?.join(', ')} attorney in ${attorney.city}, ${attorney.state}. ${attorney.experience_years} years of experience.`,
     openGraph: {
       title: `${attorney.name} - Attorney in ${attorney.city}`,
@@ -147,21 +147,21 @@ export function generateAttorneyMeta(attorney: Attorney) {
 
 export function generateCityMeta(city: City) {
   return {
-    title: `Best Attorneys in ${city.name}, ${city.state} | ${SITE_NAME}`,
+    title: `Best Attorneys in ${city.name}, ${city.state}`,
     description: `Find top-rated attorneys in ${city.name}, ${city.state}. Browse by practice area, read reviews, and connect with experienced lawyers near you.`,
   };
 }
 
 export function generateStateMeta(state: State) {
   return {
-    title: `Best Attorneys in ${state.name} | ${SITE_NAME}`,
+    title: `Best Attorneys in ${state.name}`,
     description: `Find top-rated attorneys across ${state.name}. Browse by city and practice area to connect with experienced lawyers.`,
   };
 }
 
 export function generateBlogMeta(post: BlogPost) {
   return {
-    title: `${post.title} | ${SITE_NAME}`,
+    title: post.title,
     description: post.description || `Read about ${post.title} on the AttorneyAITools blog.`,
     openGraph: {
       title: post.title,

@@ -27,7 +27,7 @@ export async function generateMetadata({
   const page = pages.find((p) => p.slug === slug);
   if (!page) return { title: "Not Found" };
   return {
-    title: `${page.title} | AttorneyAITools`,
+    title: page.title,
     description:
       (page as { description?: string }).description ||
       `${page.title}. Find the best AI tools and attorneys for your legal needs.`,
