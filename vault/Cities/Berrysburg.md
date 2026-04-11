@@ -1,0 +1,21 @@
+---
+type: city
+name: "Berrysburg"
+slug: "berrysburg"
+state: "Pennsylvania"
+state_slug: "pennsylvania"
+county: "Dauphin County"
+---
+
+# Berrysburg Attorneys
+
+Find experienced attorneys in Berrysburg, Pennsylvania. Browse by practice area to find the right lawyer for your needs.
+
+## Practice Areas
+- [[Personal Injury]]
+- [[Criminal Defense]]
+- [[Divorce Law]]
+- [[Business Law]]
+- [[Real Estate Law]]
+- [[Estate Planning]]
+- [[Bankruptcy]]

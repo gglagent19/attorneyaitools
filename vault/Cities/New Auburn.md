@@ -1,0 +1,21 @@
+---
+type: city
+name: "New Auburn"
+slug: "new-auburn"
+state: "Minnesota"
+state_slug: "minnesota"
+county: "Sibley County"
+---
+
+# New Auburn Attorneys
+
+Find experienced attorneys in New Auburn, Minnesota. Browse by practice area to find the right lawyer for your needs.
+
+## Practice Areas
+- [[Personal Injury]]
+- [[Criminal Defense]]
+- [[Divorce Law]]
+- [[Business Law]]
+- [[Real Estate Law]]
+- [[Estate Planning]]
+- [[Bankruptcy]]

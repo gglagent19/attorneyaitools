@@ -1,0 +1,21 @@
+---
+type: city
+name: "Eagle Lake"
+slug: "eagle-lake"
+state: "Minnesota"
+state_slug: "minnesota"
+county: "Blue Earth County"
+---
+
+# Eagle Lake Attorneys
+
+Find experienced attorneys in Eagle Lake, Minnesota. Browse by practice area to find the right lawyer for your needs.
+
+## Practice Areas
+- [[Personal Injury]]
+- [[Criminal Defense]]
+- [[Divorce Law]]
+- [[Business Law]]
+- [[Real Estate Law]]
+- [[Estate Planning]]
+- [[Bankruptcy]]

@@ -1,0 +1,21 @@
+---
+type: city
+name: "Burlingame"
+slug: "burlingame"
+state: "California"
+state_slug: "california"
+county: "San Mateo County"
+---
+
+# Burlingame Attorneys
+
+Find experienced attorneys in Burlingame, California. Browse by practice area to find the right lawyer for your needs.
+
+## Practice Areas
+- [[Personal Injury]]
+- [[Criminal Defense]]
+- [[Divorce Law]]
+- [[Business Law]]
+- [[Real Estate Law]]
+- [[Estate Planning]]
+- [[Bankruptcy]]

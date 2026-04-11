@@ -1,0 +1,21 @@
+---
+type: city
+name: "Waterville"
+slug: "waterville"
+state: "New York"
+state_slug: "new-york"
+county: "Oneida County"
+---
+
+# Waterville Attorneys
+
+Find experienced attorneys in Waterville, New York. Browse by practice area to find the right lawyer for your needs.
+
+## Practice Areas
+- [[Personal Injury]]
+- [[Criminal Defense]]
+- [[Divorce Law]]
+- [[Business Law]]
+- [[Real Estate Law]]
+- [[Estate Planning]]
+- [[Bankruptcy]]

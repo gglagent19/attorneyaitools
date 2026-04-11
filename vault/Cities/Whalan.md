@@ -1,0 +1,21 @@
+---
+type: city
+name: "Whalan"
+slug: "whalan"
+state: "Minnesota"
+state_slug: "minnesota"
+county: "Fillmore County"
+---
+
+# Whalan Attorneys
+
+Find experienced attorneys in Whalan, Minnesota. Browse by practice area to find the right lawyer for your needs.
+
+## Practice Areas
+- [[Personal Injury]]
+- [[Criminal Defense]]
+- [[Divorce Law]]
+- [[Business Law]]
+- [[Real Estate Law]]
+- [[Estate Planning]]
+- [[Bankruptcy]]

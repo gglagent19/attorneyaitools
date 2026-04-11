@@ -1,0 +1,21 @@
+---
+type: city
+name: "Farnhamville"
+slug: "farnhamville"
+state: "Iowa"
+state_slug: "iowa"
+county: "Calhoun County"
+---
+
+# Farnhamville Attorneys
+
+Find experienced attorneys in Farnhamville, Iowa. Browse by practice area to find the right lawyer for your needs.
+
+## Practice Areas
+- [[Personal Injury]]
+- [[Criminal Defense]]
+- [[Divorce Law]]
+- [[Business Law]]
+- [[Real Estate Law]]
+- [[Estate Planning]]
+- [[Bankruptcy]]

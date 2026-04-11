@@ -1,0 +1,21 @@
+---
+type: city
+name: "Gilliam"
+slug: "gilliam"
+state: "Louisiana"
+state_slug: "louisiana"
+county: "Caddo Parish"
+---
+
+# Gilliam Attorneys
+
+Find experienced attorneys in Gilliam, Louisiana. Browse by practice area to find the right lawyer for your needs.
+
+## Practice Areas
+- [[Personal Injury]]
+- [[Criminal Defense]]
+- [[Divorce Law]]
+- [[Business Law]]
+- [[Real Estate Law]]
+- [[Estate Planning]]
+- [[Bankruptcy]]

@@ -1,0 +1,21 @@
+---
+type: city
+name: "Trafalgar"
+slug: "trafalgar"
+state: "Indiana"
+state_slug: "indiana"
+county: "Johnson County"
+---
+
+# Trafalgar Attorneys
+
+Find experienced attorneys in Trafalgar, Indiana. Browse by practice area to find the right lawyer for your needs.
+
+## Practice Areas
+- [[Personal Injury]]
+- [[Criminal Defense]]
+- [[Divorce Law]]
+- [[Business Law]]
+- [[Real Estate Law]]
+- [[Estate Planning]]
+- [[Bankruptcy]]

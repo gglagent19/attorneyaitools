@@ -1,0 +1,21 @@
+---
+type: city
+name: "Plattsburg"
+slug: "plattsburg"
+state: "Missouri"
+state_slug: "missouri"
+county: "Clinton County"
+---
+
+# Plattsburg Attorneys
+
+Find experienced attorneys in Plattsburg, Missouri. Browse by practice area to find the right lawyer for your needs.
+
+## Practice Areas
+- [[Personal Injury]]
+- [[Criminal Defense]]
+- [[Divorce Law]]
+- [[Business Law]]
+- [[Real Estate Law]]
+- [[Estate Planning]]
+- [[Bankruptcy]]

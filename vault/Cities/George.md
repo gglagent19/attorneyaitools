@@ -1,0 +1,21 @@
+---
+type: city
+name: "George"
+slug: "george"
+state: "Iowa"
+state_slug: "iowa"
+county: "Lyon County"
+---
+
+# George Attorneys
+
+Find experienced attorneys in George, Iowa. Browse by practice area to find the right lawyer for your needs.
+
+## Practice Areas
+- [[Personal Injury]]
+- [[Criminal Defense]]
+- [[Divorce Law]]
+- [[Business Law]]
+- [[Real Estate Law]]
+- [[Estate Planning]]
+- [[Bankruptcy]]
