@@ -12,9 +12,10 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import StarRating from "@/components/StarRating";
 import AdBlock from "@/components/AdBlock";
 
+// Pre-generate top 500 featured/highly-rated attorneys; the rest use ISR
 export async function generateStaticParams() {
   const attorneys = getAllAttorneys();
-  return attorneys.map((a) => ({
+  return attorneys.slice(0, 500).map((a) => ({
     state: a.state_slug,
     city: a.city_slug,
     attorney: a.slug,

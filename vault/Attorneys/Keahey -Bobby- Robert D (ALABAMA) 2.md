@@ -1,8 +1,8 @@
 ---
 type: attorney
-name: "Keahey \"Bobby\" Robert D"
+name: "Keahey Bobby Robert D"
 slug: "keahey-bobby-robert-d-oak-hill"
-law_firm: "Keahey \"Bobby\" Robert D"
+law_firm: "Keahey Bobby Robert D"
 city: "Oak Hill"
 city_slug: "oak-hill"
 state: "Alabama"
@@ -21,7 +21,7 @@ source: "google_maps"
 place_id: "ChIJub2r71JJhYgR1T435T5_ixk"
 gps_latitude: 31.709593499999997
 gps_longitude: -87.7780389
-description: "Keahey \\"Bobby\\" Robert D is a attorney located in Oak Hill, Alabama."
+description: "Keahey Bobby Robert D is a attorney located in Oak Hill, Alabama."
 ---
 
 # Keahey "Bobby" Robert D

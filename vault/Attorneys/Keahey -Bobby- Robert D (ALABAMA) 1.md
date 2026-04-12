@@ -1,8 +1,8 @@
 ---
 type: attorney
-name: "Keahey \"Bobby\" Robert D"
+name: "Keahey Bobby Robert D"
 slug: "keahey-bobby-robert-d-grove-hill"
-law_firm: "Keahey \"Bobby\" Robert D"
+law_firm: "Keahey Bobby Robert D"
 city: "Grove Hill"
 city_slug: "grove-hill"
 state: "Alabama"
@@ -21,7 +21,7 @@ source: "google_maps"
 place_id: "ChIJub2r71JJhYgR1T435T5_ixk"
 gps_latitude: 31.709593499999997
 gps_longitude: -87.7780389
-description: "Keahey \\"Bobby\\" Robert D is a attorney located in Grove Hill, Alabama."
+description: "Keahey Bobby Robert D is a attorney located in Grove Hill, Alabama."
 ---
 
 # Keahey "Bobby" Robert D

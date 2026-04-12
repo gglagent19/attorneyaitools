@@ -1,8 +1,8 @@
 ---
 type: attorney
-name: "Keahey \"Bobby\" Robert D"
+name: "Keahey Bobby Robert D"
 slug: "keahey-bobby-robert-d-toxey"
-law_firm: "Keahey \"Bobby\" Robert D"
+law_firm: "Keahey Bobby Robert D"
 city: "Toxey"
 city_slug: "toxey"
 state: "Alabama"
@@ -21,7 +21,7 @@ source: "google_maps"
 place_id: "ChIJub2r71JJhYgR1T435T5_ixk"
 gps_latitude: 31.709593499999997
 gps_longitude: -87.7780389
-description: "Keahey \\"Bobby\\" Robert D is a attorney located in Toxey, Alabama."
+description: "Keahey Bobby Robert D is a attorney located in Toxey, Alabama."
 ---
 
 # Keahey "Bobby" Robert D

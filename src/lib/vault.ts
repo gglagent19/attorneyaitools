@@ -74,13 +74,25 @@ export function getToolCategories(): string[] {
 export function getAllAttorneys(): Attorney[] {
   return cached('allAttorneys', () => {
     const files = getMarkdownFiles('Attorneys');
-    return files.map(f => {
+    const all = files.map(f => {
       const data = parseFile<Attorney>('Attorneys', f);
       if (!data.slug) {
         data.slug = f.replace('.md', '').toLowerCase().replace(/[^a-z0-9]+/g, '-');
       }
       return data;
-    }).sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0) || b.rating - a.rating);
+    });
+
+    // Dedupe by (state_slug, city_slug, slug) — keeps first occurrence
+    const seen = new Set<string>();
+    const unique: Attorney[] = [];
+    for (const a of all) {
+      const key = `${a.state_slug}|${a.city_slug}|${a.slug}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      unique.push(a);
+    }
+
+    return unique.sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0) || (b.rating || 0) - (a.rating || 0));
   });
 }
 
