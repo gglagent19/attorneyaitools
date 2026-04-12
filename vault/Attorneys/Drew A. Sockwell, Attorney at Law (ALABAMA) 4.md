@@ -1,0 +1,45 @@
+---
+type: attorney
+name: "Drew A. Sockwell, Attorney at Law"
+slug: "drew-a-sockwell-attorney-at-law-st-florian"
+law_firm: "Drew A. Sockwell, Attorney at Law"
+city: "St. Florian"
+city_slug: "st-florian"
+state: "Alabama"
+state_slug: "alabama"
+practice_areas:
+  - "Trial attorney"
+  - "Criminal justice attorney"
+  - "Family law attorney"
+phone: "(256) 284-2505"
+email: ""
+website: "http://sockwelllaw.com/"
+address: "401 E Tombigbee St, Florence, AL 35630"
+experience_years: 20
+featured: false
+rating: 4.9
+review_count: 100
+source: "google_maps"
+place_id: "ChIJcbJdyrg3fYgRX36XZQ37hHA"
+gps_latitude: 34.8039321
+gps_longitude: -87.6730037
+description: "Drew A. Sockwell, Attorney at Law is a trial attorney located in St. Florian, Alabama."
+---
+
+# Drew A. Sockwell, Attorney at Law
+
+Drew A. Sockwell, Attorney at Law is a trial attorney based in St. Florian, Alabama.
+
+**Address:** 401 E Tombigbee St, Florence, AL 35630
+**Phone:** (256) 284-2505
+**Website:** [sockwelllaw.com](http://sockwelllaw.com/)
+
+## Practice Areas
+- Trial attorney
+- Criminal justice attorney
+- Family law attorney
+
+## Rating
+4.9/5 stars (100 reviews)
+
+

@@ -1,0 +1,45 @@
+---
+type: attorney
+name: "Hamilton Jessie Law, LLC"
+slug: "hamilton-jessie-law-llc-red-level"
+law_firm: "Hamilton Jessie Law, LLC"
+city: "Red Level"
+city_slug: "red-level"
+state: "Alabama"
+state_slug: "alabama"
+practice_areas:
+  - "Attorney"
+  - "Divorce lawyer"
+  - "Estate planning attorney"
+phone: "(334) 582-1464"
+email: ""
+website: "http://www.hamiltonjessielaw.com/"
+address: "4 E Ct Square Suite A, Andalusia, AL 36420"
+experience_years: 5
+featured: false
+rating: 4.5
+review_count: 17
+source: "google_maps"
+place_id: "ChIJGygW7aDukYgRYf0MxiswK9I"
+gps_latitude: 31.3081148
+gps_longitude: -86.48194
+description: "Hamilton Jessie Law, LLC is a attorney located in Red Level, Alabama."
+---
+
+# Hamilton Jessie Law, LLC
+
+Hamilton Jessie Law, LLC is a attorney based in Red Level, Alabama.
+
+**Address:** 4 E Ct Square Suite A, Andalusia, AL 36420
+**Phone:** (334) 582-1464
+**Website:** [www.hamiltonjessielaw.com](http://www.hamiltonjessielaw.com/)
+
+## Practice Areas
+- Attorney
+- Divorce lawyer
+- Estate planning attorney
+
+## Rating
+4.5/5 stars (17 reviews)
+
+

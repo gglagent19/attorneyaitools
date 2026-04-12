@@ -1,0 +1,41 @@
+---
+type: attorney
+name: "Yates Anderson"
+slug: "yates-anderson-anderson"
+law_firm: "Yates Anderson"
+city: "Anderson"
+city_slug: "anderson"
+state: "Alabama"
+state_slug: "alabama"
+practice_areas:
+  - "Law firm"
+phone: "(251) 500-4853"
+email: ""
+website: "http://www.yatesanderson.com/"
+address: "4851 Wharf Pkwy E Suite D-230, Orange Beach, AL 36561"
+experience_years: 8
+featured: false
+rating: 4.6
+review_count: 22
+source: "google_maps"
+place_id: "ChIJ_UvD-HwFmogRgOWa3Rq-Gcc"
+gps_latitude: 30.294786499999997
+gps_longitude: -87.6292596
+description: "Yates Anderson is a law firm located in Anderson, Alabama."
+---
+
+# Yates Anderson
+
+Yates Anderson is a law firm based in Anderson, Alabama.
+
+**Address:** 4851 Wharf Pkwy E Suite D-230, Orange Beach, AL 36561
+**Phone:** (251) 500-4853
+**Website:** [www.yatesanderson.com](http://www.yatesanderson.com/)
+
+## Practice Areas
+- Law firm
+
+## Rating
+4.6/5 stars (22 reviews)
+
+

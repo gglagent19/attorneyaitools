@@ -1,0 +1,41 @@
+---
+type: attorney
+name: "Dolifka & Mery, Attorneys at Law"
+slug: "dolifka-mery-attorneys-at-law-manokotak"
+law_firm: "Dolifka & Mery, Attorneys at Law"
+city: "Manokotak"
+city_slug: "manokotak"
+state: "Alaska"
+state_slug: "alaska"
+practice_areas:
+  - "Attorney"
+phone: "(907) 262-2910"
+email: ""
+website: "https://dolifkalaw.com/"
+address: "44501 Sterling Hwy Suite #202, Soldotna, AK 99669"
+experience_years: 5
+featured: false
+rating: 4.4
+review_count: 16
+source: "google_maps"
+place_id: "ChIJAYQpy3xhxlYRjlH-vU2oiN4"
+gps_latitude: 60.4811778
+gps_longitude: -151.0716438
+description: "Dolifka & Mery, Attorneys at Law is a attorney located in Manokotak, Alaska."
+---
+
+# Dolifka & Mery, Attorneys at Law
+
+Dolifka & Mery, Attorneys at Law is a attorney based in Manokotak, Alaska.
+
+**Address:** 44501 Sterling Hwy Suite #202, Soldotna, AK 99669
+**Phone:** (907) 262-2910
+**Website:** [dolifkalaw.com](https://dolifkalaw.com/)
+
+## Practice Areas
+- Attorney
+
+## Rating
+4.4/5 stars (16 reviews)
+
+
