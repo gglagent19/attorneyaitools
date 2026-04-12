@@ -25,7 +25,7 @@ const https = require('https');
 
 // ─── Configuration ──────────────────────────────────────────────────────────
 const SERPAPI_KEY = '212e9e36dea44d201e6f745648bbb99048980f21d0ae1bef9fc02f10db147632';
-const GA4_PROPERTY_ID = '532520580';
+const GA4_PROPERTY_ID = '532595968';
 const CREDIT_BUDGET_TOTAL = 1000;            // hard cap across all runs
 const MIN_VIEWS_THRESHOLD = 3;                // min page views to qualify
 const ATTORNEYS_PER_CITY_TARGET = 20;         // target count per city
