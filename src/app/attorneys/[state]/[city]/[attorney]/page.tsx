@@ -25,11 +25,16 @@ export async function generateMetadata({
 }: {
   params: Promise<{ state: string; city: string; attorney: string }>;
 }): Promise<Metadata> {
-  const { attorney: slug } = await params;
+  const { state: stateSlug, city: citySlug, attorney: slug } = await params;
   const attorneys = getAllAttorneys();
   const attorney = attorneys.find((a) => a.slug === slug);
   if (!attorney) return { title: "Attorney Not Found" };
-  return generateAttorneyMeta(attorney);
+  const base = generateAttorneyMeta(attorney);
+  return {
+    ...base,
+    alternates: { canonical: `/attorneys/${stateSlug}/${citySlug}/${slug}` },
+    robots: { index: false, follow: true },
+  };
 }
 
 export default async function AttorneyDetailPage({

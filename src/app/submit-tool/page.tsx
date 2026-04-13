@@ -6,6 +6,8 @@ export const metadata: Metadata = {
   title: "Submit an AI Tool",
   description:
     "Submit your AI tool to our directory. Get listed among the top AI tools for legal professionals.",
+  alternates: { canonical: "/submit-tool" },
+  robots: { index: false, follow: true },
 };
 
 const steps = [

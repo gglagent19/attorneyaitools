@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getAllBlogPosts, getBlogPostWithHtml } from "@/lib/vault";
-import { generateBlogMeta, generateArticleSchema } from "@/lib/seo";
+import { generateBlogMeta, generateArticleSchema, generateBreadcrumbSchema } from "@/lib/seo";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import AdBlock from "@/components/AdBlock";
 import NewsletterSignup from "@/components/NewsletterSignup";
@@ -33,6 +33,11 @@ export default async function BlogPostPage({
   if (!post) notFound();
 
   const schema = generateArticleSchema(post);
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Blog", url: "/blog" },
+    { name: post.title, url: `/blog/${post.slug}` },
+  ]);
 
   const breadcrumbs = [
     { label: "Home", href: "/" },
@@ -45,6 +50,10 @@ export default async function BlogPostPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

@@ -31,6 +31,7 @@ export async function generateMetadata({
     description:
       (page as { description?: string }).description ||
       `${page.title}. Find the best AI tools and attorneys for your legal needs.`,
+    alternates: { canonical: `/${page.slug}` },
   };
 }
 

@@ -41,7 +41,10 @@ export interface City {
   name: string;
   state: string;
   state_slug: string;
-  population: string;
+  population: number;
+  county?: string;
+  fips_state?: string;
+  fips_place?: string;
   content: string;
 }
 
@@ -64,6 +67,27 @@ export interface BlogPost {
   title: string;
   date: string;
   tags: string[];
+  description: string;
+  content: string;
+}
+
+export interface FAQ {
+  slug: string;
+  question: string;
+  category: 'ai-ethics' | 'pricing' | 'tools' | 'practice' | 'legal' | string;
+  date: string;
+  description: string;
+  related_tools: string[];
+  content: string;
+}
+
+export interface Comparison {
+  slug: string;
+  type: string;
+  title: string;
+  tool_a: string;
+  tool_b: string;
+  date: string;
   description: string;
   content: string;
 }

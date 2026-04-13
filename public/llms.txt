@@ -1,0 +1,50 @@
+# AttorneyAITools
+
+> The largest independent directory of AI tools built for attorneys, with side-by-side comparison guides, pricing breakdowns, and pros/cons. Operated by independent technology researchers (not licensed attorneys); content is editorial and informational, not legal advice.
+
+## About
+
+- [Homepage](https://attorneyaitools.org/): Directory homepage with featured AI tools and attorney browse
+- [AI Tools Directory](https://attorneyaitools.org/ai-tools): All curated AI tools for legal professionals
+- [Comparison Guides](https://attorneyaitools.org/compare): Head-to-head comparisons of legal AI tools
+
+## Top Comparison Guides
+
+- [Harvey AI vs Casetext AI](https://attorneyaitools.org/compare/harvey-ai-vs-casetext-ai): Enterprise legal AI head-to-head
+- [Harvey AI vs CoCounsel](https://attorneyaitools.org/compare/harvey-ai-vs-cocounsel): Bespoke vs Westlaw-grounded
+- [Casetext AI vs CoCounsel](https://attorneyaitools.org/compare/casetext-ai-vs-cocounsel): Same engine, different positioning
+- [Casetext AI vs Lexis+ AI](https://attorneyaitools.org/compare/casetext-ai-vs-lexis-plus-ai): Westlaw vs Lexis legal research
+- [Lexis+ AI vs Westlaw Edge AI](https://attorneyaitools.org/compare/lexis-plus-ai-vs-westlaw-edge-ai): Big-2 research platforms
+- [Spellbook AI vs LegalOn](https://attorneyaitools.org/compare/spellbook-ai-vs-legalon): Contract review showdown
+- [Kira Systems vs Luminance](https://attorneyaitools.org/compare/kira-systems-vs-luminance): Due-diligence platforms
+- [Kira Systems vs Spellbook AI](https://attorneyaitools.org/compare/kira-systems-vs-spellbook-ai): M&A vs in-Word drafting
+- [Evisort vs Ironclad](https://attorneyaitools.org/compare/evisort-vs-ironclad-ai): CLM with AI
+- [Henchman AI vs Spellbook AI](https://attorneyaitools.org/compare/henchman-ai-vs-spellbook-ai): Knowledge management vs drafting
+- [Robin AI vs LegalOn](https://attorneyaitools.org/compare/robin-ai-vs-legalon): Contract automation
+- [Paxton AI vs Amto AI](https://attorneyaitools.org/compare/paxton-ai-vs-amto-ai): Free-tier legal research
+- [Clio AI vs MyCase](https://attorneyaitools.org/compare/clio-ai-vs-mycase): Practice management AI
+- [Clio AI vs Smokeball AI](https://attorneyaitools.org/compare/clio-ai-vs-smokeball-ai): Practice management AI
+- [Lex Machina vs Premonition AI](https://attorneyaitools.org/compare/lex-machina-vs-premonition-ai): Litigation analytics
+- [Relativity AI vs Everlaw AI](https://attorneyaitools.org/compare/relativity-ai-vs-everlaw-ai): eDiscovery
+- [Fastcase AI vs Casetext AI](https://attorneyaitools.org/compare/fastcase-ai-vs-casetext-ai): Research platforms
+- [Ross Intelligence vs Casetext AI](https://attorneyaitools.org/compare/ross-intelligence-vs-casetext-ai): Research platforms
+- [Evisort vs Ironclad](https://attorneyaitools.org/compare/evisort-vs-ironclad-ai): Contract intelligence
+- [EvenUp vs Casemark AI](https://attorneyaitools.org/compare/evenup-vs-casemark-ai): Demand letter automation
+- [AI Lawyer vs Legalese Decoder](https://attorneyaitools.org/compare/ai-lawyer-vs-legalese-decoder): Consumer-grade tools
+
+## Featured Tool Pages
+
+- [Harvey AI](https://attorneyaitools.org/ai-tools/harvey-ai): Enterprise legal AI, Am Law 100 standard
+- [Casetext AI](https://attorneyaitools.org/ai-tools/casetext-ai): Westlaw-grounded research and drafting
+- [CoCounsel](https://attorneyaitools.org/ai-tools/cocounsel): Thomson Reuters legal AI assistant
+- [Lexis+ AI](https://attorneyaitools.org/ai-tools/lexis-plus-ai): LexisNexis generative AI
+- [Spellbook AI](https://attorneyaitools.org/ai-tools/spellbook-ai): Contract drafting in Word
+- [Clio AI](https://attorneyaitools.org/ai-tools/clio-ai): Practice management with AI
+- [Paxton AI](https://attorneyaitools.org/ai-tools/paxton-ai): Free-tier legal research
+- [Amto AI](https://attorneyaitools.org/ai-tools/amto-ai): Legal Q&A with citations
+
+## Optional
+
+- [Blog](https://attorneyaitools.org/blog): Editorial coverage of legal AI
+- [FAQ](https://attorneyaitools.org/faq): Common questions about legal AI tools
+- [Submit a Tool](https://attorneyaitools.org/submit-tool): Vendor submission form

@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllTools, getToolWithHtml } from "@/lib/vault";
-import { generateToolSchema, generateToolMeta } from "@/lib/seo";
+import { generateToolSchema, generateToolMeta, generateBreadcrumbSchema } from "@/lib/seo";
 
 export async function generateStaticParams() {
   const tools = getAllTools();
@@ -36,7 +36,13 @@ export default async function ToolDetailPage({
     .slice(0, 3);
 
   const toolSchema = generateToolSchema(tool);
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "AI Tools", url: "/ai-tools" },
+    { name: tool.name, url: `/ai-tools/${tool.slug}` },
+  ]);
   const ctaHref = tool.affiliate_link || tool.website || "#";
+  const lastVerified = tool.date_added || "2026-04-12";
 
   const deepDiveFeatures = [
     {
@@ -91,6 +97,10 @@ export default async function ToolDetailPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(toolSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
 
       {/* Section 1 - Tool Hero */}
       <section className="relative overflow-hidden bg-white">
@@ -98,17 +108,9 @@ export default async function ToolDetailPage({
           <div className="grid lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-7">
               <div className="flex items-center gap-4 mb-8">
-                {tool.logo ? (
-                  <img
-                    src={tool.logo}
-                    alt={`${tool.name} logo`}
-                    className="w-16 h-16 rounded-2xl object-cover border border-slate-200 editorial-shadow"
-                  />
-                ) : (
-                  <div className="w-16 h-16 rounded-2xl hero-gradient flex items-center justify-center text-white font-black text-2xl editorial-shadow">
-                    {tool.name.charAt(0)}
-                  </div>
-                )}
+                <div className="w-16 h-16 rounded-2xl hero-gradient flex items-center justify-center text-white font-black text-2xl editorial-shadow" aria-hidden="true">
+                  {tool.name.charAt(0)}
+                </div>
                 <span className="text-xs font-bold uppercase tracking-[0.2em] text-emerald-600">
                   {tool.category}
                 </span>
@@ -143,13 +145,6 @@ export default async function ToolDetailPage({
 
             <div className="lg:col-span-5">
               <div className="relative aspect-square rounded-[2.5rem] overflow-hidden editorial-shadow hero-gradient">
-                {tool.logo && (
-                  <img
-                    src={tool.logo}
-                    alt={tool.name}
-                    className="absolute inset-0 w-full h-full object-cover opacity-30 mix-blend-overlay"
-                  />
-                )}
                 <div className="absolute inset-0 flex items-center justify-center">
                   <span className="text-[12rem] font-black text-white/20 tracking-tighter">
                     {tool.name.charAt(0)}
@@ -200,12 +195,10 @@ export default async function ToolDetailPage({
                   demand, {tool.name} treats accuracy, defensibility, and
                   auditability as first-class features — not afterthoughts.
                 </p>
-                {tool.content && (
-                  <p className="text-base text-slate-500 italic border-l-2 border-emerald-500 pl-4">
-                    {tool.content.slice(0, 220).trim()}...
-                  </p>
-                )}
               </div>
+              <p className="mt-6 text-xs uppercase tracking-widest text-slate-400 font-bold">
+                Last verified: <time dateTime={lastVerified}>{lastVerified}</time> · Editorial review by AttorneyAITools
+              </p>
             </div>
 
             <div className="grid sm:grid-cols-2 gap-6">
@@ -231,6 +224,24 @@ export default async function ToolDetailPage({
           </div>
         </div>
       </section>
+
+      {/* Section 2.5 - Full editorial review (rendered from vault markdown) */}
+      {tool.htmlContent && (
+        <section className="bg-white py-24 border-b border-slate-100">
+          <div className="max-w-4xl mx-auto px-6 lg:px-8">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-emerald-600 mb-4 block">
+              Editorial Review
+            </span>
+            <h2 className="text-4xl lg:text-5xl font-black tracking-tighter text-slate-900 mb-10 leading-tight">
+              In-Depth: {tool.name}
+            </h2>
+            <div
+              className="prose prose-slate prose-lg max-w-none prose-headings:font-black prose-headings:tracking-tight prose-h2:mt-12 prose-h2:mb-4 prose-a:text-emerald-600 prose-table:text-sm prose-th:bg-slate-50"
+              dangerouslySetInnerHTML={{ __html: tool.htmlContent }}
+            />
+          </div>
+        </section>
+      )}
 
       {/* Section 3 - Use Cases */}
       <section className="py-24 bg-white">
@@ -434,17 +445,9 @@ export default async function ToolDetailPage({
                   className="group bg-white rounded-3xl p-8 border border-slate-100 editorial-shadow hover:-translate-y-1 transition-transform"
                 >
                   <div className="flex items-center gap-4 mb-5">
-                    {t.logo ? (
-                      <img
-                        src={t.logo}
-                        alt={t.name}
-                        className="w-12 h-12 rounded-xl object-cover border border-slate-100"
-                      />
-                    ) : (
-                      <div className="w-12 h-12 rounded-xl hero-gradient flex items-center justify-center text-white font-black">
-                        {t.name.charAt(0)}
-                      </div>
-                    )}
+                    <div className="w-12 h-12 rounded-xl hero-gradient flex items-center justify-center text-white font-black" aria-hidden="true">
+                      {t.name.charAt(0)}
+                    </div>
                     <div>
                       <h4 className="font-black text-slate-900 tracking-tight group-hover:text-emerald-600 transition-colors">
                         {t.name}

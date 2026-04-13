@@ -2,7 +2,7 @@ import Link from "next/link";
 import ToolCard from "@/components/ToolCard";
 import AttorneyCard from "@/components/AttorneyCard";
 import { getAllTools, getAllAttorneys, getAllStates, getAllPracticeAreas, getStats } from "@/lib/vault";
-import { generateWebsiteSchema } from "@/lib/seo";
+import { generateWebsiteSchema, generateOrganizationSchema } from "@/lib/seo";
 
 export default function HomePage() {
   const tools = getAllTools();
@@ -11,6 +11,7 @@ export default function HomePage() {
   const practiceAreas = getAllPracticeAreas();
   const stats = getStats();
   const websiteSchema = generateWebsiteSchema();
+  const orgSchema = generateOrganizationSchema();
 
   const featuredTools = tools.filter((t) => t.featured).slice(0, 6);
   const featuredAttorneys = attorneys.filter((a) => a.featured).slice(0, 6);
@@ -20,6 +21,10 @@ export default function HomePage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}

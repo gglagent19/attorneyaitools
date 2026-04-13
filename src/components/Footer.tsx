@@ -66,6 +66,16 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               <li>
+                <Link href="/about" className="text-slate-400 hover:text-emerald-400 transition-all text-sm">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link href="/methodology" className="text-slate-400 hover:text-emerald-400 transition-all text-sm">
+                  Methodology
+                </Link>
+              </li>
+              <li>
                 <Link href="/privacy" className="text-slate-400 hover:text-emerald-400 transition-all text-sm">
                   Privacy Policy
                 </Link>
@@ -95,6 +105,15 @@ export default function Footer() {
               </form>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Disclosure */}
+      <div className="border-t border-slate-800 bg-slate-950">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <p className="text-xs text-slate-400 leading-relaxed text-center max-w-4xl mx-auto">
+            <strong className="text-slate-300">Disclosure:</strong> AttorneyAITools is operated by independent technology researchers, not licensed attorneys. Information on this site is for general educational purposes only and does not constitute legal advice. Tool listings are editorial; some links may be affiliate links. Attorney profiles are aggregated from publicly available sources and listing here does not imply endorsement, partnership, or attorney-client relationship. Always consult a licensed attorney for legal matters in your jurisdiction.
+          </p>
         </div>
       </div>
 

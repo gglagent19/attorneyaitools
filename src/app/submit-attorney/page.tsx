@@ -6,6 +6,8 @@ export const metadata: Metadata = {
   title: "Submit Attorney Listing",
   description:
     "Submit your attorney listing to our directory. Get featured among top-rated lawyers in your practice area.",
+  alternates: { canonical: "/submit-attorney" },
+  robots: { index: false, follow: true },
 };
 
 const steps = [

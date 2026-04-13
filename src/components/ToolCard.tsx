@@ -33,18 +33,13 @@ export default function ToolCard({ tool }: ToolCardProps) {
     <div className="group bg-white p-8 rounded-xl border border-slate-200 hover:shadow-xl hover:border-emerald-500/20 transition-all duration-500 flex flex-col">
       {/* Top area: logo + bookmark */}
       <div className="flex items-start justify-between mb-5">
-        <div className="w-16 h-16 rounded-2xl bg-slate-50 flex items-center justify-center overflow-hidden shrink-0">
-          {tool.logo ? (
-            <img
-              src={tool.logo}
-              alt={`${tool.name} logo`}
-              className="w-16 h-16 rounded-2xl object-cover"
-            />
-          ) : (
-            <span className="text-2xl font-bold text-slate-700">
-              {tool.name.charAt(0)}
-            </span>
-          )}
+        <div
+          className="w-16 h-16 rounded-2xl bg-emerald-50 flex items-center justify-center shrink-0"
+          aria-hidden="true"
+        >
+          <span className="text-2xl font-bold text-emerald-700">
+            {tool.name.charAt(0)}
+          </span>
         </div>
         <button
           type="button"

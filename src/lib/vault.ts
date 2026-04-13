@@ -5,7 +5,7 @@ import { remark } from 'remark';
 import html from 'remark-html';
 import gfm from 'remark-gfm';
 import type {
-  AITool, Attorney, City, State, PracticeArea, BlogPost, ProgrammaticPage,
+  AITool, Attorney, City, State, PracticeArea, BlogPost, ProgrammaticPage, FAQ, Comparison,
 } from './types';
 
 const VAULT_PATH = path.join(process.cwd(), 'vault');
@@ -145,10 +145,19 @@ interface CityIndex {
   state: string;
   slug: string;
   state_slug: string;
+  population?: number;
+  county?: string;
+  fips_state?: string;
+  fips_place?: string;
 }
 
 function loadCityIndex(): CityIndex[] {
   return cached('cityIndex', () => {
+    // Prefer the enriched Census-derived dataset.
+    const enrichedPath = path.join(VAULT_PATH, 'Datasets', 'cities-enriched.json');
+    if (fs.existsSync(enrichedPath)) {
+      return JSON.parse(fs.readFileSync(enrichedPath, 'utf8'));
+    }
     const jsonPath = path.join(VAULT_PATH, 'Datasets', 'cities.json');
     if (fs.existsSync(jsonPath)) {
       return JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
@@ -168,14 +177,19 @@ function loadCityIndex(): CityIndex[] {
 export function getAllCities(): City[] {
   return cached('allCities', () => {
     const index = loadCityIndex();
-    return index.map(c => ({
-      slug: c.slug,
-      name: c.name,
-      state: c.state,
-      state_slug: c.state_slug,
-      population: '',
-      content: '',
-    })).sort((a, b) => a.name.localeCompare(b.name));
+    return index
+      .map((c) => ({
+        slug: c.slug,
+        name: c.name,
+        state: c.state,
+        state_slug: c.state_slug,
+        population: c.population || 0,
+        county: c.county,
+        fips_state: c.fips_state,
+        fips_place: c.fips_place,
+        content: '',
+      }))
+      .sort((a, b) => a.name.localeCompare(b.name));
   });
 }
 
@@ -234,6 +248,31 @@ export async function getBlogPostWithHtml(slug: string): Promise<(BlogPost & { h
   return { ...post, htmlContent };
 }
 
+// ─── FAQs ───────────────────────────────────────────────────────────────────
+export function getAllFAQs(): FAQ[] {
+  return cached('allFAQs', () => {
+    const files = getMarkdownFiles('FAQ');
+    return files.map(f => {
+      const data = parseFile<FAQ>('FAQ', f);
+      if (!data.slug) {
+        data.slug = f.replace('.md', '').toLowerCase().replace(/[^a-z0-9]+/g, '-');
+      }
+      return data;
+    }).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  });
+}
+
+export function getFAQBySlug(slug: string): FAQ | undefined {
+  return getAllFAQs().find(f => f.slug === slug);
+}
+
+export async function getFAQWithHtml(slug: string): Promise<(FAQ & { htmlContent: string }) | undefined> {
+  const faq = getFAQBySlug(slug);
+  if (!faq) return undefined;
+  const htmlContent = await parseMarkdown(faq.content);
+  return { ...faq, htmlContent };
+}
+
 // ─── Programmatic SEO pages ─────────────────────────────────────────────────
 export function getAllProgrammaticPages(): ProgrammaticPage[] {
   return cached('allProgrammaticPages', () => {
@@ -257,6 +296,31 @@ export async function getProgrammaticPageWithHtml(slug: string): Promise<(Progra
   if (!page) return undefined;
   const htmlContent = await parseMarkdown(page.content);
   return { ...page, htmlContent };
+}
+
+// ─── Comparisons ────────────────────────────────────────────────────────────
+export function getAllComparisons(): Comparison[] {
+  return cached('allComparisons', () => {
+    const files = getMarkdownFiles('Compare');
+    return files.map(f => {
+      const data = parseFile<Comparison>('Compare', f);
+      if (!data.slug) {
+        data.slug = f.replace('.md', '').toLowerCase().replace(/[^a-z0-9]+/g, '-');
+      }
+      return data;
+    }).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  });
+}
+
+export function getComparisonBySlug(slug: string): Comparison | undefined {
+  return getAllComparisons().find(c => c.slug === slug);
+}
+
+export async function getComparisonWithHtml(slug: string): Promise<(Comparison & { htmlContent: string }) | undefined> {
+  const comp = getComparisonBySlug(slug);
+  if (!comp) return undefined;
+  const htmlContent = await parseMarkdown(comp.content);
+  return { ...comp, htmlContent };
 }
 
 // ─── Aggregation helpers ────────────────────────────────────────────────────
