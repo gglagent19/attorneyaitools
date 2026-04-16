@@ -41,8 +41,10 @@ function buildUrlList() {
     `https://${SITE}/ai-tools`,
     `https://${SITE}/attorneys`,
     `https://${SITE}/blog`,
-    `https://${SITE}/submit-tool`,
-    `https://${SITE}/submit-attorney`,
+    `https://${SITE}/compare`,
+    `https://${SITE}/faq`,
+    `https://${SITE}/about`,
+    `https://${SITE}/methodology`,
   ];
 
   // AI Tools
@@ -95,6 +97,39 @@ function buildUrlList() {
       const content = fs.readFileSync(path.join(progDir, f), 'utf8');
       const slug = content.match(/^slug:\s*"?([^"\n]+)"?/m)?.[1]?.trim();
       if (slug) urls.push(`https://${SITE}/${slug}`);
+    }
+  }
+
+  // Comparison guides
+  const compareDir = path.join(VAULT_PATH, 'Compare');
+  if (fs.existsSync(compareDir)) {
+    for (const f of fs.readdirSync(compareDir)) {
+      if (!f.endsWith('.md')) continue;
+      const content = fs.readFileSync(path.join(compareDir, f), 'utf8');
+      const slug = content.match(/^slug:\s*"?([^"\n]+)"?/m)?.[1]?.trim();
+      if (slug) urls.push(`https://${SITE}/compare/${slug}`);
+    }
+  }
+
+  // FAQs
+  const faqDir = path.join(VAULT_PATH, 'FAQ');
+  if (fs.existsSync(faqDir)) {
+    for (const f of fs.readdirSync(faqDir)) {
+      if (!f.endsWith('.md')) continue;
+      const content = fs.readFileSync(path.join(faqDir, f), 'utf8');
+      const slug = content.match(/^slug:\s*"?([^"\n]+)"?/m)?.[1]?.trim();
+      if (slug) urls.push(`https://${SITE}/faq/${slug}`);
+    }
+  }
+
+  // City pages — from enriched dataset (~19K)
+  const citiesPath = path.join(VAULT_PATH, 'Datasets', 'cities-enriched.json');
+  if (fs.existsSync(citiesPath)) {
+    const cities = JSON.parse(fs.readFileSync(citiesPath, 'utf8'));
+    for (const c of cities) {
+      if (c.state_slug && c.slug) {
+        urls.push(`https://${SITE}/attorneys/${c.state_slug}/${c.slug}`);
+      }
     }
   }
 

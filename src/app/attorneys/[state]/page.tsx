@@ -6,6 +6,7 @@ import {
   generateBreadcrumbSchema,
   generateItemListSchema,
   generateFAQPageSchema,
+  generateStateDescription,
 } from "@/lib/seo";
 import { getStateFacts, getAllQualifiedCityKeys } from "@/lib/city-facts";
 import { getStateData } from "@/lib/state-data";
@@ -24,13 +25,25 @@ export async function generateMetadata({
   const state = getStateBySlug(stateSlug);
   if (!state) return { title: "State Not Found" };
   const facts = getStateFacts(stateSlug);
+  const stateData = getStateData(stateSlug);
+  const description = generateStateDescription({
+    stateName: state.name,
+    stateSlug,
+    attorneyCount: facts.attorneyCount,
+    cityCount: facts.qualifiedCityCount,
+    topPracticeArea: facts.topPracticeAreas[0]?.name,
+    avgRating: facts.avgRating,
+    avgYears: facts.avgExperienceYears,
+    solYears: stateData?.injurySolYears ?? 2,
+    barName: stateData?.bar.name,
+  });
   return {
     title: `${facts.attorneyCount}+ Attorneys in ${state.name}`,
-    description: `Browse ${facts.attorneyCount}+ attorneys across ${facts.qualifiedCityCount} ${state.name} cities. Find lawyers by practice area, average rating, and years of experience.`,
+    description,
     alternates: { canonical: `/attorneys/${stateSlug}` },
     openGraph: {
       title: `${facts.attorneyCount}+ Attorneys in ${state.name}`,
-      description: `Browse top-rated lawyers across ${state.name}.`,
+      description,
       url: `https://attorneyaitools.org/attorneys/${stateSlug}`,
       type: "website",
     },

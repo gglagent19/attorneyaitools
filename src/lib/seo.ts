@@ -3,6 +3,123 @@ import type { AITool, Attorney, BlogPost, City, State, Comparison } from './type
 const SITE_URL = 'https://attorneyaitools.org';
 const SITE_NAME = 'AttorneyAITools';
 
+// ─── Hash-rotated description generator ────────────────────────────────────
+// Stable hash → 0..n-1 so the same page gets the same description every build.
+function hashIdx(input: string, mod: number): number {
+  let h = 2166136261;
+  for (let i = 0; i < input.length; i++) {
+    h ^= input.charCodeAt(i);
+    h = Math.imul(h, 16777619);
+  }
+  return Math.abs(h) % mod;
+}
+
+// Clamp + clean: meta description sweet spot is 130–160 chars.
+function clamp(s: string, max = 158): string {
+  const clean = s.replace(/\s+/g, ' ').trim();
+  if (clean.length <= max) return clean;
+  return clean.slice(0, max - 1).replace(/[,;:\s]+\S*$/, '') + '…';
+}
+
+export interface CityDescriptionInput {
+  cityName: string;
+  stateName: string;
+  stateSlug: string;
+  citySlug: string;
+  population: number;
+  county?: string;
+  attorneyCount: number; // 0 if unqualified
+  topPracticeArea?: string;
+  avgRating?: number;
+  avgYears?: number;
+  solYears: number;
+  qualified: boolean;
+}
+
+export function generateCityDescription(i: CityDescriptionInput): string {
+  const seed = `${i.stateSlug}|${i.citySlug}`;
+  const popStr = i.population > 0 ? i.population.toLocaleString() : "—";
+  const co = i.county ? i.county.replace(/ County$/, "") : null;
+
+  if (i.qualified) {
+    const variants = [
+      `Browse ${i.attorneyCount} verified attorneys in ${i.cityName}, ${i.stateName}. Top practice area: ${i.topPracticeArea || "personal injury"}. Average ${(i.avgYears || 0).toFixed(0)} yrs experience, ${(i.avgRating || 0).toFixed(1)}/5 rating.`,
+      `${i.attorneyCount} ${i.cityName}, ${i.stateName} lawyers compared by practice area, rating, and experience.${co ? ` ${co} County.` : ""} ${i.stateName} ${i.solYears}-yr injury SOL.`,
+      `Find a ${i.cityName} lawyer fast. ${i.attorneyCount} attorneys in our ${i.stateName} directory${co ? ` (${co} County)` : ""}, averaging ${(i.avgRating || 0).toFixed(1)}/5 with ${(i.avgYears || 0).toFixed(0)} yrs of practice.`,
+      `${i.cityName}, ${i.stateName} attorney directory. ${i.attorneyCount} verified ${(i.topPracticeArea || "practice").toLowerCase()} and other lawyers, with ratings, experience, and direct profiles.`,
+      `${i.attorneyCount} attorneys serving ${i.cityName}, ${i.stateName}${co ? ` and ${co} County` : ""}. Compare ratings, years of experience, and practice areas in our editorial directory.`,
+      `Top-rated ${i.cityName}, ${i.stateName} lawyers (${i.attorneyCount} listed). ${i.stateName} bar–licensed, ${(i.avgYears || 0).toFixed(0)}+ yrs avg, ${(i.avgRating || 0).toFixed(1)}/5 client rating.`,
+    ];
+    return clamp(variants[hashIdx(seed, variants.length)]);
+  }
+
+  // Unqualified — lean on Census + state legal facts.
+  const placeBand =
+    i.population >= 250000 ? "metropolitan area" :
+    i.population >= 50000 ? "mid-size city" :
+    i.population >= 10000 ? "small city" :
+    i.population >= 2500 ? "town" : "village";
+
+  const variants = [
+    `${i.cityName}, ${i.stateName} (pop ${popStr}${co ? `, ${co} County` : ""}). ${i.stateName} legal context, ${i.solYears}-yr injury SOL, and the closest cities with verified attorney listings.`,
+    `Legal resources for ${i.cityName}, ${i.stateName} — population ${popStr}${co ? `, located in ${co} County` : ""}. ${i.stateName} bar lookup and nearby attorney listings.`,
+    `${i.cityName} is a ${i.stateName} ${placeBand} of ~${popStr}${co ? ` in ${co} County` : ""}. Browse ${i.stateName} legal context, statutes, and the nearest verified attorney directory.`,
+    `Need a lawyer near ${i.cityName}, ${i.stateName}? See ${i.stateName} legal context (${i.solYears}-yr injury SOL), ${co ? `${co} County resources, ` : ""}and the closest cities with verified listings.`,
+    `${i.cityName}, ${i.stateName} attorney guide${co ? ` for ${co} County residents` : ""}. Population ~${popStr}. ${i.stateName} bar verification and nearby cities with vetted lawyers.`,
+    `Attorneys near ${i.cityName}, ${i.stateName}${co ? ` (${co} County)` : ""}. ${i.stateName} legal info, ${i.solYears}-yr personal injury SOL, and the closest cities in our verified directory.`,
+  ];
+  return clamp(variants[hashIdx(seed, variants.length)]);
+}
+
+export interface StateDescriptionInput {
+  stateName: string;
+  stateSlug: string;
+  attorneyCount: number;
+  cityCount: number;
+  topPracticeArea?: string;
+  avgRating?: number;
+  avgYears?: number;
+  solYears: number;
+  barName?: string;
+}
+
+export function generateStateDescription(i: StateDescriptionInput): string {
+  const seed = `state|${i.stateSlug}`;
+  const variants = [
+    `${i.attorneyCount}+ verified ${i.stateName} attorneys across ${i.cityCount} cities. Top practice area: ${i.topPracticeArea || "personal injury"}. ${i.stateName} ${i.solYears}-yr injury SOL.`,
+    `Browse ${i.attorneyCount}+ ${i.stateName} lawyers in ${i.cityCount} cities. Average ${(i.avgYears || 0).toFixed(0)} yrs experience and ${(i.avgRating || 0).toFixed(1)}/5 client rating.`,
+    `${i.stateName} attorney directory: ${i.attorneyCount}+ lawyers across ${i.cityCount} cities, with ${i.barName || `${i.stateName} bar`} verification and per-city practice area breakdowns.`,
+    `Find a ${i.stateName} lawyer in ${i.cityCount} covered cities. ${i.attorneyCount}+ attorneys ranked by rating and experience, plus ${i.stateName} legal context.`,
+    `${i.attorneyCount}+ ${i.stateName} attorneys serving ${i.cityCount} cities. Compare ratings, years of experience, practice areas, and ${i.stateName} bar information.`,
+    `Top-rated ${i.stateName} attorneys (${i.attorneyCount}+ in directory). ${i.stateName}-bar licensed lawyers across ${i.cityCount} cities with ratings and practice-area filters.`,
+  ];
+  return clamp(variants[hashIdx(seed, variants.length)]);
+}
+
+export interface PracticeAreaDescriptionInput {
+  areaName: string;
+  practiceSlug: string;
+  attorneyCount: number;
+  topStateName?: string;
+  topCityName?: string;
+  avgYears?: number;
+  shortDef: string;
+}
+
+export function generatePracticeAreaDescription(i: PracticeAreaDescriptionInput): string {
+  const seed = `pa|${i.practiceSlug}`;
+  const def = clamp(i.shortDef, 100);
+  const variants = [
+    `${i.attorneyCount} ${i.areaName} lawyers in our directory, averaging ${(i.avgYears || 0).toFixed(0)} yrs experience. Compare across states, cities, and ratings — pricing and FAQs included.`,
+    `${def} Browse ${i.attorneyCount} ${i.areaName.toLowerCase()} attorneys${i.topStateName ? `, top in ${i.topStateName}` : ""}, with verified profiles and ratings.`,
+    `Find a ${i.areaName.toLowerCase()} lawyer fast. ${i.attorneyCount} attorneys in our directory${i.topCityName ? `, with ${i.topCityName} as the top city` : ""}, ranked by rating and experience.`,
+    `${i.areaName} attorney directory. ${i.attorneyCount} lawyers with verified profiles, fee structures, and FAQs covering when to hire and what to expect.`,
+    `${i.attorneyCount} ${i.areaName.toLowerCase()} attorneys, ${i.topStateName ? `most concentrated in ${i.topStateName}` : "nationwide"}. Compare profiles, ratings, fees, and case experience.`,
+    `${i.areaName} lawyer guide: ${def} ${i.attorneyCount} verified attorneys with ratings and experience.`,
+  ];
+  return clamp(variants[hashIdx(seed, variants.length)]);
+}
+
 // ─── Schema generators ──────────────────────────────────────────────────────
 
 export function generateOrganizationSchema() {

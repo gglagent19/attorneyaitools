@@ -6,6 +6,7 @@ import {
   generateBreadcrumbSchema,
   generateItemListSchema,
   generateFAQPageSchema,
+  generatePracticeAreaDescription,
 } from "@/lib/seo";
 import { getPracticeAreaFacts } from "@/lib/city-facts";
 import { getPracticeAreaData } from "@/lib/practice-area-data";
@@ -26,13 +27,22 @@ export async function generateMetadata({
   if (!area) return { title: "Practice Area Not Found" };
   const facts = getPracticeAreaFacts(practice);
   const data = getPracticeAreaData(practice);
+  const description = generatePracticeAreaDescription({
+    areaName: area.name,
+    practiceSlug: practice,
+    attorneyCount: facts.attorneyCount,
+    topStateName: facts.topStates[0]?.stateName,
+    topCityName: facts.topCities[0]?.cityName,
+    avgYears: facts.avgExperienceYears,
+    shortDef: data.shortDef,
+  });
   return {
     title: `${area.name} Lawyers - ${facts.attorneyCount}+ Attorneys`,
-    description: `${data.shortDef.slice(0, 155)}`,
+    description,
     alternates: { canonical: `/practice-areas/${practice}` },
     openGraph: {
       title: `${area.name} Lawyers - ${facts.attorneyCount}+ Attorneys`,
-      description: data.shortDef,
+      description,
       url: `https://attorneyaitools.org/practice-areas/${practice}`,
       type: "website",
     },

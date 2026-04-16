@@ -10,6 +10,7 @@ import {
   generateBreadcrumbSchema,
   generateItemListSchema,
   generateFAQPageSchema,
+  generateCityDescription,
 } from "@/lib/seo";
 import {
   getCityFacts,
@@ -69,13 +70,25 @@ export async function generateMetadata({
   if (!city || !state) return { title: "Not Found" };
   const facts = getCityFacts(stateSlug, citySlug);
   const qualified = !!facts && facts.attorneyCount >= MIN_ATTORNEYS_FOR_INDEX;
+  const stateData = getStateData(stateSlug);
 
   const baseTitle = qualified
     ? `${facts!.attorneyCount} Attorneys in ${city.name}, ${state.name}`
-    : `Attorneys in ${city.name}, ${state.name}`;
-  const description = qualified
-    ? `Find ${facts!.attorneyCount} attorneys in ${city.name}, ${state.name}. Compare lawyers by practice area, ratings, and experience. ${facts!.topPracticeAreas[0]?.name || "All practice areas"} and more.`
-    : `Legal information and attorney directory for ${city.name}, ${state.name} (population ${city.population?.toLocaleString() || "—"}). ${city.county || ""} ${state.name} legal resources, statutes, and nearby attorney listings.`;
+    : `Attorneys in ${city.name}, ${state.name} (Pop ${(city.population || 0).toLocaleString()})`;
+  const description = generateCityDescription({
+    cityName: city.name,
+    stateName: state.name,
+    stateSlug,
+    citySlug,
+    population: city.population || 0,
+    county: city.county,
+    attorneyCount: facts?.attorneyCount || 0,
+    topPracticeArea: facts?.topPracticeAreas[0]?.name,
+    avgRating: facts?.avgRating,
+    avgYears: facts?.avgExperienceYears,
+    solYears: stateData?.injurySolYears ?? 2,
+    qualified,
+  });
 
   return {
     title: baseTitle,
