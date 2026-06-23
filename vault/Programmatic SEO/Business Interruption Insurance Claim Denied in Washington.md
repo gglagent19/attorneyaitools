@@ -1,6 +1,6 @@
 ---
 type: programmatic
-title: "Business Interruption Insurance Claim Denied in Washington? How to Dispute It"
+title: "Business Interruption Insurance Claim Denied in Washington?"
 slug: "business-interruption-insurance-claim-denied-washington"
 template: "claim-by-state"
 practice_area: ""
@@ -13,9 +13,9 @@ description: "Denied or underpaid business interruption insurance claim in Washi
 
 A denied or lowballed business interruption claim in Washington doesn't mean your case is closed. WA residents have the right to question the adjuster's estimate, request a re-inspection, and appeal — and the data shows persistence pays.
 
-[**▶ Run a free 90-second analysis of your claim**](/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your policy actually owes.
+[**▶ Run a free 90-second analysis of your claim**](/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your business interruption policy actually owes.
 
-## Why Business Interruption Insurance Claims Get Denied or Underpaid
+## Why Business Interruption Insurance Claims Get Denied in Washington
 
 Most business interruption disputes in Washington come down to a handful of recurring tactics:
 
@@ -24,27 +24,42 @@ Most business interruption disputes in Washington come down to a handful of recu
 - The lost-income calculation used conservative revenue assumptions
 - A covered physical-loss trigger was disputed
 
-In Washington, where windstorms and flooding drive a large share of property losses, business interruption claims are also prone to causation disputes — insurers may attribute damage to an excluded cause to reduce or deny payment.
+In Washington, where windstorms and flooding drive a large share of property losses, business interruption claims are especially prone to causation disputes — insurers may attribute the damage to an excluded cause to reduce or deny payment.
 
-## What a Lowball Offer Looks Like
+## What a Business Interruption Insurance Lowball Looks Like in Washington
 
-A lowball on a business interruption claim usually means understating projected revenue, shortening the restoration period, and excluding continuing payroll and extra expenses. The number can look official — it arrives on letterhead with line items — but the scope behind it is often incomplete. Comparing the adjuster's estimate line-by-line against real local repair costs is where most underpayments surface.
+In Washington, an underpaid business interruption offer typically comes from understating projected revenue, shortening the restoration period, and excluding continuing payroll and extra expenses. The number can look official — letterhead, line items — but the scope behind it is often incomplete. Comparing the adjuster's business interruption estimate line-by-line against real Washington repair costs is where most underpayments surface.
 
-## How to Dispute It (Step by Step)
+## How to dispute a business interruption claim in Washington
 
-1. **Read the denial or estimate carefully.** Identify the exact policy provision or scope item the insurer relied on.
-2. **Document everything.** Photos, videos, receipts, contractor estimates, and a dated timeline of the loss.
-3. **Get an independent estimate.** A licensed Washington contractor's scope often exceeds the adjuster's — that delta is your leverage.
-4. **Request a re-inspection in writing.** Insurers frequently revise scope when shown specific, documented gaps.
-5. **Write a clear, itemized rebuttal.** Tie each disputed item to your policy language and your evidence.
-6. **Escalate if needed.** You can file a complaint with the Washington Department of Insurance (find it through the [NAIC directory](https://content.naic.org/state-insurance-departments)), and many policies include appraisal or mediation provisions for valuation disputes.
+1. **Read the denial or estimate closely.** Pin down the exact policy provision your insurer leaned on for this business interruption claim.
+2. **Document everything** in Washington — dated photos, video, receipts, and a written timeline of the loss.
+3. **Commission your own Washington contractor estimate.** Where it exceeds the insurer's figure is exactly what you negotiate back.
+4. **Request a re-inspection in writing** and submit an itemized rebuttal that ties each disputed item to your policy and your evidence.
+5. **Use the formal channels:** a complaint to the Washington Department of Insurance ([NAIC](https://content.naic.org/state-insurance-departments)) and, for valuation-only disputes, the appraisal clause.
 
-> **Deadlines matter.** Most policies set a contractual time limit (a "suit limitation" clause, often one to two years) and require prompt notice of loss. Check your own policy and confirm the specifics with the Washington Department of Insurance — don't rely on a general figure.
+> **Time limits matter here.** Washington policies typically cap how long you have to act. Check your policy's deadline clause and the Washington Department of Insurance so a technicality never closes your file.
 
-## Where Shielded Helps
+## Where Shielded Helps With Your Washington Business Interruption Insurance Claim
 
-Shielded reads your Washington policy and the adjuster's estimate, then shows — in about 90 seconds — where the offer falls short of what your policy owes. From there it drafts the rebuttal letter, organizes your documentation, benchmarks your claim against comparable settlements, and tracks your deadlines.
+Shielded reads your Washington policy and the adjuster's estimate, then shows — in about 90 seconds — where the offer falls short of what your business interruption policy owes. From there it drafts the rebuttal letter, organizes your documentation, benchmarks your business interruption claim against comparable Washington settlements, and tracks your deadlines.
 
 [**Start your free business interruption claim analysis →**](/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
+
+Prefer to work with an attorney? [Get matched free with a Washington insurance claim lawyer](/find-a-lawyer).
+
+## Frequently Asked Questions
+
+**How long do I have to appeal in Washington?**
+
+Washington policies usually set a contractual deadline to file suit — commonly one to two years from the loss — plus a prompt-notice requirement. Check your policy's "suit limitation" clause and confirm with the Washington Department of Insurance.
+
+**What if the adjuster's estimate is too low in Washington?**
+
+Get an independent Washington contractor estimate for the full scope and compare it line-by-line. The difference — missed square footage, code upgrades, matching, recoverable depreciation — is what you document and dispute.
+
+**Do I need a lawyer to fight a business interruption claim in Washington?**
+
+Not always. Many Washington valuation disputes are resolved with a documented rebuttal or the appraisal process. A lawyer makes sense for outright coverage denials or bad-faith conduct. You can also run a free analysis first to see how large your gap is.
 
 *Shielded is a self-help analysis and document tool. It is not a law firm or a licensed public adjuster, and it does not provide legal advice or represent you in negotiations.*

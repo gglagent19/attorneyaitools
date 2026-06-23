@@ -17,6 +17,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { seedFrom, pick, disputeSteps, deadlineNote, faqBlock } = require('./claim-content-lib.cjs');
 
 const VAULT_OUT = path.join(__dirname, '..', 'vault', 'Programmatic SEO');
 const NAIC_DIRECTORY = 'https://content.naic.org/state-insurance-departments';
@@ -188,41 +189,58 @@ function introVariant(state, ct, i) {
 }
 
 function buildContent(state, ct, idx) {
+  const seed = seedFrom(`${state.name}|${ct.key}`);
   const reasons = ct.denialReasons.map(r => `- ${r.charAt(0).toUpperCase() + r.slice(1)}`).join('\n');
+
+  const whyLead = pick([
+    `Most ${ct.short} disputes in ${state.name} come down to a handful of recurring tactics:`,
+    `Across ${state.name}, ${ct.short} claims are denied or trimmed for a predictable set of reasons:`,
+    `When a ${ct.short} claim is underpaid in ${state.name}, it usually traces back to one of these:`,
+  ], seed, 5);
+
+  const lowballLead = pick([
+    `A lowball on a ${ct.short} claim in ${state.name} usually means ${ct.lowball}.`,
+    `In ${state.name}, an underpaid ${ct.short} offer typically comes from ${ct.lowball}.`,
+    `Most ${state.name} ${ct.short} lowballs trace to ${ct.lowball}.`,
+  ], seed, 6);
+
+  const helpLead = pick([
+    `Shielded reads your ${state.name} policy and the adjuster's estimate, then shows — in about 90 seconds — where the offer falls short of what your ${ct.short} policy owes.`,
+    `Upload your ${state.name} policy and the adjuster's ${ct.short} estimate, and Shielded pinpoints the gap in about 90 seconds.`,
+    `For ${ct.short} claims in ${state.name}, Shielded compares your policy to the adjuster's estimate and surfaces what you're actually owed in seconds.`,
+  ], seed, 8);
+
   return `## ${ct.label} Claim Denied or Underpaid in ${state.name}?
 
 ${introVariant(state, ct, idx)}
 
-[**▶ Run a free 90-second analysis of your claim**](${APP_CTA}) — upload your policy and the adjuster's estimate, and see whether you're being offered what your policy actually owes.
+[**▶ Run a free 90-second analysis of your claim**](${APP_CTA}) — upload your policy and the adjuster's estimate, and see whether you're being offered what your ${ct.short} policy actually owes.
 
-## Why ${ct.label} Claims Get Denied or Underpaid
+## Why ${ct.label} Claims Get Denied in ${state.name}
 
-Most ${ct.short} disputes in ${state.name} come down to a handful of recurring tactics:
+${whyLead}
 
 ${reasons}
 
-In ${state.name}, where ${state.perils} drive a large share of property losses, ${ct.short} claims are also prone to causation disputes — insurers may attribute damage to an excluded cause to reduce or deny payment.
+In ${state.name}, where ${state.perils} drive a large share of property losses, ${ct.short} claims are especially prone to causation disputes — insurers may attribute the damage to an excluded cause to reduce or deny payment.
 
-## What a Lowball Offer Looks Like
+## What a ${ct.label} Lowball Looks Like in ${state.name}
 
-A lowball on a ${ct.short} claim usually means ${ct.lowball}. The number can look official — it arrives on letterhead with line items — but the scope behind it is often incomplete. Comparing the adjuster's estimate line-by-line against real local repair costs is where most underpayments surface.
+${lowballLead} The number can look official — letterhead, line items — but the scope behind it is often incomplete. Comparing the adjuster's ${ct.short} estimate line-by-line against real ${state.name} repair costs is where most underpayments surface.
 
-## How to Dispute It (Step by Step)
+${disputeSteps(state.name, state.name, ct.short + ' claim', seed)}
 
-1. **Read the denial or estimate carefully.** Identify the exact policy provision or scope item the insurer relied on.
-2. **Document everything.** Photos, videos, receipts, contractor estimates, and a dated timeline of the loss.
-3. **Get an independent estimate.** A licensed ${state.name} contractor's scope often exceeds the adjuster's — that delta is your leverage.
-4. **Request a re-inspection in writing.** Insurers frequently revise scope when shown specific, documented gaps.
-5. **Write a clear, itemized rebuttal.** Tie each disputed item to your policy language and your evidence.
-6. **Escalate if needed.** You can file a complaint with the ${state.name} Department of Insurance (find it through the [NAIC directory](${NAIC_DIRECTORY})), and many policies include appraisal or mediation provisions for valuation disputes.
+${deadlineNote(state.name, state.name, seed)}
 
-> **Deadlines matter.** Most policies set a contractual time limit (a "suit limitation" clause, often one to two years) and require prompt notice of loss. Check your own policy and confirm the specifics with the ${state.name} Department of Insurance — don't rely on a general figure.
+## Where Shielded Helps With Your ${state.name} ${ct.label} Claim
 
-## Where Shielded Helps
-
-Shielded reads your ${state.name} policy and the adjuster's estimate, then shows — in about 90 seconds — where the offer falls short of what your policy owes. From there it drafts the rebuttal letter, organizes your documentation, benchmarks your claim against comparable settlements, and tracks your deadlines.
+${helpLead} From there it drafts the rebuttal letter, organizes your documentation, benchmarks your ${ct.short} claim against comparable ${state.name} settlements, and tracks your deadlines.
 
 [**Start your free ${ct.short} claim analysis →**](${APP_CTA})
+
+Prefer to work with an attorney? [Get matched free with a ${state.name} insurance claim lawyer](/find-a-lawyer).
+
+${faqBlock(state.name, state.name, ct.short + ' claim', seed)}
 
 *Shielded is a self-help analysis and document tool. It is not a law firm or a licensed public adjuster, and it does not provide legal advice or represent you in negotiations.*
 `;
@@ -237,7 +255,7 @@ let generated = 0, skipped = 0, idx = 0;
 for (const state of states) {
   for (const ct of CLAIM_TYPES) {
     idx++;
-    const title = `${ct.label} Claim Denied in ${state.name}? How to Dispute It`;
+    const title = `${ct.label} Claim Denied in ${state.name}?`;
     const slug = `${ct.key}-insurance-claim-denied-${slugify(state.name)}`;
     const description = `Denied or underpaid ${ct.short} insurance claim in ${state.name}? Learn how to dispute the adjuster, appeal a denial, and recover what your policy owes. Free 90-second claim analysis.`;
     const filename = `${ct.label} Claim Denied in ${state.name}.md`;
