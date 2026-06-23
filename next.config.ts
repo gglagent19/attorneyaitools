@@ -39,8 +39,10 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        // Apply strict security headers everywhere EXCEPT /app, which proxies the
-        // external Shielded app (its own scripts/API calls would break under our CSP).
+        // Apply strict security headers everywhere EXCEPT /app — the Shielded
+        // app served there needs its CDN scripts + Supabase calls to run
+        // unrestricted, as they did on its original host. (Users only hit /app;
+        // the rewrite serves app.html, and headers match the request path.)
         source: "/((?!app(?:/|$)).*)",
         headers: [
           { key: "X-Frame-Options", value: "DENY" },
@@ -77,17 +79,11 @@ const nextConfig: NextConfig = {
       { source: "/lawyers", destination: "/attorneys", permanent: true },
     ];
   },
-  // Serve the Shielded app at /app by proxying the existing GitHub Pages app.
-  // Requires the app to be reachable at gglagent19.github.io/shielded-prototype/
-  // (remove the .org custom domain from that repo's GitHub Pages settings so it
-  // stops redirecting to attorneyaitools.org).
+  // Serve the Shielded app at /app from the self-contained app.html hosted in
+  // /public (no GitHub Pages dependency). The app is a single inline-React file
+  // that loads its libraries from CDNs and talks to Supabase directly.
   async rewrites() {
-    const APP_ORIGIN = "https://gglagent19.github.io/shielded-prototype";
-    return [
-      { source: "/app", destination: `${APP_ORIGIN}/app.html` },
-      { source: "/app/", destination: `${APP_ORIGIN}/app.html` },
-      { source: "/app/:path*", destination: `${APP_ORIGIN}/:path*` },
-    ];
+    return [{ source: "/app", destination: "/app.html" }];
   },
 };
 
