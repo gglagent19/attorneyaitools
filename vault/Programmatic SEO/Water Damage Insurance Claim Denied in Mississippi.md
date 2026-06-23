@@ -13,7 +13,7 @@ description: "Denied or underpaid water damage insurance claim in Mississippi? L
 
 A denied or lowballed water damage claim in Mississippi doesn't mean your case is closed. MS residents have the right to question the adjuster's estimate, request a re-inspection, and appeal — and the data shows persistence pays.
 
-[**▶ Run a free 90-second analysis of your claim**](/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your water damage policy actually owes.
+[**▶ Run a free 90-second analysis of your claim**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your water damage policy actually owes.
 
 ## Why Water Damage Insurance Claims Get Denied in Mississippi
 
@@ -44,7 +44,7 @@ A lowball on a water damage claim in Mississippi usually means paying only for v
 
 For water damage claims in Mississippi, Shielded compares your policy to the adjuster's estimate and surfaces what you're actually owed in seconds. From there it drafts the rebuttal letter, organizes your documentation, benchmarks your water damage claim against comparable Mississippi settlements, and tracks your deadlines.
 
-[**Start your free water damage claim analysis →**](/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
+[**Start your free water damage claim analysis →**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
 
 Prefer to work with an attorney? [Get matched free with a Mississippi insurance claim lawyer](/find-a-lawyer).
 

@@ -17,7 +17,7 @@ reading_time: "8 min"
 
 The adjuster's number and your claim's real value are often two very different figures. Knowing what you're actually owed — before you accept anything — is the single most valuable thing you can do. Here's how claim value is built.
 
-> [Get your estimated gap in 90 seconds](/app.html?utm_source=blog&utm_medium=organic&utm_campaign=claim-worth) — Shielded compares the adjuster's offer to what your policy owes.
+> [Get your estimated gap in 90 seconds](https://app.attorneyaitools.org/app.html?utm_source=blog&utm_medium=organic&utm_campaign=claim-worth) — Shielded compares the adjuster's offer to what your policy owes.
 
 ## Replacement Cost vs Actual Cash Value (the biggest lever)
 
@@ -55,6 +55,6 @@ It's not laziness — it's that valuing a claim correctly requires reading the p
 
 Upload your policy and the adjuster's estimate. Shielded identifies your coverage type, flags the missing line items, benchmarks against comparable settlements, and shows your estimated gap — in about 90 seconds, free.
 
-[**See what my claim is worth →**](/app.html?utm_source=blog&utm_medium=organic&utm_campaign=claim-worth)
+[**See what my claim is worth →**](https://app.attorneyaitools.org/app.html?utm_source=blog&utm_medium=organic&utm_campaign=claim-worth)
 
 *General information, not legal advice or a guarantee of recovery. Shielded is a self-help analysis tool, not a law firm or licensed public adjuster.*

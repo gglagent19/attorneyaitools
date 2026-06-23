@@ -13,7 +13,7 @@ description: "Denied or underpaid storm and hurricane insurance claim in Florida
 
 Getting a storm and hurricane claim denied or underpaid in Florida is frustrating, but the adjuster's first decision is rarely the final word. Florida homeowners and policyholders dispute lowball offers every day — and many recover thousands more than they were first offered.
 
-[**▶ Run a free 90-second analysis of your claim**](/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your storm and hurricane policy actually owes.
+[**▶ Run a free 90-second analysis of your claim**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your storm and hurricane policy actually owes.
 
 ## Why Storm & Hurricane Insurance Claims Get Denied in Florida
 
@@ -44,7 +44,7 @@ In Florida, an underpaid storm and hurricane offer typically comes from splittin
 
 Shielded reads your Florida policy and the adjuster's estimate, then shows — in about 90 seconds — where the offer falls short of what your storm and hurricane policy owes. From there it drafts the rebuttal letter, organizes your documentation, benchmarks your storm and hurricane claim against comparable Florida settlements, and tracks your deadlines.
 
-[**Start your free storm and hurricane claim analysis →**](/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
+[**Start your free storm and hurricane claim analysis →**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
 
 Prefer to work with an attorney? [Get matched free with a Florida insurance claim lawyer](/find-a-lawyer).
 

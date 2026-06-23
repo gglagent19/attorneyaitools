@@ -13,7 +13,7 @@ description: "Denied or underpaid business interruption insurance claim in Rhode
 
 A denied or lowballed business interruption claim in Rhode Island doesn't mean your case is closed. RI residents have the right to question the adjuster's estimate, request a re-inspection, and appeal — and the data shows persistence pays.
 
-[**▶ Run a free 90-second analysis of your claim**](/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your business interruption policy actually owes.
+[**▶ Run a free 90-second analysis of your claim**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your business interruption policy actually owes.
 
 ## Why Business Interruption Insurance Claims Get Denied in Rhode Island
 
@@ -44,7 +44,7 @@ A lowball on a business interruption claim in Rhode Island usually means underst
 
 For business interruption claims in Rhode Island, Shielded compares your policy to the adjuster's estimate and surfaces what you're actually owed in seconds. From there it drafts the rebuttal letter, organizes your documentation, benchmarks your business interruption claim against comparable Rhode Island settlements, and tracks your deadlines.
 
-[**Start your free business interruption claim analysis →**](/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
+[**Start your free business interruption claim analysis →**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
 
 Prefer to work with an attorney? [Get matched free with a Rhode Island insurance claim lawyer](/find-a-lawyer).
 

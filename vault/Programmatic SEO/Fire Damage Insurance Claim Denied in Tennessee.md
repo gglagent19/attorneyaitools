@@ -13,7 +13,7 @@ description: "Denied or underpaid fire damage insurance claim in Tennessee? Lear
 
 If your fire damage insurance claim in Tennessee came back denied — or with an offer that won't come close to covering the repairs — you are not stuck with that first number. Insurers in Tennessee routinely issue low initial offers, and a well-documented challenge often changes the outcome.
 
-[**▶ Run a free 90-second analysis of your claim**](/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your fire damage policy actually owes.
+[**▶ Run a free 90-second analysis of your claim**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your fire damage policy actually owes.
 
 ## Why Fire Damage Insurance Claims Get Denied in Tennessee
 
@@ -44,7 +44,7 @@ In Tennessee, an underpaid fire damage offer typically comes from settling struc
 
 Shielded reads your Tennessee policy and the adjuster's estimate, then shows — in about 90 seconds — where the offer falls short of what your fire damage policy owes. From there it drafts the rebuttal letter, organizes your documentation, benchmarks your fire damage claim against comparable Tennessee settlements, and tracks your deadlines.
 
-[**Start your free fire damage claim analysis →**](/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
+[**Start your free fire damage claim analysis →**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
 
 Prefer to work with an attorney? [Get matched free with a Tennessee insurance claim lawyer](/find-a-lawyer).
 

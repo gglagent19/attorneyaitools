@@ -21,7 +21,7 @@ export default function AppCTA({
   label = "Run my free claim analysis →",
   className,
 }: AppCTAProps) {
-  const href = `/app.html?utm_source=site&utm_medium=organic&utm_campaign=${encodeURIComponent(
+  const href = `https://app.attorneyaitools.org/app.html?utm_source=site&utm_medium=organic&utm_campaign=${encodeURIComponent(
     campaign
   )}`;
 

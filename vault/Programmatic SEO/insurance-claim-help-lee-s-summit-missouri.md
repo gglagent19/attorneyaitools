@@ -13,7 +13,7 @@ description: "Denied or underpaid insurance claim in Lee's Summit, Missouri? Lea
 
 Insurers in Lee's Summit, Missouri routinely issue low initial offers. The gap between what they pay and what your policy actually owes is often large — and entirely disputable. Here's how Lee's Summit policyholders fight back.
 
-[**▶ Run a free 90-second analysis of your claim**](/app.html?utm_source=seo&utm_medium=organic&utm_campaign=city-claim-pages) — upload your policy and the adjuster's estimate and see whether you're being offered what your policy actually owes in Lee's Summit.
+[**▶ Run a free 90-second analysis of your claim**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=city-claim-pages) — upload your policy and the adjuster's estimate and see whether you're being offered what your policy actually owes in Lee's Summit.
 
 ## Why Lee's Summit Insurance Claims Get Denied
 
@@ -38,7 +38,7 @@ With a population of about 101,108, Lee's Summit sees a steady volume of propert
 
 Shielded reads your policy and the adjuster's estimate and shows — in about 90 seconds — where the offer falls short of what your policy owes in Lee's Summit, Missouri, then drafts the rebuttal letter and tracks your deadlines.
 
-[**Start your free claim analysis →**](/app.html?utm_source=seo&utm_medium=organic&utm_campaign=city-claim-pages)
+[**Start your free claim analysis →**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=city-claim-pages)
 
 Prefer to work with an attorney? [Get matched free with an insurance claim lawyer near Lee's Summit](/find-a-lawyer).
 

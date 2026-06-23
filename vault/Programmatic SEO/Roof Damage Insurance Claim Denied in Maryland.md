@@ -13,7 +13,7 @@ description: "Denied or underpaid roof damage insurance claim in Maryland? Learn
 
 Across Maryland — from Baltimore to Columbia — policyholders are told their roof damage claim is denied, only to discover the loss was genuinely covered. The gap between what an insurer offers and what your policy owes is often large, and entirely disputable.
 
-[**▶ Run a free 90-second analysis of your claim**](/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your roof damage policy actually owes.
+[**▶ Run a free 90-second analysis of your claim**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your roof damage policy actually owes.
 
 ## Why Roof Damage Insurance Claims Get Denied in Maryland
 
@@ -44,7 +44,7 @@ In Maryland, an underpaid roof damage offer typically comes from approving spot 
 
 Shielded reads your Maryland policy and the adjuster's estimate, then shows — in about 90 seconds — where the offer falls short of what your roof damage policy owes. From there it drafts the rebuttal letter, organizes your documentation, benchmarks your roof damage claim against comparable Maryland settlements, and tracks your deadlines.
 
-[**Start your free roof damage claim analysis →**](/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
+[**Start your free roof damage claim analysis →**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
 
 Prefer to work with an attorney? [Get matched free with a Maryland insurance claim lawyer](/find-a-lawyer).
 

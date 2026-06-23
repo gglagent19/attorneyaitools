@@ -13,7 +13,7 @@ description: "Denied or underpaid homeowners insurance claim in Kansas? Learn ho
 
 Getting a homeowners claim denied or underpaid in Kansas is frustrating, but the adjuster's first decision is rarely the final word. Kansas homeowners and policyholders dispute lowball offers every day — and many recover thousands more than they were first offered.
 
-[**▶ Run a free 90-second analysis of your claim**](/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your homeowners policy actually owes.
+[**▶ Run a free 90-second analysis of your claim**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your homeowners policy actually owes.
 
 ## Why Homeowners Insurance Claims Get Denied in Kansas
 
@@ -44,7 +44,7 @@ In Kansas, an underpaid homeowners offer typically comes from using a repair est
 
 Shielded reads your Kansas policy and the adjuster's estimate, then shows — in about 90 seconds — where the offer falls short of what your homeowners policy owes. From there it drafts the rebuttal letter, organizes your documentation, benchmarks your homeowners claim against comparable Kansas settlements, and tracks your deadlines.
 
-[**Start your free homeowners claim analysis →**](/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
+[**Start your free homeowners claim analysis →**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
 
 Prefer to work with an attorney? [Get matched free with a Kansas insurance claim lawyer](/find-a-lawyer).
 

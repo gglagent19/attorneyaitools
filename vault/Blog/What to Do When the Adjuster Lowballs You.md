@@ -17,7 +17,7 @@ reading_time: "8 min"
 
 The estimate arrives, and the number is nowhere near what repairs actually cost. That's a lowball — and it's one of the most common moves in claims handling. The good news: lowballs are built on an incomplete scope, and a documented counter often closes most of the gap.
 
-> [Check your offer in 90 seconds](/app.html?utm_source=blog&utm_medium=organic&utm_campaign=lowball-guide) — Shielded compares the adjuster's estimate against what your policy owes.
+> [Check your offer in 90 seconds](https://app.attorneyaitools.org/app.html?utm_source=blog&utm_medium=organic&utm_campaign=lowball-guide) — Shielded compares the adjuster's estimate against what your policy owes.
 
 ## How to know it's actually a lowball
 
@@ -61,6 +61,6 @@ Cashing a settlement check — especially one marked "full and final" — can cl
 
 Comparing an adjuster's estimate to real replacement cost line-by-line is tedious and easy to get wrong. Shielded reads both documents and shows you, specifically, where the offer falls short — then drafts the counter.
 
-[**Run my free analysis →**](/app.html?utm_source=blog&utm_medium=organic&utm_campaign=lowball-guide)
+[**Run my free analysis →**](https://app.attorneyaitools.org/app.html?utm_source=blog&utm_medium=organic&utm_campaign=lowball-guide)
 
 *General information, not legal advice. Shielded is a self-help tool, not a law firm or licensed public adjuster.*

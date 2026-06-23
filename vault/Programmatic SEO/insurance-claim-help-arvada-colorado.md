@@ -13,7 +13,7 @@ description: "Denied or underpaid insurance claim in Arvada, Colorado? Learn how
 
 A denied or underpaid insurance claim in Arvada, Colorado doesn't mean your case is closed. Residents across Adams County have the right to question the adjuster's estimate, request a re-inspection, and appeal.
 
-[**▶ Run a free 90-second analysis of your claim**](/app.html?utm_source=seo&utm_medium=organic&utm_campaign=city-claim-pages) — upload your policy and the adjuster's estimate and see whether you're being offered what your policy actually owes in Arvada.
+[**▶ Run a free 90-second analysis of your claim**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=city-claim-pages) — upload your policy and the adjuster's estimate and see whether you're being offered what your policy actually owes in Arvada.
 
 ## Why Arvada Insurance Claims Get Denied
 
@@ -38,7 +38,7 @@ With a population of about 124,402, Arvada sees a steady volume of property and 
 
 Shielded reads your policy and the adjuster's estimate and shows — in about 90 seconds — where the offer falls short of what your policy owes in Arvada, Colorado, then drafts the rebuttal letter and tracks your deadlines.
 
-[**Start your free claim analysis →**](/app.html?utm_source=seo&utm_medium=organic&utm_campaign=city-claim-pages)
+[**Start your free claim analysis →**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=city-claim-pages)
 
 Prefer to work with an attorney? [Get matched free with an insurance claim lawyer near Arvada](/find-a-lawyer).
 

@@ -13,7 +13,7 @@ description: "Denied or underpaid denied claim insurance claim in Oklahoma? Lear
 
 If your denied claim insurance claim in Oklahoma came back denied — or with an offer that won't come close to covering the repairs — you are not stuck with that first number. Insurers in Oklahoma routinely issue low initial offers, and a well-documented challenge often changes the outcome.
 
-[**▶ Run a free 90-second analysis of your claim**](/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your denied claim policy actually owes.
+[**▶ Run a free 90-second analysis of your claim**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your denied claim policy actually owes.
 
 ## Why Denied Claim Appeal Claims Get Denied in Oklahoma
 
@@ -44,7 +44,7 @@ Most Oklahoma denied claim lowballs trace to closing a claim as "no coverage" or
 
 Upload your Oklahoma policy and the adjuster's denied claim estimate, and Shielded pinpoints the gap in about 90 seconds. From there it drafts the rebuttal letter, organizes your documentation, benchmarks your denied claim claim against comparable Oklahoma settlements, and tracks your deadlines.
 
-[**Start your free denied claim claim analysis →**](/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
+[**Start your free denied claim claim analysis →**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
 
 Prefer to work with an attorney? [Get matched free with a Oklahoma insurance claim lawyer](/find-a-lawyer).
 

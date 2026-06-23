@@ -13,7 +13,7 @@ description: "Denied or underpaid insurance claim in San Buenaventura (Ventura),
 
 Insurers in San Buenaventura (Ventura), California routinely issue low initial offers. The gap between what they pay and what your policy actually owes is often large — and entirely disputable. Here's how San Buenaventura (Ventura) policyholders fight back.
 
-[**▶ Run a free 90-second analysis of your claim**](/app.html?utm_source=seo&utm_medium=organic&utm_campaign=city-claim-pages) — upload your policy and the adjuster's estimate and see whether you're being offered what your policy actually owes in San Buenaventura (Ventura).
+[**▶ Run a free 90-second analysis of your claim**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=city-claim-pages) — upload your policy and the adjuster's estimate and see whether you're being offered what your policy actually owes in San Buenaventura (Ventura).
 
 ## Why San Buenaventura (Ventura) Insurance Claims Get Denied
 
@@ -38,7 +38,7 @@ With a population of about 110,763, San Buenaventura (Ventura) sees a steady vol
 
 Shielded reads your policy and the adjuster's estimate and shows — in about 90 seconds — where the offer falls short of what your policy owes in San Buenaventura (Ventura), California, then drafts the rebuttal letter and tracks your deadlines.
 
-[**Start your free claim analysis →**](/app.html?utm_source=seo&utm_medium=organic&utm_campaign=city-claim-pages)
+[**Start your free claim analysis →**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=city-claim-pages)
 
 Prefer to work with an attorney? [Get matched free with an insurance claim lawyer near San Buenaventura (Ventura)](/find-a-lawyer).
 

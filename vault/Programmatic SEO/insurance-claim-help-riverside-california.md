@@ -13,7 +13,7 @@ description: "Denied or underpaid insurance claim in Riverside, California? Lear
 
 Insurers in Riverside, California routinely issue low initial offers. The gap between what they pay and what your policy actually owes is often large — and entirely disputable. Here's how Riverside policyholders fight back.
 
-[**▶ Run a free 90-second analysis of your claim**](/app.html?utm_source=seo&utm_medium=organic&utm_campaign=city-claim-pages) — upload your policy and the adjuster's estimate and see whether you're being offered what your policy actually owes in Riverside.
+[**▶ Run a free 90-second analysis of your claim**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=city-claim-pages) — upload your policy and the adjuster's estimate and see whether you're being offered what your policy actually owes in Riverside.
 
 ## Why Riverside Insurance Claims Get Denied
 
@@ -38,7 +38,7 @@ With a population of about 314,998, Riverside sees a steady volume of property a
 
 Shielded reads your policy and the adjuster's estimate and shows — in about 90 seconds — where the offer falls short of what your policy owes in Riverside, California, then drafts the rebuttal letter and tracks your deadlines.
 
-[**Start your free claim analysis →**](/app.html?utm_source=seo&utm_medium=organic&utm_campaign=city-claim-pages)
+[**Start your free claim analysis →**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=city-claim-pages)
 
 Prefer to work with an attorney? [Get matched free with an insurance claim lawyer near Riverside](/find-a-lawyer).
 

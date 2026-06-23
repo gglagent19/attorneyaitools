@@ -21,7 +21,7 @@ const { seedFrom, pick, disputeSteps, deadlineNote, faqBlock } = require('./clai
 
 const VAULT_OUT = path.join(__dirname, '..', 'vault', 'Programmatic SEO');
 const NAIC_DIRECTORY = 'https://content.naic.org/state-insurance-departments';
-const APP_CTA = '/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages';
+const APP_CTA = 'https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages';
 
 const FORCE = process.argv.includes('--force');
 const ALL = process.argv.includes('--all');

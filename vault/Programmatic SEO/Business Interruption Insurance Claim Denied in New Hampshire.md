@@ -13,7 +13,7 @@ description: "Denied or underpaid business interruption insurance claim in New H
 
 A denied or lowballed business interruption claim in New Hampshire doesn't mean your case is closed. NH residents have the right to question the adjuster's estimate, request a re-inspection, and appeal — and the data shows persistence pays.
 
-[**▶ Run a free 90-second analysis of your claim**](/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your business interruption policy actually owes.
+[**▶ Run a free 90-second analysis of your claim**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your business interruption policy actually owes.
 
 ## Why Business Interruption Insurance Claims Get Denied in New Hampshire
 
@@ -44,7 +44,7 @@ In New Hampshire, an underpaid business interruption offer typically comes from 
 
 Shielded reads your New Hampshire policy and the adjuster's estimate, then shows — in about 90 seconds — where the offer falls short of what your business interruption policy owes. From there it drafts the rebuttal letter, organizes your documentation, benchmarks your business interruption claim against comparable New Hampshire settlements, and tracks your deadlines.
 
-[**Start your free business interruption claim analysis →**](/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
+[**Start your free business interruption claim analysis →**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
 
 Prefer to work with an attorney? [Get matched free with a New Hampshire insurance claim lawyer](/find-a-lawyer).
 
