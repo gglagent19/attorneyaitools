@@ -11,6 +11,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import AttorneyCard from "@/components/AttorneyCard";
 import ToolCard from "@/components/ToolCard";
 import AdBlock from "@/components/AdBlock";
+import ShieldedCTA from "@/components/ShieldedCTA";
 
 export async function generateStaticParams() {
   const pages = getAllProgrammaticPages();
@@ -58,9 +59,17 @@ export default async function ProgrammaticPage({
 
   const breadcrumbs = [{ label: "Home", href: "/" }, { label: page.title }];
 
+  const isClaimPage = page.template === "claim-by-state";
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <Breadcrumbs items={breadcrumbs} />
+
+      {isClaimPage && (
+        <div className="mb-8">
+          <ShieldedCTA state={page.state} position="top" variant="banner" />
+        </div>
+      )}
 
       <article className="mb-10">
         <h1 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
@@ -102,6 +111,21 @@ export default async function ProgrammaticPage({
             ))}
           </div>
         </section>
+      )}
+
+      {isClaimPage && (
+        <div className="mt-10">
+          <ShieldedCTA state={page.state} position="bottom" variant="inline" />
+          <p className="mt-4 text-center text-sm text-slate-500">
+            Prefer to work with an attorney?{" "}
+            <a
+              href="/find-a-lawyer"
+              className="font-semibold text-emerald-600 hover:underline"
+            >
+              Get matched with an insurance claim lawyer free →
+            </a>
+          </p>
+        </div>
       )}
     </div>
   );

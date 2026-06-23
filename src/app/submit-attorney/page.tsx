@@ -1,6 +1,35 @@
 import type { Metadata } from "next";
 import SubmitForm from "@/components/SubmitForm";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import FeaturedListingCTA from "@/components/FeaturedListingCTA";
+import { getListingPaymentLink } from "@/lib/payment-links";
+
+const listingTiers = [
+  {
+    name: "Free Listing",
+    price: "$0",
+    unit: "",
+    features: ["Standard directory profile", "Practice areas & jurisdiction", "Editorial review"],
+    cta: "List for free",
+    highlight: false,
+  },
+  {
+    name: "Featured",
+    price: "$49",
+    unit: "/ month",
+    features: ["Top of search results", "Verified badge", "Priority placement on city & practice pages", "4x more client inquiries"],
+    cta: "Get Featured",
+    highlight: true,
+  },
+  {
+    name: "Spotlight",
+    price: "$99",
+    unit: "/ month",
+    features: ["Everything in Featured", "Homepage & state-hub placement", "Lead routing from claim pages", "Performance reporting"],
+    cta: "Get Spotlight",
+    highlight: false,
+  },
+];
 
 export const metadata: Metadata = {
   title: "Submit Attorney Listing",
@@ -48,12 +77,55 @@ export default function SubmitAttorneyPage() {
           </h1>
           <p className="text-lg text-slate-600 max-w-2xl">
             List your practice in the directory trusted by clients nationwide.
-            Featured listings ($49/month) appear at the top of search results and
-            include a verified badge.
+            Get matched with policyholders who need an attorney for a denied or
+            underpaid insurance claim.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-12 gap-6">
+        {/* Listing tiers */}
+        <div className="mb-14 grid grid-cols-1 gap-6 md:grid-cols-3">
+          {listingTiers.map((tier) => (
+            <div
+              key={tier.name}
+              className={
+                tier.highlight
+                  ? "flex flex-col rounded-3xl border-2 border-emerald-500 bg-emerald-50 p-7"
+                  : "flex flex-col rounded-3xl border border-slate-200 bg-white p-7 shadow-sm"
+              }
+            >
+              {tier.highlight && (
+                <span className="mb-3 inline-block w-fit rounded-full bg-emerald-600 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-white">
+                  Most popular
+                </span>
+              )}
+              <p className="text-lg font-bold text-slate-900">{tier.name}</p>
+              <p className="mb-6 mt-1">
+                <span className="text-3xl font-black text-slate-900">{tier.price}</span>{" "}
+                <span className="text-sm font-medium text-slate-500">{tier.unit}</span>
+              </p>
+              <ul className="mb-8 flex-1 space-y-2.5 text-sm text-slate-700">
+                {tier.features.map((f) => (
+                  <li key={f} className="flex items-start gap-2">
+                    <span className="mt-0.5 text-emerald-600">✓</span>
+                    {f}
+                  </li>
+                ))}
+              </ul>
+              <FeaturedListingCTA
+                tier={tier.name}
+                label={tier.cta}
+                href={getListingPaymentLink(tier.name)}
+                className={
+                  tier.highlight
+                    ? "inline-flex w-full items-center justify-center rounded-xl bg-emerald-600 px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-emerald-700"
+                    : "inline-flex w-full items-center justify-center rounded-xl border border-slate-300 bg-white px-6 py-3 text-sm font-bold text-slate-900 transition-colors hover:bg-slate-50"
+                }
+              />
+            </div>
+          ))}
+        </div>
+
+        <div id="listing-form" className="grid lg:grid-cols-12 gap-6 scroll-mt-24">
           <aside className="lg:col-span-4 space-y-6">
             <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
               <h3 className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-5">

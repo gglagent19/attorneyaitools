@@ -47,16 +47,20 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        {/* Define the gtag shim early so events fired during interaction are
+            queued in dataLayer, then flushed when the (lazy-loaded) library
+            arrives. Keeps INP protected while never dropping events. */}
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', 'G-20VJ6GN3C7', { send_page_view: true });`}
+        </Script>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-20VJ6GN3C7"
           strategy="lazyOnload"
         />
-        <Script id="gtag-init" strategy="lazyOnload">
-          {`window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-20VJ6GN3C7');`}
-        </Script>
       </body>
     </html>
   );

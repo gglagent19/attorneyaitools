@@ -3,13 +3,18 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import AppCTA from "@/components/AppCTA";
 
 const navLinks = [
-  { label: "Tools", href: "/ai-tools" },
-  { label: "Attorneys", href: "/attorneys" },
-  { label: "Practice Areas", href: "/practice-areas" },
-  { label: "Blog", href: "/blog" },
+  { label: "How It Works", href: "/#how-it-works" },
+  { label: "Pricing", href: "/#pricing" },
+  { label: "For Attorneys", href: "/for-attorneys" },
+  { label: "Find a Lawyer", href: "/find-a-lawyer" },
+  { label: "Guides", href: "/blog" },
 ];
+
+const headerCtaClass =
+  "bg-emerald-600 text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-emerald-700 shadow-lg shadow-emerald-100 transition-all duration-300 inline-flex items-center";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -48,12 +53,12 @@ export default function Header() {
 
           {/* Right side */}
           <div className="hidden md:flex items-center">
-            <Link
-              href="/submit-tool"
-              className="bg-emerald-600 text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-emerald-700 shadow-lg shadow-emerald-100 transition-all duration-300"
-            >
-              Submit Tool
-            </Link>
+            <AppCTA
+              campaign="header"
+              position="header"
+              label="Free Claim Analysis"
+              className={headerCtaClass}
+            />
           </div>
 
           {/* Mobile Hamburger */}
@@ -97,13 +102,14 @@ export default function Header() {
                 </Link>
               );
             })}
-            <Link
-              href="/submit-tool"
-              className="block mt-2 text-center bg-emerald-600 text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-emerald-700 shadow-lg shadow-emerald-100 transition-all duration-300"
-              onClick={() => setMobileOpen(false)}
-            >
-              Submit Tool
-            </Link>
+            <div className="mt-2" onClick={() => setMobileOpen(false)}>
+              <AppCTA
+                campaign="header"
+                position="header-mobile"
+                label="Free Claim Analysis"
+                className="block w-full text-center bg-emerald-600 text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-emerald-700 shadow-lg shadow-emerald-100 transition-all duration-300"
+              />
+            </div>
           </div>
         </nav>
       )}
