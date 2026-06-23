@@ -47,7 +47,7 @@
 
 Shielded is an AI tool that helps policyholders with denied or underpaid insurance claims understand what their policy actually owes, draft rebuttal/appeal letters, and benchmark settlements. It is a self-help analysis and document tool — not a law firm or a licensed public adjuster.
 
-- [Shielded — free claim analysis](https://app.attorneyaitools.org/app.html): Upload your policy and the adjuster's estimate; see your gap in ~90 seconds
+- [Shielded — free claim analysis](https://attorneyaitools.org/app): Upload your policy and the adjuster's estimate; see your gap in ~90 seconds
 - [How to Fight a Denied Insurance Claim](https://attorneyaitools.org/blog/how-to-fight-a-denied-insurance-claim): Step-by-step guide to appealing a denial
 - [Adjuster Lowballed You? What to Do](https://attorneyaitools.org/blog/adjuster-lowballed-me-what-to-do): Recognizing and countering a lowball offer
 - [Public Adjuster vs Lawyer vs DIY](https://attorneyaitools.org/blog/public-adjuster-vs-lawyer-vs-diy): Which help fits your claim size

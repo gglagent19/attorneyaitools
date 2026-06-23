@@ -39,7 +39,9 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        source: "/(.*)",
+        // Apply strict security headers everywhere EXCEPT /app, which proxies the
+        // external Shielded app (its own scripts/API calls would break under our CSP).
+        source: "/((?!app(?:/|$)).*)",
         headers: [
           { key: "X-Frame-Options", value: "DENY" },
           { key: "X-Content-Type-Options", value: "nosniff" },
@@ -73,6 +75,18 @@ const nextConfig: NextConfig = {
       { source: "/tools", destination: "/ai-tools", permanent: true },
       { source: "/tools/:slug", destination: "/ai-tools/:slug", permanent: true },
       { source: "/lawyers", destination: "/attorneys", permanent: true },
+    ];
+  },
+  // Serve the Shielded app at /app by proxying the existing GitHub Pages app.
+  // Requires the app to be reachable at gglagent19.github.io/shielded-prototype/
+  // (remove the .org custom domain from that repo's GitHub Pages settings so it
+  // stops redirecting to attorneyaitools.org).
+  async rewrites() {
+    const APP_ORIGIN = "https://gglagent19.github.io/shielded-prototype";
+    return [
+      { source: "/app", destination: `${APP_ORIGIN}/app.html` },
+      { source: "/app/", destination: `${APP_ORIGIN}/app.html` },
+      { source: "/app/:path*", destination: `${APP_ORIGIN}/:path*` },
     ];
   },
 };

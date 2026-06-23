@@ -13,7 +13,7 @@ description: "Denied or underpaid storm and hurricane insurance claim in Marylan
 
 Getting a storm and hurricane claim denied or underpaid in Maryland is frustrating, but the adjuster's first decision is rarely the final word. Maryland homeowners and policyholders dispute lowball offers every day — and many recover thousands more than they were first offered.
 
-[**▶ Run a free 90-second analysis of your claim**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your storm and hurricane policy actually owes.
+[**▶ Run a free 90-second analysis of your claim**](/app?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your storm and hurricane policy actually owes.
 
 ## Why Storm & Hurricane Insurance Claims Get Denied in Maryland
 
@@ -44,7 +44,7 @@ In Maryland, an underpaid storm and hurricane offer typically comes from splitti
 
 Shielded reads your Maryland policy and the adjuster's estimate, then shows — in about 90 seconds — where the offer falls short of what your storm and hurricane policy owes. From there it drafts the rebuttal letter, organizes your documentation, benchmarks your storm and hurricane claim against comparable Maryland settlements, and tracks your deadlines.
 
-[**Start your free storm and hurricane claim analysis →**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
+[**Start your free storm and hurricane claim analysis →**](/app?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
 
 Prefer to work with an attorney? [Get matched free with a Maryland insurance claim lawyer](/find-a-lawyer).
 

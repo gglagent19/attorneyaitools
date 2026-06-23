@@ -13,7 +13,7 @@ description: "Denied or underpaid insurance claim in Providence, Rhode Island? L
 
 If your insurance claim in Providence, Rhode Island was denied or came back far below your repair costs, you are not stuck with that first number. Homeowners and policyholders across Providence County dispute lowball offers every day — and many recover thousands more than they were first offered.
 
-[**▶ Run a free 90-second analysis of your claim**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=city-claim-pages) — upload your policy and the adjuster's estimate and see whether you're being offered what your policy actually owes in Providence.
+[**▶ Run a free 90-second analysis of your claim**](/app?utm_source=seo&utm_medium=organic&utm_campaign=city-claim-pages) — upload your policy and the adjuster's estimate and see whether you're being offered what your policy actually owes in Providence.
 
 ## Why Providence Insurance Claims Get Denied
 
@@ -38,7 +38,7 @@ With a population of about 190,934, Providence sees a steady volume of property 
 
 Shielded reads your policy and the adjuster's estimate and shows — in about 90 seconds — where the offer falls short of what your policy owes in Providence, Rhode Island, then drafts the rebuttal letter and tracks your deadlines.
 
-[**Start your free claim analysis →**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=city-claim-pages)
+[**Start your free claim analysis →**](/app?utm_source=seo&utm_medium=organic&utm_campaign=city-claim-pages)
 
 Prefer to work with an attorney? [Get matched free with an insurance claim lawyer near Providence](/find-a-lawyer).
 

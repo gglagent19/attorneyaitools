@@ -13,7 +13,7 @@ description: "Denied or underpaid business interruption insurance claim in Alask
 
 A denied or lowballed business interruption claim in Alaska doesn't mean your case is closed. AK residents have the right to question the adjuster's estimate, request a re-inspection, and appeal — and the data shows persistence pays.
 
-[**▶ Run a free 90-second analysis of your claim**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your business interruption policy actually owes.
+[**▶ Run a free 90-second analysis of your claim**](/app?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your business interruption policy actually owes.
 
 ## Why Business Interruption Insurance Claims Get Denied in Alaska
 
@@ -44,7 +44,7 @@ Most Alaska business interruption lowballs trace to understating projected reven
 
 Upload your Alaska policy and the adjuster's business interruption estimate, and Shielded pinpoints the gap in about 90 seconds. From there it drafts the rebuttal letter, organizes your documentation, benchmarks your business interruption claim against comparable Alaska settlements, and tracks your deadlines.
 
-[**Start your free business interruption claim analysis →**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
+[**Start your free business interruption claim analysis →**](/app?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
 
 Prefer to work with an attorney? [Get matched free with a Alaska insurance claim lawyer](/find-a-lawyer).
 

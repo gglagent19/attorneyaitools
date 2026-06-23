@@ -13,7 +13,7 @@ description: "Denied or underpaid insurance claim in Lynn, Massachusetts? Learn 
 
 A denied or underpaid insurance claim in Lynn, Massachusetts doesn't mean your case is closed. Residents across Essex County have the right to question the adjuster's estimate, request a re-inspection, and appeal.
 
-[**▶ Run a free 90-second analysis of your claim**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=city-claim-pages) — upload your policy and the adjuster's estimate and see whether you're being offered what your policy actually owes in Lynn.
+[**▶ Run a free 90-second analysis of your claim**](/app?utm_source=seo&utm_medium=organic&utm_campaign=city-claim-pages) — upload your policy and the adjuster's estimate and see whether you're being offered what your policy actually owes in Lynn.
 
 ## Why Lynn Insurance Claims Get Denied
 
@@ -38,7 +38,7 @@ With a population of about 101,253, Lynn sees a steady volume of property and ca
 
 Shielded reads your policy and the adjuster's estimate and shows — in about 90 seconds — where the offer falls short of what your policy owes in Lynn, Massachusetts, then drafts the rebuttal letter and tracks your deadlines.
 
-[**Start your free claim analysis →**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=city-claim-pages)
+[**Start your free claim analysis →**](/app?utm_source=seo&utm_medium=organic&utm_campaign=city-claim-pages)
 
 Prefer to work with an attorney? [Get matched free with an insurance claim lawyer near Lynn](/find-a-lawyer).
 

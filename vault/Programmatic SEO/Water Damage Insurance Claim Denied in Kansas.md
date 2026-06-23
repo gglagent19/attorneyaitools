@@ -13,7 +13,7 @@ description: "Denied or underpaid water damage insurance claim in Kansas? Learn 
 
 A denied or lowballed water damage claim in Kansas doesn't mean your case is closed. KS residents have the right to question the adjuster's estimate, request a re-inspection, and appeal — and the data shows persistence pays.
 
-[**▶ Run a free 90-second analysis of your claim**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your water damage policy actually owes.
+[**▶ Run a free 90-second analysis of your claim**](/app?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your water damage policy actually owes.
 
 ## Why Water Damage Insurance Claims Get Denied in Kansas
 
@@ -44,7 +44,7 @@ In Kansas, an underpaid water damage offer typically comes from paying only for 
 
 Shielded reads your Kansas policy and the adjuster's estimate, then shows — in about 90 seconds — where the offer falls short of what your water damage policy owes. From there it drafts the rebuttal letter, organizes your documentation, benchmarks your water damage claim against comparable Kansas settlements, and tracks your deadlines.
 
-[**Start your free water damage claim analysis →**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
+[**Start your free water damage claim analysis →**](/app?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
 
 Prefer to work with an attorney? [Get matched free with a Kansas insurance claim lawyer](/find-a-lawyer).
 

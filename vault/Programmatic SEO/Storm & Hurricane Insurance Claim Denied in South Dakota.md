@@ -13,7 +13,7 @@ description: "Denied or underpaid storm and hurricane insurance claim in South D
 
 Getting a storm and hurricane claim denied or underpaid in South Dakota is frustrating, but the adjuster's first decision is rarely the final word. South Dakota homeowners and policyholders dispute lowball offers every day — and many recover thousands more than they were first offered.
 
-[**▶ Run a free 90-second analysis of your claim**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your storm and hurricane policy actually owes.
+[**▶ Run a free 90-second analysis of your claim**](/app?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your storm and hurricane policy actually owes.
 
 ## Why Storm & Hurricane Insurance Claims Get Denied in South Dakota
 
@@ -44,7 +44,7 @@ Most South Dakota storm and hurricane lowballs trace to splitting wind vs. flood
 
 Upload your South Dakota policy and the adjuster's storm and hurricane estimate, and Shielded pinpoints the gap in about 90 seconds. From there it drafts the rebuttal letter, organizes your documentation, benchmarks your storm and hurricane claim against comparable South Dakota settlements, and tracks your deadlines.
 
-[**Start your free storm and hurricane claim analysis →**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
+[**Start your free storm and hurricane claim analysis →**](/app?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
 
 Prefer to work with an attorney? [Get matched free with a South Dakota insurance claim lawyer](/find-a-lawyer).
 

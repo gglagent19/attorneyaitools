@@ -13,7 +13,7 @@ description: "Denied or underpaid roof damage insurance claim in South Dakota? L
 
 Across South Dakota — from Sioux Falls to Rapid City — policyholders are told their roof damage claim is denied, only to discover the loss was genuinely covered. The gap between what an insurer offers and what your policy owes is often large, and entirely disputable.
 
-[**▶ Run a free 90-second analysis of your claim**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your roof damage policy actually owes.
+[**▶ Run a free 90-second analysis of your claim**](/app?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your roof damage policy actually owes.
 
 ## Why Roof Damage Insurance Claims Get Denied in South Dakota
 
@@ -44,7 +44,7 @@ A lowball on a roof damage claim in South Dakota usually means approving spot re
 
 For roof damage claims in South Dakota, Shielded compares your policy to the adjuster's estimate and surfaces what you're actually owed in seconds. From there it drafts the rebuttal letter, organizes your documentation, benchmarks your roof damage claim against comparable South Dakota settlements, and tracks your deadlines.
 
-[**Start your free roof damage claim analysis →**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
+[**Start your free roof damage claim analysis →**](/app?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
 
 Prefer to work with an attorney? [Get matched free with a South Dakota insurance claim lawyer](/find-a-lawyer).
 

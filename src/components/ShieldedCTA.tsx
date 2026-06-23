@@ -10,7 +10,7 @@ interface ShieldedCTAProps {
 }
 
 const APP_URL =
-  "https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages";
+  "/app?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages";
 
 /**
  * Conversion CTA for claimant SEO pages — drives the free 90-second analysis,

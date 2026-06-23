@@ -13,7 +13,7 @@ description: "Denied or underpaid homeowners insurance claim in Washington? Lear
 
 Getting a homeowners claim denied or underpaid in Washington is frustrating, but the adjuster's first decision is rarely the final word. Washington homeowners and policyholders dispute lowball offers every day — and many recover thousands more than they were first offered.
 
-[**▶ Run a free 90-second analysis of your claim**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your homeowners policy actually owes.
+[**▶ Run a free 90-second analysis of your claim**](/app?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your homeowners policy actually owes.
 
 ## Why Homeowners Insurance Claims Get Denied in Washington
 
@@ -44,7 +44,7 @@ A lowball on a homeowners claim in Washington usually means using a repair estim
 
 For homeowners claims in Washington, Shielded compares your policy to the adjuster's estimate and surfaces what you're actually owed in seconds. From there it drafts the rebuttal letter, organizes your documentation, benchmarks your homeowners claim against comparable Washington settlements, and tracks your deadlines.
 
-[**Start your free homeowners claim analysis →**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
+[**Start your free homeowners claim analysis →**](/app?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
 
 Prefer to work with an attorney? [Get matched free with a Washington insurance claim lawyer](/find-a-lawyer).
 

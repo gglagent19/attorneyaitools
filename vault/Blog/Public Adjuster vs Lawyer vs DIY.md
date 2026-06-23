@@ -17,7 +17,7 @@ reading_time: "8 min"
 
 When an insurer underpays or denies your claim, you have three traditional options — plus a newer one. Here's how they compare so you can pick the right level of help for *your* claim size.
 
-> Not sure which you need? [Run a free 90-second analysis](https://app.attorneyaitools.org/app.html?utm_source=blog&utm_medium=organic&utm_campaign=who-helps-guide) to see how big your gap is first — that number decides everything.
+> Not sure which you need? [Run a free 90-second analysis](/app?utm_source=blog&utm_medium=organic&utm_campaign=who-helps-guide) to see how big your gap is first — that number decides everything.
 
 ## Option 1: Public adjuster
 
@@ -58,6 +58,6 @@ The reason DIY fails isn't effort — it's that comparing a policy to an adjuste
 
 For many mid-sized claims, that's the sweet spot: most of the value of a public adjuster, at a fraction of the cost, with you in control.
 
-[**See your gap free, then decide →**](https://app.attorneyaitools.org/app.html?utm_source=blog&utm_medium=organic&utm_campaign=who-helps-guide)
+[**See your gap free, then decide →**](/app?utm_source=blog&utm_medium=organic&utm_campaign=who-helps-guide)
 
 *General information, not legal advice. Shielded is a self-help analysis and document tool — not a law firm or a licensed public adjuster, and it does not represent you in negotiations.*

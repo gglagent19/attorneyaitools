@@ -13,7 +13,7 @@ description: "Denied or underpaid fire damage insurance claim in Alaska? Learn h
 
 If your fire damage insurance claim in Alaska came back denied — or with an offer that won't come close to covering the repairs — you are not stuck with that first number. Insurers in Alaska routinely issue low initial offers, and a well-documented challenge often changes the outcome.
 
-[**▶ Run a free 90-second analysis of your claim**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your fire damage policy actually owes.
+[**▶ Run a free 90-second analysis of your claim**](/app?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your fire damage policy actually owes.
 
 ## Why Fire Damage Insurance Claims Get Denied in Alaska
 
@@ -44,7 +44,7 @@ Most Alaska fire damage lowballs trace to settling structure and contents below 
 
 Upload your Alaska policy and the adjuster's fire damage estimate, and Shielded pinpoints the gap in about 90 seconds. From there it drafts the rebuttal letter, organizes your documentation, benchmarks your fire damage claim against comparable Alaska settlements, and tracks your deadlines.
 
-[**Start your free fire damage claim analysis →**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
+[**Start your free fire damage claim analysis →**](/app?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
 
 Prefer to work with an attorney? [Get matched free with a Alaska insurance claim lawyer](/find-a-lawyer).
 

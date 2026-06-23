@@ -33,7 +33,7 @@ export default function FindALawyerPage() {
             Not ready to talk to a lawyer yet? See what your insurer owes you first.
           </p>
           <Link
-            href="https://app.attorneyaitools.org/app.html?utm_source=find-a-lawyer&utm_medium=organic&utm_campaign=cross-sell"
+            href="/app?utm_source=find-a-lawyer&utm_medium=organic&utm_campaign=cross-sell"
             className="mt-3 inline-flex items-center font-semibold text-emerald-600 hover:underline"
           >
             Run a free 90-second claim analysis →

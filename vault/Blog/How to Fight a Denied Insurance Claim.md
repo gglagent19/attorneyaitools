@@ -17,7 +17,7 @@ reading_time: "9 min"
 
 A denial letter feels final. It isn't. Insurers deny or underpay a large share of valid claims, and a documented, persistent challenge frequently reverses the outcome — often recovering thousands of dollars more than the first offer. Here is exactly how to fight back.
 
-> **Want the fast version?** [Run a free 90-second claim analysis](https://app.attorneyaitools.org/app.html?utm_source=blog&utm_medium=organic&utm_campaign=denied-claim-guide) — upload your policy and the adjuster's estimate and see where the offer falls short of what you're owed.
+> **Want the fast version?** [Run a free 90-second claim analysis](/app?utm_source=blog&utm_medium=organic&utm_campaign=denied-claim-guide) — upload your policy and the adjuster's estimate and see where the offer falls short of what you're owed.
 
 ## Step 1: Read the denial letter like a contract
 
@@ -63,6 +63,6 @@ Most policies require *prompt notice* of loss and set a contractual time limit t
 
 Reading a policy, comparing it line-by-line against the adjuster's estimate, and drafting a rebuttal is exactly the kind of work that used to require a public adjuster or lawyer. Shielded does the analysis in about 90 seconds, shows you the gap, and drafts the letter.
 
-[**See what your insurer actually owes you →**](https://app.attorneyaitools.org/app.html?utm_source=blog&utm_medium=organic&utm_campaign=denied-claim-guide)
+[**See what your insurer actually owes you →**](/app?utm_source=blog&utm_medium=organic&utm_campaign=denied-claim-guide)
 
 *This guide is general information, not legal advice. Shielded is a self-help analysis and document tool, not a law firm or licensed public adjuster.*

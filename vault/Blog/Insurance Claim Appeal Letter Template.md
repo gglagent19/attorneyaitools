@@ -17,7 +17,7 @@ reading_time: "7 min"
 
 A strong appeal letter is specific, evidenced, and organized around your policy language. Here's a template you can adapt, plus the principles that make insurers actually reconsider.
 
-> **Skip the writing.** [Shielded drafts your appeal letter](https://app.attorneyaitools.org/app.html?utm_source=blog&utm_medium=organic&utm_campaign=appeal-letter) from your policy and the adjuster's estimate in seconds. Start free.
+> **Skip the writing.** [Shielded drafts your appeal letter](/app?utm_source=blog&utm_medium=organic&utm_campaign=appeal-letter) from your policy and the adjuster's estimate in seconds. Start free.
 
 ## What makes an appeal letter work
 
@@ -83,6 +83,6 @@ Enclosures: [list]
 
 The hardest part is mapping each disputed line to the right policy provision. Shielded reads your policy and the adjuster's estimate and drafts the itemized rebuttal for you — accurate, specific, and ready to send.
 
-[**Draft my appeal letter free →**](https://app.attorneyaitools.org/app.html?utm_source=blog&utm_medium=organic&utm_campaign=appeal-letter)
+[**Draft my appeal letter free →**](/app?utm_source=blog&utm_medium=organic&utm_campaign=appeal-letter)
 
 *Template provided for general informational purposes, not legal advice. Shielded is a self-help document tool, not a law firm or licensed public adjuster.*

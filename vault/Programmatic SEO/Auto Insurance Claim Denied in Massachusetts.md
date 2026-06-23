@@ -13,7 +13,7 @@ description: "Denied or underpaid auto insurance claim in Massachusetts? Learn h
 
 Across Massachusetts — from Boston to Worcester — policyholders are told their auto claim is denied, only to discover the loss was genuinely covered. The gap between what an insurer offers and what your policy owes is often large, and entirely disputable.
 
-[**▶ Run a free 90-second analysis of your claim**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your auto policy actually owes.
+[**▶ Run a free 90-second analysis of your claim**](/app?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your auto policy actually owes.
 
 ## Why Auto Insurance Claims Get Denied in Massachusetts
 
@@ -44,7 +44,7 @@ Most Massachusetts auto lowballs trace to using a valuation report with poorly m
 
 Upload your Massachusetts policy and the adjuster's auto estimate, and Shielded pinpoints the gap in about 90 seconds. From there it drafts the rebuttal letter, organizes your documentation, benchmarks your auto claim against comparable Massachusetts settlements, and tracks your deadlines.
 
-[**Start your free auto claim analysis →**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
+[**Start your free auto claim analysis →**](/app?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
 
 Prefer to work with an attorney? [Get matched free with a Massachusetts insurance claim lawyer](/find-a-lawyer).
 

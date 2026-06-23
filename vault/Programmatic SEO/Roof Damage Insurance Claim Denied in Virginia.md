@@ -13,7 +13,7 @@ description: "Denied or underpaid roof damage insurance claim in Virginia? Learn
 
 Across Virginia — from Virginia Beach to Richmond — policyholders are told their roof damage claim is denied, only to discover the loss was genuinely covered. The gap between what an insurer offers and what your policy owes is often large, and entirely disputable.
 
-[**▶ Run a free 90-second analysis of your claim**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your roof damage policy actually owes.
+[**▶ Run a free 90-second analysis of your claim**](/app?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your roof damage policy actually owes.
 
 ## Why Roof Damage Insurance Claims Get Denied in Virginia
 
@@ -44,7 +44,7 @@ Most Virginia roof damage lowballs trace to approving spot repairs instead of a 
 
 Upload your Virginia policy and the adjuster's roof damage estimate, and Shielded pinpoints the gap in about 90 seconds. From there it drafts the rebuttal letter, organizes your documentation, benchmarks your roof damage claim against comparable Virginia settlements, and tracks your deadlines.
 
-[**Start your free roof damage claim analysis →**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
+[**Start your free roof damage claim analysis →**](/app?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
 
 Prefer to work with an attorney? [Get matched free with a Virginia insurance claim lawyer](/find-a-lawyer).
 

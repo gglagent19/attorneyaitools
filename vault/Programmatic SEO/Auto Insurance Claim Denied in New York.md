@@ -13,7 +13,7 @@ description: "Denied or underpaid auto insurance claim in New York? Learn how to
 
 Across New York — from New York City to Buffalo — policyholders are told their auto claim is denied, only to discover the loss was genuinely covered. The gap between what an insurer offers and what your policy owes is often large, and entirely disputable.
 
-[**▶ Run a free 90-second analysis of your claim**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your auto policy actually owes.
+[**▶ Run a free 90-second analysis of your claim**](/app?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages) — upload your policy and the adjuster's estimate, and see whether you're being offered what your auto policy actually owes.
 
 ## Why Auto Insurance Claims Get Denied in New York
 
@@ -44,7 +44,7 @@ In New York, an underpaid auto offer typically comes from using a valuation repo
 
 Shielded reads your New York policy and the adjuster's estimate, then shows — in about 90 seconds — where the offer falls short of what your auto policy owes. From there it drafts the rebuttal letter, organizes your documentation, benchmarks your auto claim against comparable New York settlements, and tracks your deadlines.
 
-[**Start your free auto claim analysis →**](https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
+[**Start your free auto claim analysis →**](/app?utm_source=seo&utm_medium=organic&utm_campaign=claim-pages)
 
 Prefer to work with an attorney? [Get matched free with a New York insurance claim lawyer](/find-a-lawyer).
 

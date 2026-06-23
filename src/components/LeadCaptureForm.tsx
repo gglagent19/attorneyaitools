@@ -82,7 +82,7 @@ export default function LeadCaptureForm() {
         <p className="mx-auto max-w-md text-slate-600">
           We&apos;ll match you with an attorney in your area who handles your type of
           claim. In the meantime, you can{" "}
-          <a href="https://app.attorneyaitools.org/app.html?utm_source=lead&utm_medium=organic&utm_campaign=find-a-lawyer" className="font-semibold text-emerald-600 hover:underline">
+          <a href="/app?utm_source=lead&utm_medium=organic&utm_campaign=find-a-lawyer" className="font-semibold text-emerald-600 hover:underline">
             run a free claim analysis
           </a>
           .

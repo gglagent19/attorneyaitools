@@ -20,7 +20,7 @@ const { seedFrom, pick, disputeSteps, deadlineNote, faqBlock } = require("./clai
 const VAULT_OUT = path.join(__dirname, "..", "vault", "Programmatic SEO");
 const CITIES = path.join(__dirname, "..", "vault", "Datasets", "cities-enriched.json");
 const NAIC = "https://content.naic.org/state-insurance-departments";
-const APP_CTA = "https://app.attorneyaitools.org/app.html?utm_source=seo&utm_medium=organic&utm_campaign=city-claim-pages";
+const APP_CTA = "/app?utm_source=seo&utm_medium=organic&utm_campaign=city-claim-pages";
 
 const argMin = process.argv.indexOf("--min");
 const MIN_POP = argMin > -1 ? Number(process.argv[argMin + 1]) : 100000;
