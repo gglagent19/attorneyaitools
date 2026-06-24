@@ -39,11 +39,12 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        // Apply strict security headers everywhere EXCEPT /app — the Shielded
-        // app served there needs its CDN scripts + Supabase calls to run
-        // unrestricted, as they did on its original host. (Users only hit /app;
-        // the rewrite serves app.html, and headers match the request path.)
-        source: "/((?!app(?:/|$)).*)",
+        // Apply strict security headers everywhere EXCEPT /app and the homepage
+        // "/" — both serve the self-contained Shielded app.html, which needs its
+        // CDN scripts + Supabase calls to run unrestricted, as they did on its
+        // original host. The rewrites serve app.html for those paths, and headers
+        // match the request path, so we exclude both here.
+        source: "/((?!app(?:/|$)|$).*)",
         headers: [
           { key: "X-Frame-Options", value: "DENY" },
           { key: "X-Content-Type-Options", value: "nosniff" },
@@ -79,11 +80,20 @@ const nextConfig: NextConfig = {
       { source: "/lawyers", destination: "/attorneys", permanent: true },
     ];
   },
-  // Serve the Shielded app at /app from the self-contained app.html hosted in
-  // /public (no GitHub Pages dependency). The app is a single inline-React file
-  // that loads its libraries from CDNs and talks to Supabase directly.
+  // Serve the Shielded app at both the homepage "/" and "/app" from the
+  // self-contained app.html hosted in /public (no GitHub Pages dependency). The
+  // app is a single inline-React file that loads its libraries from CDNs and
+  // talks to Supabase directly. `beforeFiles` makes the "/" rewrite take
+  // precedence over the filesystem route at src/app/page.tsx.
   async rewrites() {
-    return [{ source: "/app", destination: "/app.html" }];
+    return {
+      beforeFiles: [
+        { source: "/", destination: "/app.html" },
+        { source: "/app", destination: "/app.html" },
+      ],
+      afterFiles: [],
+      fallback: [],
+    };
   },
 };
 
