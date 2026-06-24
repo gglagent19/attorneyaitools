@@ -14,19 +14,19 @@ const navLinks = [
 ];
 
 const headerCtaClass =
-  "bg-emerald-600 text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-emerald-700 shadow-lg shadow-emerald-100 transition-all duration-300 inline-flex items-center";
+  "bg-[#1a2a4a] text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-[#12203d] transition-colors duration-200 inline-flex items-center";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl shadow-[0_32px_64px_-12px_rgba(15,23,42,0.06)]">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-[#e2ddd3] bg-[#f6f3ee]/85 backdrop-blur-xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Brand */}
           <Link href="/" className="shrink-0">
-            <span className="text-2xl font-black tracking-tighter text-emerald-600">
+            <span className="text-2xl font-black tracking-tighter text-[#1a2a4a]">
               AttorneyAITools
             </span>
           </Link>
@@ -41,8 +41,8 @@ export default function Header() {
                   href={link.href}
                   className={
                     isActive
-                      ? "text-emerald-600 font-bold border-b-2 border-emerald-600 pb-0.5 transition-all duration-300"
-                      : "text-slate-600 hover:text-emerald-500 font-medium transition-all duration-300"
+                      ? "text-[#0f7d6c] font-semibold border-b-2 border-[#0f7d6c] pb-0.5 transition-colors duration-200"
+                      : "text-[#2a3140] hover:text-[#0f7d6c] font-medium transition-colors duration-200"
                   }
                 >
                   {link.label}
@@ -83,7 +83,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <nav className="md:hidden border-t border-slate-200 bg-white/95 backdrop-blur-xl">
+        <nav className="md:hidden border-t border-[#e2ddd3] bg-[#f6f3ee]/95 backdrop-blur-xl">
           <div className="px-4 py-3 space-y-1">
             {navLinks.map((link) => {
               const isActive = pathname === link.href || pathname.startsWith(link.href + "/");
@@ -93,8 +93,8 @@ export default function Header() {
                   href={link.href}
                   className={
                     isActive
-                      ? "block px-3 py-2 text-base text-emerald-600 font-bold rounded-lg transition-all duration-300"
-                      : "block px-3 py-2 text-base text-slate-600 font-medium rounded-lg hover:text-emerald-500 transition-all duration-300"
+                      ? "block px-3 py-2 text-base text-[#0f7d6c] font-semibold rounded-lg transition-colors duration-200"
+                      : "block px-3 py-2 text-base text-[#2a3140] font-medium rounded-lg hover:text-[#0f7d6c] transition-colors duration-200"
                   }
                   onClick={() => setMobileOpen(false)}
                 >
@@ -107,7 +107,7 @@ export default function Header() {
                 campaign="header"
                 position="header-mobile"
                 label="Free Claim Analysis"
-                className="block w-full text-center bg-emerald-600 text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-emerald-700 shadow-lg shadow-emerald-100 transition-all duration-300"
+                className="block w-full text-center bg-[#1a2a4a] text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-[#12203d] transition-colors duration-200"
               />
             </div>
           </div>
