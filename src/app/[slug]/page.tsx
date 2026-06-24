@@ -62,7 +62,7 @@ export default async function ProgrammaticPage({
   const isClaimPage = page.template === "claim-by-state";
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div className="bg-[#f6f3ee] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <Breadcrumbs items={breadcrumbs} />
 
       {isClaimPage && (
@@ -72,10 +72,10 @@ export default async function ProgrammaticPage({
       )}
 
       <article className="mb-10">
-        <h1 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+        <h1 className="serif-ed text-3xl sm:text-4xl text-[#14181f] mb-4">
           {page.title}
         </h1>
-        <div className="bg-white rounded-xl border border-slate-200 p-6 sm:p-8">
+        <div className="bg-white rounded-xl border border-[#e2ddd3] p-6 sm:p-8">
           <div
             className="prose max-w-none"
             dangerouslySetInnerHTML={{ __html: page.htmlContent }}
@@ -88,7 +88,7 @@ export default async function ProgrammaticPage({
       {/* Show relevant attorneys */}
       {attorneys.length > 0 && (
         <section className="mt-8">
-          <h2 className="text-2xl font-semibold text-slate-900 mb-4">
+          <h2 className="serif-ed text-2xl text-[#14181f] mb-4">
             {page.practice_area} Attorneys
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -102,7 +102,7 @@ export default async function ProgrammaticPage({
       {/* Show relevant tools */}
       {tools.length > 0 && (
         <section className="mt-8">
-          <h2 className="text-2xl font-semibold text-slate-900 mb-4">
+          <h2 className="serif-ed text-2xl text-[#14181f] mb-4">
             Recommended AI Tools
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -116,11 +116,11 @@ export default async function ProgrammaticPage({
       {isClaimPage && (
         <div className="mt-10">
           <ShieldedCTA state={page.state} position="bottom" variant="inline" />
-          <p className="mt-4 text-center text-sm text-slate-500">
+          <p className="mt-4 text-center text-sm text-[#8a93a1]">
             Prefer to work with an attorney?{" "}
             <a
               href="/find-a-lawyer"
-              className="font-semibold text-emerald-600 hover:underline"
+              className="font-semibold text-[#0f7d6c] hover:underline"
             >
               Get matched with an insurance claim lawyer free →
             </a>

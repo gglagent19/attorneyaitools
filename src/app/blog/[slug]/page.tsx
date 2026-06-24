@@ -56,49 +56,51 @@ export default async function BlogPostPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <Breadcrumbs items={breadcrumbs} />
+      <div className="bg-[#f6f3ee]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <Breadcrumbs items={breadcrumbs} />
 
-        <article>
-          <header className="mb-8">
-            <h1 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-3">
-              {post.title}
-            </h1>
-            <p className="text-sm text-slate-500">
-              {new Date(post.date).toLocaleDateString("en-US", {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })}
-            </p>
-            {post.tags && post.tags.length > 0 && (
-              <div className="flex flex-wrap gap-2 mt-3">
-                {post.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="px-2.5 py-1 bg-blue-50 text-blue-700 text-xs rounded-md border border-blue-100"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            )}
-          </header>
+          <article>
+            <header className="mb-8">
+              <h1 className="serif-ed text-3xl sm:text-4xl text-[#14181f] mb-3">
+                {post.title}
+              </h1>
+              <p className="text-sm text-[#8a93a1]">
+                {new Date(post.date).toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
+              </p>
+              {post.tags && post.tags.length > 0 && (
+                <div className="flex flex-wrap gap-2 mt-3">
+                  {post.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="px-2.5 py-1 bg-[#d9ece7] text-[#0f7d6c] text-xs rounded-md border border-[#e2ddd3]"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </header>
 
-          <div className="bg-white rounded-xl border border-slate-200 p-6 sm:p-8">
-            <div
-              className="prose max-w-none"
-              dangerouslySetInnerHTML={{ __html: post.htmlContent }}
-            />
+            <div className="bg-white rounded-2xl border border-[#e2ddd3] p-6 sm:p-8">
+              <div
+                className="prose max-w-none"
+                dangerouslySetInnerHTML={{ __html: post.htmlContent }}
+              />
+            </div>
+          </article>
+
+          <div className="mt-8">
+            <AdBlock format="horizontal" slot="blog-post-bottom" />
           </div>
-        </article>
 
-        <div className="mt-8">
-          <AdBlock format="horizontal" slot="blog-post-bottom" />
-        </div>
-
-        <div className="mt-12">
-          <NewsletterSignup />
+          <div className="mt-12">
+            <NewsletterSignup />
+          </div>
         </div>
       </div>
     </>

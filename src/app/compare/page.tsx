@@ -34,15 +34,15 @@ export default function CompareIndexPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}
       />
 
-      <section className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
+      <section className="bg-[#f6f3ee] max-w-7xl mx-auto px-6 lg:px-8 py-20">
         <div className="max-w-3xl mb-16">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold tracking-widest uppercase mb-6">
+          <span className="eyebrow-ed inline-flex items-center gap-2 rounded-full bg-[#d9ece7] px-3 py-1.5 text-[#0f7d6c] mb-6">
             Head-to-Head
           </span>
-          <h1 className="text-5xl md:text-6xl font-black text-slate-900 leading-[1.05] tracking-tighter mb-6">
+          <h1 className="serif-ed text-5xl md:text-6xl text-[#14181f] leading-[1.05] mb-6">
             AI Tool Comparisons for Lawyers
           </h1>
-          <p className="text-xl text-slate-500 leading-relaxed">
+          <p className="text-xl text-[#5b6472] leading-relaxed">
             Honest, side-by-side comparisons of the top legal AI platforms.
             Verdicts, pricing, features, and which tool fits your firm size and
             workflow.
@@ -54,18 +54,18 @@ export default function CompareIndexPage() {
             <Link
               key={c.slug}
               href={`/compare/${c.slug}`}
-              className="group bg-white p-8 rounded-2xl border border-slate-200 hover:border-emerald-500/40 hover:shadow-xl transition-all flex flex-col"
+              className="group bg-white p-8 rounded-2xl border border-[#e2ddd3] hover:border-[#d4cebf] hover:shadow-xl transition-all flex flex-col"
             >
-              <span className="text-xs font-bold uppercase tracking-widest text-emerald-600 mb-4">
+              <span className="text-xs font-bold uppercase tracking-widest text-[#0f7d6c] mb-4">
                 Comparison
               </span>
-              <h2 className="text-xl font-black text-slate-900 leading-snug mb-4 group-hover:text-emerald-600 transition-colors">
+              <h2 className="serif-ed text-xl text-[#14181f] leading-snug mb-4 group-hover:text-[#0f7d6c] transition-colors">
                 {c.title}
               </h2>
-              <p className="text-sm text-slate-600 leading-relaxed flex-grow line-clamp-3">
+              <p className="text-sm text-[#5b6472] leading-relaxed flex-grow line-clamp-3">
                 {c.description}
               </p>
-              <div className="mt-6 flex items-center gap-2 text-sm font-bold text-emerald-600">
+              <div className="mt-6 flex items-center gap-2 text-sm font-bold text-[#0f7d6c]">
                 Read comparison
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

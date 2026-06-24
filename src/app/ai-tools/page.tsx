@@ -24,7 +24,7 @@ export default function AIToolsPage() {
   ]);
 
   return (
-    <div className="bg-white min-h-screen font-[Inter] pt-32 pb-24">
+    <div className="bg-[#f6f3ee] min-h-screen font-[Inter] pt-32 pb-24">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList) }}
@@ -36,14 +36,14 @@ export default function AIToolsPage() {
       <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Editorial header */}
         <header className="mb-16 max-w-4xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-emerald-600 mb-5">
+          <p className="eyebrow-ed inline-flex items-center gap-2 rounded-full bg-[#d9ece7] px-3 py-1.5 text-[#0f7d6c] mb-5">
             Professional Directory
           </p>
-          <h1 className="text-5xl sm:text-6xl font-black tracking-tight text-slate-900 leading-[1.05] mb-6">
+          <h1 className="serif-ed text-5xl sm:text-6xl text-[#14181f] leading-[1.05] mb-6">
             Elite AI Solutions for the{" "}
-            <span className="text-emerald-600">Legal Mind</span>
+            <span className="text-[#0f7d6c]">Legal Mind</span>
           </h1>
-          <p className="text-lg text-slate-600 leading-relaxed max-w-2xl">
+          <p className="text-lg text-[#5b6472] leading-relaxed max-w-2xl">
             A meticulously curated directory of AI-powered tools built for
             modern legal professionals. Discover, compare, and adopt the
             technology transforming law firms today.

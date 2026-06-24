@@ -126,17 +126,18 @@ ${stateData?.notableLegalContext || `${state.name} follows standard U.S. legal p
         />
       )}
 
+      <div className="bg-[#f6f3ee]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <Breadcrumbs items={breadcrumbs} />
 
         <header className="mt-4 mb-10">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold tracking-widest uppercase mb-4">
+          <span className="eyebrow-ed inline-flex items-center gap-2 rounded-full bg-[#d9ece7] px-3 py-1.5 text-[#0f7d6c] mb-4">
             State Directory
           </span>
-          <h1 className="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight leading-[1.05] mb-4">
+          <h1 className="serif-ed text-4xl sm:text-5xl text-[#14181f] leading-[1.05] mb-4">
             Attorneys in {state.name}
           </h1>
-          <p className="text-lg text-slate-600 leading-relaxed max-w-3xl">
+          <p className="text-lg text-[#5b6472] leading-relaxed max-w-3xl">
             Browse {facts.attorneyCount.toLocaleString()} attorneys across{" "}
             {facts.qualifiedCityCount} {state.name} cities. Filter by practice
             area, find the closest city to you, and read profiles for licensed
@@ -145,34 +146,34 @@ ${stateData?.notableLegalContext || `${state.name} follows standard U.S. legal p
         </header>
 
         <section className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-12">
-          <div className="bg-white p-5 rounded-xl border border-slate-200">
-            <p className="text-3xl font-black text-slate-900">{facts.attorneyCount}</p>
-            <p className="text-xs text-slate-500 mt-1 uppercase tracking-widest font-medium">Listed Attorneys</p>
+          <div className="bg-white p-5 rounded-2xl border border-[#e2ddd3]">
+            <p className="serif-ed text-3xl text-[#14181f]">{facts.attorneyCount}</p>
+            <p className="text-xs text-[#8a93a1] mt-1 uppercase tracking-widest font-medium">Listed Attorneys</p>
           </div>
-          <div className="bg-white p-5 rounded-xl border border-slate-200">
-            <p className="text-3xl font-black text-slate-900">{facts.qualifiedCityCount}</p>
-            <p className="text-xs text-slate-500 mt-1 uppercase tracking-widest font-medium">Cities Covered</p>
+          <div className="bg-white p-5 rounded-2xl border border-[#e2ddd3]">
+            <p className="serif-ed text-3xl text-[#14181f]">{facts.qualifiedCityCount}</p>
+            <p className="text-xs text-[#8a93a1] mt-1 uppercase tracking-widest font-medium">Cities Covered</p>
           </div>
-          <div className="bg-white p-5 rounded-xl border border-slate-200">
-            <p className="text-3xl font-black text-slate-900">
-              {facts.avgRating.toFixed(1)}<span className="text-sm text-slate-500">/5</span>
+          <div className="bg-white p-5 rounded-2xl border border-[#e2ddd3]">
+            <p className="serif-ed text-3xl text-[#14181f]">
+              {facts.avgRating.toFixed(1)}<span className="text-sm text-[#8a93a1]">/5</span>
             </p>
-            <p className="text-xs text-slate-500 mt-1 uppercase tracking-widest font-medium">Average Rating</p>
+            <p className="text-xs text-[#8a93a1] mt-1 uppercase tracking-widest font-medium">Average Rating</p>
           </div>
-          <div className="bg-white p-5 rounded-xl border border-slate-200">
-            <p className="text-3xl font-black text-slate-900">{Math.round(facts.avgExperienceYears)}</p>
-            <p className="text-xs text-slate-500 mt-1 uppercase tracking-widest font-medium">Avg Years Experience</p>
+          <div className="bg-white p-5 rounded-2xl border border-[#e2ddd3]">
+            <p className="serif-ed text-3xl text-[#14181f]">{Math.round(facts.avgExperienceYears)}</p>
+            <p className="text-xs text-[#8a93a1] mt-1 uppercase tracking-widest font-medium">Avg Years Experience</p>
           </div>
         </section>
 
         {/* State legal context */}
         {stateData && (
-          <section className="mb-12 bg-slate-50 rounded-2xl p-8 border border-slate-200">
-            <h2 className="text-2xl font-black text-slate-900 mb-4 tracking-tight">
+          <section className="mb-12 bg-white rounded-2xl p-8 border border-[#e2ddd3]">
+            <h2 className="serif-ed text-2xl text-[#14181f] mb-4">
               Legal context in {state.name}
             </h2>
-            <p className="text-slate-700 leading-relaxed mb-4">{stateData.notableLegalContext}</p>
-            <p className="text-slate-700 leading-relaxed mb-6">
+            <p className="text-[#5b6472] leading-relaxed mb-4">{stateData.notableLegalContext}</p>
+            <p className="text-[#5b6472] leading-relaxed mb-6">
               The personal-injury statute of limitations in {state.name} is{" "}
               <strong>
                 {sol} year{sol === 1 ? "" : "s"}
@@ -180,21 +181,21 @@ ${stateData?.notableLegalContext || `${state.name} follows standard U.S. legal p
               from the date of injury, which is one of the most important
               deadlines for residents to know.
             </p>
-            <ul className="text-sm text-slate-600 space-y-2">
+            <ul className="text-sm text-[#5b6472] space-y-2">
               <li>
-                <strong className="text-slate-900">Bar association:</strong>{" "}
-                <a href={stateData.bar.url} rel="noopener noreferrer nofollow" target="_blank" className="text-emerald-600 hover:underline">
+                <strong className="text-[#14181f]">Bar association:</strong>{" "}
+                <a href={stateData.bar.url} rel="noopener noreferrer nofollow" target="_blank" className="text-[#0f7d6c] hover:underline">
                   {stateData.bar.name}
                 </a>
               </li>
               <li>
-                <strong className="text-slate-900">Court system:</strong>{" "}
-                <a href={stateData.courts.url} rel="noopener noreferrer nofollow" target="_blank" className="text-emerald-600 hover:underline">
+                <strong className="text-[#14181f]">Court system:</strong>{" "}
+                <a href={stateData.courts.url} rel="noopener noreferrer nofollow" target="_blank" className="text-[#0f7d6c] hover:underline">
                   {stateData.courts.name}
                 </a>
               </li>
               <li>
-                <strong className="text-slate-900">Largest counties:</strong>{" "}
+                <strong className="text-[#14181f]">Largest counties:</strong>{" "}
                 {stateData.largestCounties.join(", ")}
               </li>
             </ul>
@@ -204,10 +205,10 @@ ${stateData?.notableLegalContext || `${state.name} follows standard U.S. legal p
         {/* Practice area breakdown */}
         {facts.topPracticeAreas.length > 0 && (
           <section className="mb-12">
-            <h2 className="text-2xl font-black text-slate-900 mb-4 tracking-tight">
+            <h2 className="serif-ed text-2xl text-[#14181f] mb-4">
               Practice areas in {state.name}
             </h2>
-            <p className="text-slate-600 mb-6 max-w-3xl">
+            <p className="text-[#5b6472] mb-6 max-w-3xl">
               Of the {facts.attorneyCount} attorneys featured in {state.name},
               the most represented practice areas are:
             </p>
@@ -215,9 +216,9 @@ ${stateData?.notableLegalContext || `${state.name} follows standard U.S. legal p
               {facts.topPracticeAreas.map((pa) => (
                 <span
                   key={pa.name}
-                  className="px-4 py-2 rounded-full bg-slate-100 text-slate-800 text-sm font-medium border border-slate-200"
+                  className="px-4 py-2 rounded-full bg-[#d9ece7] text-[#0f7d6c] text-sm font-medium border border-[#e2ddd3]"
                 >
-                  {pa.name} <span className="text-slate-500">· {pa.count}</span>
+                  {pa.name} <span className="text-[#0f7d6c]/70">· {pa.count}</span>
                 </span>
               ))}
             </div>
@@ -227,10 +228,10 @@ ${stateData?.notableLegalContext || `${state.name} follows standard U.S. legal p
         {/* Cities */}
         {qualifiedCities.length > 0 && (
           <section className="mb-12">
-            <h2 className="text-2xl font-black text-slate-900 mb-4 tracking-tight">
+            <h2 className="serif-ed text-2xl text-[#14181f] mb-4">
               Browse {state.name} cities ({qualifiedCities.length})
             </h2>
-            <p className="text-slate-600 mb-6 max-w-3xl">
+            <p className="text-[#5b6472] mb-6 max-w-3xl">
               Each city page lists the attorneys serving that area, the most
               common practice areas locally, and city-specific FAQs.
             </p>
@@ -239,10 +240,10 @@ ${stateData?.notableLegalContext || `${state.name} follows standard U.S. legal p
                 <Link
                   key={c.citySlug}
                   href={`/attorneys/${stateSlug}/${c.citySlug}`}
-                  className="px-4 py-3 bg-white rounded-lg border border-slate-200 text-sm font-medium text-slate-700 hover:border-emerald-500/40 hover:text-emerald-600 hover:bg-emerald-50 transition-all"
+                  className="px-4 py-3 bg-white rounded-2xl border border-[#e2ddd3] text-sm font-medium text-[#5b6472] hover:border-[#d4cebf] hover:text-[#0f7d6c] hover:bg-[#eeeae2] transition-all"
                 >
-                  <div className="font-bold">{c.cityName}</div>
-                  <div className="text-xs text-slate-500 mt-0.5">{c.count} attorneys</div>
+                  <div className="font-bold text-[#14181f]">{c.cityName}</div>
+                  <div className="text-xs text-[#8a93a1] mt-0.5">{c.count} attorneys</div>
                 </Link>
               ))}
             </div>
@@ -251,45 +252,46 @@ ${stateData?.notableLegalContext || `${state.name} follows standard U.S. legal p
 
         {/* FAQ */}
         <section className="mb-12">
-          <h2 className="text-2xl font-black text-slate-900 mb-6 tracking-tight">
+          <h2 className="serif-ed text-2xl text-[#14181f] mb-6">
             Frequently Asked Questions
           </h2>
           <div className="space-y-6 max-w-3xl">
             <div>
-              <h3 className="font-bold text-slate-900 mb-1">How many attorneys are listed in {state.name}?</h3>
-              <p className="text-slate-600 leading-relaxed">
+              <h3 className="font-semibold text-[#14181f] mb-1">How many attorneys are listed in {state.name}?</h3>
+              <p className="text-[#5b6472] leading-relaxed">
                 Our directory currently lists {facts.attorneyCount} attorneys across {facts.qualifiedCityCount}{" "}
                 {state.name} cities, covering {facts.topPracticeAreas.length} practice areas. The most represented
                 practice area is {(facts.topPracticeAreas[0]?.name || "personal injury").toLowerCase()}.
               </p>
             </div>
             <div>
-              <h3 className="font-bold text-slate-900 mb-1">
+              <h3 className="font-semibold text-[#14181f] mb-1">
                 What is the personal injury statute of limitations in {state.name}?
               </h3>
-              <p className="text-slate-600 leading-relaxed">
+              <p className="text-[#5b6472] leading-relaxed">
                 {state.name} generally allows {sol} year{sol === 1 ? "" : "s"} from the date of injury to file a
                 personal injury lawsuit. Exceptions exist for minors, government claims, and discovery-rule cases.
               </p>
             </div>
             <div>
-              <h3 className="font-bold text-slate-900 mb-1">How do I verify a {state.name} attorney&apos;s license?</h3>
-              <p className="text-slate-600 leading-relaxed">
+              <h3 className="font-semibold text-[#14181f] mb-1">How do I verify a {state.name} attorney&apos;s license?</h3>
+              <p className="text-[#5b6472] leading-relaxed">
                 Check any {state.name} attorney&apos;s bar status, disciplinary history, and contact information through
                 the {stateData?.bar.name || `${state.name} state bar`}. We recommend verifying every lawyer before
                 retaining them.
               </p>
             </div>
             <div>
-              <h3 className="font-bold text-slate-900 mb-1">
+              <h3 className="font-semibold text-[#14181f] mb-1">
                 Does {state.name} have unique legal rules I should know about?
               </h3>
-              <p className="text-slate-600 leading-relaxed">
+              <p className="text-[#5b6472] leading-relaxed">
                 {stateData?.notableLegalContext || `${state.name} follows standard U.S. legal procedures.`}
               </p>
             </div>
           </div>
         </section>
+      </div>
       </div>
     </>
   );

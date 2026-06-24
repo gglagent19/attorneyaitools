@@ -6,6 +6,26 @@
   --primary: #0f7d6c;
   --navy: #1a2a4a;
   --emerald: #0f7d6c;
+
+  /* ── Shielded /app design tokens (ported verbatim from app.html) ── */
+  --bg: #f6f3ee;
+  --bg-card: #ffffff;
+  --bg-subtle: #eeeae2;
+  --bg-muted: #e8e3da;
+  --ink: #14181f;
+  --ink-2: #2a3140;
+  --ink-3: #5b6472;
+  --ink-4: #8a93a1;
+  --line: #e2ddd3;
+  --line-2: #d4cebf;
+  --navy-2: #12203d;
+  --navy-soft: #2b3d60;
+  --teal: #0f7d6c;
+  --teal-soft: #d9ece7;
+  --amber: #b8761f;
+  --amber-soft: #f5e6c8;
+  --red: #a3321c;
+  --red-soft: #f1dacf;
 }
 
 /*
@@ -71,13 +91,71 @@ h1, h2 {
 }
 
 /* Editorial type helpers (opt-in) */
+.serif-ed {
+  font-family: var(--font-serif), "Iowan Old Style", Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
 .eyebrow-ed {
   font-family: var(--font-mono), ui-monospace, monospace;
   font-size: 11px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   font-weight: 500;
+  color: var(--ink-4);
 }
+
+/*
+ * ── Shielded /app component primitives (mirror app.html) ──────────────
+ * Reusable classes so every Next page can be built from the SAME building
+ * blocks as the homepage (app.html): warm surfaces, navy/ghost buttons,
+ * paper cards, teal pills.
+ */
+.surface-paper { background: var(--bg); }
+.surface-subtle { background: var(--bg-subtle); }
+.surface-ink { background: var(--ink); color: #f1ece2; }
+
+.btn-ed {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: background 0.15s, border-color 0.15s, color 0.15s, transform 0.04s;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.btn-ed:active { transform: translateY(0.5px); }
+.btn-ed-primary { background: var(--navy); color: #fff; border-color: var(--navy); }
+.btn-ed-primary:hover { background: var(--navy-2); }
+.btn-ed-ghost { background: transparent; color: var(--ink-2); border-color: var(--line-2); }
+.btn-ed-ghost:hover { background: var(--bg-subtle); }
+.btn-ed-teal { background: var(--teal); color: #fff; border-color: var(--teal); }
+.btn-ed-teal:hover { background: #0c6557; }
+
+.card-ed {
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.pill-ed {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1;
+}
+.pill-ed-teal { background: var(--teal-soft); color: var(--teal); }
+.pill-ed-navy { background: #dde5f2; color: var(--navy); }
+.pill-ed-neutral { background: var(--bg-subtle); color: var(--ink-3); }
+
+.hr-ed { height: 1px; background: var(--line); border: none; margin: 0; }
 
 /* Editorial shadow utility */
 .editorial-shadow {

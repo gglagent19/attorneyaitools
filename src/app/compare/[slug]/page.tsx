@@ -66,63 +66,63 @@ export default async function ComparisonDetailPage({
         />
       )}
 
-      <article className="max-w-4xl mx-auto px-6 lg:px-8 py-20">
-        <nav aria-label="Breadcrumb" className="mb-8 text-sm text-slate-500">
-          <Link href="/" className="hover:text-emerald-600">Home</Link>
+      <article className="bg-[#f6f3ee] max-w-4xl mx-auto px-6 lg:px-8 py-20">
+        <nav aria-label="Breadcrumb" className="mb-8 text-sm text-[#8a93a1]">
+          <Link href="/" className="hover:text-[#0f7d6c]">Home</Link>
           <span className="mx-2">/</span>
-          <Link href="/compare" className="hover:text-emerald-600">Compare</Link>
+          <Link href="/compare" className="hover:text-[#0f7d6c]">Compare</Link>
           <span className="mx-2">/</span>
-          <span className="text-slate-700">{c.title}</span>
+          <span className="text-[#5b6472]">{c.title}</span>
         </nav>
 
         <header className="mb-10">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold tracking-widest uppercase mb-6">
+          <span className="eyebrow-ed inline-flex items-center gap-2 rounded-full bg-[#d9ece7] px-3 py-1.5 text-[#0f7d6c] mb-6">
             Head-to-Head Comparison
           </span>
-          <h1 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight leading-[1.1] mb-6">
+          <h1 className="serif-ed text-4xl md:text-5xl text-[#14181f] leading-[1.1] mb-6">
             {c.title}
           </h1>
-          <p className="text-xl text-slate-600 leading-relaxed">
+          <p className="text-xl text-[#5b6472] leading-relaxed">
             {c.description}
           </p>
           {c.date && (
-            <p className="mt-6 text-sm text-slate-400">
+            <p className="mt-6 text-sm text-[#8a93a1]">
               Published <time dateTime={c.date}>{c.date}</time> · Reviewed by AttorneyAITools editorial
             </p>
           )}
         </header>
 
         <div
-          className="prose prose-slate prose-lg max-w-none prose-headings:font-black prose-headings:tracking-tight prose-h2:mt-12 prose-h2:mb-4 prose-a:text-emerald-600 prose-table:text-sm prose-th:bg-slate-50"
+          className="prose prose-slate prose-lg max-w-none prose-headings:text-[#14181f] prose-headings:tracking-tight prose-h2:mt-12 prose-h2:mb-4 prose-a:text-[#0f7d6c] prose-table:text-sm prose-th:bg-[#eeeae2]"
           dangerouslySetInnerHTML={{ __html: c.htmlContent }}
         />
 
         <div className="mt-16 flex flex-wrap gap-4">
           <Link
             href={`/ai-tools/${c.tool_a}`}
-            className="px-6 py-3 rounded-xl bg-slate-900 text-white font-bold hover:bg-emerald-600 transition-colors"
+            className="inline-flex items-center justify-center rounded-lg bg-[#1a2a4a] px-6 py-3 font-semibold text-white transition-colors hover:bg-[#12203d]"
           >
             View {c.tool_a}
           </Link>
           <Link
             href={`/ai-tools/${c.tool_b}`}
-            className="px-6 py-3 rounded-xl border border-slate-300 text-slate-900 font-bold hover:border-emerald-500 hover:text-emerald-600 transition-colors"
+            className="inline-flex items-center justify-center rounded-lg border border-[#d4cebf] bg-transparent px-6 py-3 font-semibold text-[#2a3140] hover:bg-[#eeeae2] transition-colors"
           >
             View {c.tool_b}
           </Link>
         </div>
 
         {related.length > 0 && (
-          <aside className="mt-20 border-t border-slate-200 pt-12">
-            <h2 className="text-2xl font-black text-slate-900 mb-6">More Comparisons</h2>
+          <aside className="mt-20 border-t border-[#e2ddd3] pt-12">
+            <h2 className="serif-ed text-2xl text-[#14181f] mb-6">More Comparisons</h2>
             <ul className="grid sm:grid-cols-2 gap-4">
               {related.map((r) => (
                 <li key={r.slug}>
                   <Link
                     href={`/compare/${r.slug}`}
-                    className="block p-5 rounded-xl border border-slate-200 hover:border-emerald-500/40 hover:bg-emerald-50/40 transition-all"
+                    className="block p-5 rounded-xl border border-[#e2ddd3] bg-white hover:border-[#d4cebf] hover:bg-[#eeeae2] transition-all"
                   >
-                    <p className="font-bold text-slate-900">{r.title}</p>
+                    <p className="font-bold text-[#14181f]">{r.title}</p>
                   </Link>
                 </li>
               ))}

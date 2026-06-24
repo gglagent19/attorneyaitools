@@ -77,6 +77,7 @@ export default async function AttorneyDetailPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
 
+      <div className="bg-[#f6f3ee]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <div className="pt-6">
           <Breadcrumbs items={breadcrumbs} />
@@ -86,16 +87,16 @@ export default async function AttorneyDetailPage({
         <section className="grid lg:grid-cols-12 gap-10 pt-32">
           {/* Left: Portrait */}
           <div className="lg:col-span-5">
-            <div className="relative aspect-[4/5] rounded-xl overflow-hidden bg-gradient-to-br from-emerald-500 to-emerald-700 shadow-xl">
+            <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-gradient-to-br from-[#1a2a4a] to-[#12203d] shadow-xl">
               <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-[12rem] font-black text-white/90 leading-none tracking-tighter select-none">
+                <span className="serif-ed text-[12rem] text-white/90 leading-none select-none">
                   {initial}
                 </span>
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/40 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#12203d]/40 via-transparent to-transparent" />
               {attorney.featured && (
                 <div className="absolute bottom-5 right-5">
-                  <span className="inline-flex items-center px-4 py-2 rounded-full text-xs font-bold tracking-wider uppercase bg-emerald-400 text-emerald-950 shadow-lg ring-2 ring-white/30">
+                  <span className="eyebrow-ed inline-flex items-center gap-2 rounded-full bg-[#d9ece7] px-3 py-1.5 text-[#0f7d6c] shadow-lg ring-2 ring-white/30">
                     Featured Partner
                   </span>
                 </div>
@@ -105,51 +106,51 @@ export default async function AttorneyDetailPage({
 
           {/* Right: Name + stats */}
           <div className="lg:col-span-7 lg:pt-8">
-            <h1 className="text-5xl md:text-7xl font-black tracking-tighter text-slate-900 leading-[0.9]">
+            <h1 className="serif-ed text-5xl md:text-7xl text-[#14181f] leading-[0.95]">
               {attorney.name}
             </h1>
-            <p className="mt-4 text-xl text-emerald-600 font-semibold">
+            <p className="mt-4 text-xl text-[#0f7d6c] font-semibold">
               {practiceSubtitle}
             </p>
-            <div className="mt-6 h-1.5 w-24 bg-emerald-500 rounded-full" />
+            <div className="mt-6 h-1.5 w-24 bg-[#0f7d6c] rounded-full" />
 
             {attorney.law_firm && (
-              <p className="mt-6 text-lg text-slate-600 font-medium">
+              <p className="mt-6 text-lg text-[#5b6472] font-medium">
                 {attorney.law_firm}
               </p>
             )}
 
             <div className="mt-8 grid sm:grid-cols-2 gap-5">
-              <div className="p-6 rounded-xl bg-white shadow-sm border border-slate-200">
-                <p className="text-xs font-bold uppercase tracking-widest text-emerald-600">
+              <div className="p-6 rounded-2xl bg-white shadow-sm border border-[#e2ddd3]">
+                <p className="text-xs font-bold uppercase tracking-widest text-[#0f7d6c]">
                   Experience
                 </p>
-                <p className="mt-3 text-4xl font-black tracking-tighter text-slate-900">
+                <p className="mt-3 serif-ed text-4xl text-[#14181f]">
                   {attorney.experience_years}
-                  <span className="text-xl text-slate-500 font-semibold ml-1">
+                  <span className="text-xl text-[#8a93a1] font-semibold ml-1">
                     yrs
                   </span>
                 </p>
-                <p className="mt-2 text-sm text-slate-500">
+                <p className="mt-2 text-sm text-[#8a93a1]">
                   Practicing in {attorney.city}, {attorney.state}
                 </p>
               </div>
 
-              <div className="p-6 rounded-xl bg-white shadow-sm border border-slate-200">
-                <p className="text-xs font-bold uppercase tracking-widest text-emerald-600">
+              <div className="p-6 rounded-2xl bg-white shadow-sm border border-[#e2ddd3]">
+                <p className="text-xs font-bold uppercase tracking-widest text-[#0f7d6c]">
                   Credentials
                 </p>
-                <p className="mt-3 text-lg font-bold text-slate-900 leading-tight">
+                <p className="mt-3 text-lg font-semibold text-[#14181f] leading-tight">
                   Juris Doctor (J.D.)
                 </p>
-                <p className="mt-1 text-sm text-slate-500">
+                <p className="mt-1 text-sm text-[#8a93a1]">
                   Admitted to {attorney.state} State Bar
                 </p>
                 {typeof attorney.rating === "number" && (
-                  <p className="mt-2 text-sm text-slate-600 font-semibold">
+                  <p className="mt-2 text-sm text-[#5b6472] font-semibold">
                     Rating: {attorney.rating.toFixed(1)} / 5.0
                     {reviewCount ? (
-                      <span className="text-slate-400 font-normal">
+                      <span className="text-[#8a93a1] font-normal">
                         {" "}
                         ({reviewCount} reviews)
                       </span>
@@ -164,16 +165,16 @@ export default async function AttorneyDetailPage({
         {/* ===== Section 2: Biography + Practice Areas ===== */}
         <section className="grid lg:grid-cols-3 gap-8 mt-24">
           {/* Bio */}
-          <div className="lg:col-span-2 bg-slate-100 p-10 rounded-xl">
-            <p className="text-xs font-bold uppercase tracking-widest text-emerald-600">
+          <div className="lg:col-span-2 bg-[#eeeae2] p-10 rounded-2xl border border-[#e2ddd3]">
+            <p className="text-xs font-bold uppercase tracking-widest text-[#0f7d6c]">
               01 — About
             </p>
-            <h2 className="mt-3 text-3xl md:text-4xl font-black tracking-tight text-slate-900">
+            <h2 className="mt-3 serif-ed text-3xl md:text-4xl text-[#14181f]">
               Professional Biography
             </h2>
-            <div className="mt-6 h-1 w-16 bg-emerald-500 rounded-full" />
+            <div className="mt-6 h-1 w-16 bg-[#0f7d6c] rounded-full" />
 
-            <div className="mt-8 space-y-5 text-slate-700 text-lg leading-relaxed">
+            <div className="mt-8 space-y-5 text-[#5b6472] text-lg leading-relaxed">
               <p>{attorney.description}</p>
               <p>
                 With over {attorney.experience_years} years of dedicated legal
@@ -192,46 +193,46 @@ export default async function AttorneyDetailPage({
 
             {attorney.htmlContent && (
               <div
-                className="prose prose-slate max-w-none mt-8 prose-headings:tracking-tight prose-headings:text-slate-900 prose-a:text-emerald-600"
+                className="prose prose-slate max-w-none mt-8 prose-headings:tracking-tight prose-headings:text-[#14181f] prose-a:text-[#0f7d6c]"
                 dangerouslySetInnerHTML={{ __html: attorney.htmlContent }}
               />
             )}
           </div>
 
           {/* Practice Areas */}
-          <div className="bg-white p-10 rounded-xl shadow-sm border border-slate-200">
-            <p className="text-xs font-bold uppercase tracking-widest text-emerald-600">
+          <div className="bg-white p-10 rounded-2xl shadow-sm border border-[#e2ddd3]">
+            <p className="text-xs font-bold uppercase tracking-widest text-[#0f7d6c]">
               02 — Focus
             </p>
-            <h2 className="mt-3 text-3xl font-black tracking-tight text-slate-900">
+            <h2 className="mt-3 serif-ed text-3xl text-[#14181f]">
               Practice Areas
             </h2>
-            <div className="mt-6 h-1 w-16 bg-emerald-500 rounded-full" />
+            <div className="mt-6 h-1 w-16 bg-[#0f7d6c] rounded-full" />
 
             {attorney.practice_areas && attorney.practice_areas.length > 0 ? (
               <div className="mt-8 flex flex-wrap gap-2.5">
                 {attorney.practice_areas.map((pa) => (
                   <span
                     key={pa}
-                    className="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200 hover:bg-emerald-100 transition-colors"
+                    className="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-[#d9ece7] text-[#0f7d6c] border border-[#e2ddd3] hover:bg-[#cfe5df] transition-colors"
                   >
                     {pa}
                   </span>
                 ))}
               </div>
             ) : (
-              <p className="mt-8 text-slate-500 italic">
+              <p className="mt-8 text-[#8a93a1] italic">
                 General legal practice.
               </p>
             )}
 
-            <blockquote className="mt-10 pt-8 border-t border-slate-200">
-              <p className="italic text-slate-600 text-lg leading-relaxed">
+            <blockquote className="mt-10 pt-8 border-t border-[#e2ddd3]">
+              <p className="italic text-[#5b6472] text-lg leading-relaxed">
                 &ldquo;Every client deserves clarity, candor, and relentless
                 advocacy. That is the standard we hold ourselves to — on every
                 case, every day.&rdquo;
               </p>
-              <footer className="mt-4 text-sm font-bold uppercase tracking-widest text-slate-900">
+              <footer className="mt-4 text-sm font-bold uppercase tracking-widest text-[#14181f]">
                 — {attorney.name}
               </footer>
             </blockquote>
@@ -247,16 +248,16 @@ export default async function AttorneyDetailPage({
         <section className="grid lg:grid-cols-2 gap-8 mt-20">
           {/* Location */}
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-emerald-600">
+            <p className="text-xs font-bold uppercase tracking-widest text-[#0f7d6c]">
               03 — Visit
             </p>
-            <h2 className="mt-3 text-4xl md:text-5xl font-black tracking-tighter text-slate-900 leading-[0.95]">
+            <h2 className="mt-3 serif-ed text-4xl md:text-5xl text-[#14181f] leading-[0.95]">
               Office Location
             </h2>
-            <div className="mt-6 h-1.5 w-24 bg-emerald-500 rounded-full" />
+            <div className="mt-6 h-1.5 w-24 bg-[#0f7d6c] rounded-full" />
 
             {/* Map placeholder */}
-            <div className="mt-8 aspect-[16/10] rounded-xl bg-gradient-to-br from-slate-200 via-slate-100 to-emerald-50 border border-slate-200 relative overflow-hidden">
+            <div className="mt-8 aspect-[16/10] rounded-2xl bg-gradient-to-br from-[#eeeae2] via-[#f6f3ee] to-[#d9ece7] border border-[#e2ddd3] relative overflow-hidden">
               <div
                 className="absolute inset-0 opacity-40"
                 style={{
@@ -267,7 +268,7 @@ export default async function AttorneyDetailPage({
               />
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="flex flex-col items-center">
-                  <div className="w-12 h-12 rounded-full bg-emerald-500 ring-8 ring-emerald-500/20 flex items-center justify-center shadow-lg">
+                  <div className="w-12 h-12 rounded-full bg-[#0f7d6c] ring-8 ring-[#0f7d6c]/20 flex items-center justify-center shadow-lg">
                     <svg
                       className="w-6 h-6 text-white"
                       fill="none"
@@ -287,7 +288,7 @@ export default async function AttorneyDetailPage({
                       />
                     </svg>
                   </div>
-                  <p className="mt-3 text-sm font-bold text-slate-900">
+                  <p className="mt-3 text-sm font-bold text-[#14181f]">
                     {attorney.city}, {attorney.state}
                   </p>
                 </div>
@@ -296,8 +297,8 @@ export default async function AttorneyDetailPage({
 
             {/* Contact grid */}
             <div className="mt-8 grid sm:grid-cols-2 gap-4">
-              <div className="p-5 rounded-xl bg-white border border-slate-200">
-                <div className="flex items-center gap-2 text-emerald-600">
+              <div className="p-5 rounded-2xl bg-white border border-[#e2ddd3]">
+                <div className="flex items-center gap-2 text-[#0f7d6c]">
                   <svg
                     className="w-4 h-4"
                     fill="none"
@@ -320,13 +321,13 @@ export default async function AttorneyDetailPage({
                     Address
                   </p>
                 </div>
-                <p className="mt-2 text-sm font-semibold text-slate-900 leading-snug">
+                <p className="mt-2 text-sm font-semibold text-[#14181f] leading-snug">
                   {address || `${attorney.city}, ${attorney.state}`}
                 </p>
               </div>
 
-              <div className="p-5 rounded-xl bg-white border border-slate-200">
-                <div className="flex items-center gap-2 text-emerald-600">
+              <div className="p-5 rounded-2xl bg-white border border-[#e2ddd3]">
+                <div className="flex items-center gap-2 text-[#0f7d6c]">
                   <svg
                     className="w-4 h-4"
                     fill="none"
@@ -347,23 +348,23 @@ export default async function AttorneyDetailPage({
                 {attorney.phone ? (
                   <a
                     href={`tel:${attorney.phone}`}
-                    className="mt-2 block text-sm font-semibold text-slate-900 hover:text-emerald-600"
+                    className="mt-2 block text-sm font-semibold text-[#14181f] hover:text-[#0f7d6c]"
                   >
                     {attorney.phone}
                   </a>
                 ) : (
-                  <p className="mt-2 text-sm text-slate-400">On request</p>
+                  <p className="mt-2 text-sm text-[#8a93a1]">On request</p>
                 )}
               </div>
 
               {attorney.email && (
-                <div className="p-5 rounded-xl bg-white border border-slate-200">
-                  <p className="text-xs font-bold uppercase tracking-widest text-emerald-600">
+                <div className="p-5 rounded-2xl bg-white border border-[#e2ddd3]">
+                  <p className="text-xs font-bold uppercase tracking-widest text-[#0f7d6c]">
                     Email
                   </p>
                   <a
                     href={`mailto:${attorney.email}`}
-                    className="mt-2 block text-sm font-semibold text-slate-900 hover:text-emerald-600 truncate"
+                    className="mt-2 block text-sm font-semibold text-[#14181f] hover:text-[#0f7d6c] truncate"
                   >
                     {attorney.email}
                   </a>
@@ -371,15 +372,15 @@ export default async function AttorneyDetailPage({
               )}
 
               {attorney.website && (
-                <div className="p-5 rounded-xl bg-white border border-slate-200">
-                  <p className="text-xs font-bold uppercase tracking-widest text-emerald-600">
+                <div className="p-5 rounded-2xl bg-white border border-[#e2ddd3]">
+                  <p className="text-xs font-bold uppercase tracking-widest text-[#0f7d6c]">
                     Website
                   </p>
                   <a
                     href={attorney.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-2 block text-sm font-semibold text-slate-900 hover:text-emerald-600 truncate"
+                    className="mt-2 block text-sm font-semibold text-[#14181f] hover:text-[#0f7d6c] truncate"
                   >
                     {attorney.website.replace(/^https?:\/\//, "")}
                   </a>
@@ -389,54 +390,54 @@ export default async function AttorneyDetailPage({
           </div>
 
           {/* Inquiry Form */}
-          <div className="bg-slate-100 p-10 rounded-xl">
-            <p className="text-xs font-bold uppercase tracking-widest text-emerald-600">
+          <div className="bg-[#eeeae2] p-10 rounded-2xl border border-[#e2ddd3]">
+            <p className="text-xs font-bold uppercase tracking-widest text-[#0f7d6c]">
               04 — Request
             </p>
-            <h2 className="mt-3 text-4xl md:text-5xl font-black tracking-tighter text-slate-900 leading-[0.95]">
+            <h2 className="mt-3 serif-ed text-4xl md:text-5xl text-[#14181f] leading-[0.95]">
               Schedule a Consultation
             </h2>
-            <div className="mt-6 h-1.5 w-24 bg-emerald-500 rounded-full" />
+            <div className="mt-6 h-1.5 w-24 bg-[#0f7d6c] rounded-full" />
 
-            <p className="mt-6 text-slate-600">
+            <p className="mt-6 text-[#5b6472]">
               Submit the form below and {attorney.name.split(" ")[0]}&rsquo;s
               team will follow up within one business day.
             </p>
 
             <form className="mt-8 space-y-5">
               <div>
-                <label className="block text-xs font-bold uppercase tracking-widest text-slate-700 mb-2">
+                <label className="block text-xs font-bold uppercase tracking-widest text-[#5b6472] mb-2">
                   Full Name
                 </label>
                 <input
                   type="text"
                   name="name"
                   required
-                  className="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                  className="w-full px-4 py-3 rounded-lg bg-white border border-[#e2ddd3] text-[#14181f] placeholder-[#8a93a1] focus:outline-none focus:ring-2 focus:ring-[#0f7d6c] focus:border-[#0f7d6c]"
                   placeholder="Jane Doe"
                 />
               </div>
 
               <div>
-                <label className="block text-xs font-bold uppercase tracking-widest text-slate-700 mb-2">
+                <label className="block text-xs font-bold uppercase tracking-widest text-[#5b6472] mb-2">
                   Email Address
                 </label>
                 <input
                   type="email"
                   name="email"
                   required
-                  className="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                  className="w-full px-4 py-3 rounded-lg bg-white border border-[#e2ddd3] text-[#14181f] placeholder-[#8a93a1] focus:outline-none focus:ring-2 focus:ring-[#0f7d6c] focus:border-[#0f7d6c]"
                   placeholder="jane@example.com"
                 />
               </div>
 
               <div>
-                <label className="block text-xs font-bold uppercase tracking-widest text-slate-700 mb-2">
+                <label className="block text-xs font-bold uppercase tracking-widest text-[#5b6472] mb-2">
                   Case Type
                 </label>
                 <select
                   name="caseType"
-                  className="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                  className="w-full px-4 py-3 rounded-lg bg-white border border-[#e2ddd3] text-[#14181f] focus:outline-none focus:ring-2 focus:ring-[#0f7d6c] focus:border-[#0f7d6c]"
                 >
                   <option value="">Select a practice area</option>
                   {(attorney.practice_areas || []).map((pa) => (
@@ -449,26 +450,26 @@ export default async function AttorneyDetailPage({
               </div>
 
               <div>
-                <label className="block text-xs font-bold uppercase tracking-widest text-slate-700 mb-2">
+                <label className="block text-xs font-bold uppercase tracking-widest text-[#5b6472] mb-2">
                   Brief Message
                 </label>
                 <textarea
                   name="message"
                   rows={5}
                   required
-                  className="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 resize-none"
+                  className="w-full px-4 py-3 rounded-lg bg-white border border-[#e2ddd3] text-[#14181f] placeholder-[#8a93a1] focus:outline-none focus:ring-2 focus:ring-[#0f7d6c] focus:border-[#0f7d6c] resize-none"
                   placeholder="Tell us briefly about your situation..."
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full px-6 py-4 rounded-xl bg-slate-900 hover:bg-emerald-600 text-white font-bold uppercase tracking-widest text-sm transition-colors shadow-lg"
+                className="w-full px-6 py-4 rounded-lg bg-[#1a2a4a] hover:bg-[#12203d] text-white font-semibold uppercase tracking-widest text-sm transition-colors shadow-lg"
               >
                 Send Inquiry
               </button>
 
-              <p className="text-xs text-slate-500 text-center">
+              <p className="text-xs text-[#8a93a1] text-center">
                 Submitting does not create an attorney-client relationship.
               </p>
             </form>
@@ -478,6 +479,7 @@ export default async function AttorneyDetailPage({
         <div className="mt-20">
           <AdBlock format="horizontal" slot="attorney-detail-bottom" />
         </div>
+      </div>
       </div>
     </>
   );

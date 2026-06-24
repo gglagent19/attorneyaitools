@@ -127,30 +127,31 @@ export default async function FAQPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <Breadcrumbs items={breadcrumbs} />
+      <div className="bg-[#f6f3ee]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <Breadcrumbs items={breadcrumbs} />
 
-        <article>
-          <header className="mb-6">
-            <div className="flex items-center gap-2 mb-3">
-              <span className="px-2.5 py-1 bg-emerald-50 text-emerald-700 text-xs font-medium rounded-md border border-emerald-100">
-                {categoryLabel}
-              </span>
-              <span className="text-xs text-slate-500">
-                Updated{" "}
-                {new Date(faq.date).toLocaleDateString("en-US", {
-                  year: "numeric",
-                  month: "long",
-                  day: "numeric",
-                })}
-              </span>
-            </div>
-            <h1 className="text-3xl sm:text-4xl font-bold text-slate-900 leading-tight">
-              {faq.question}
-            </h1>
-          </header>
+          <article>
+            <header className="mb-6">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="eyebrow-ed inline-flex items-center gap-2 rounded-full bg-[#d9ece7] px-3 py-1.5 text-[#0f7d6c]">
+                  {categoryLabel}
+                </span>
+                <span className="text-xs text-[#8a93a1]">
+                  Updated{" "}
+                  {new Date(faq.date).toLocaleDateString("en-US", {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                  })}
+                </span>
+              </div>
+              <h1 className="serif-ed text-3xl sm:text-4xl text-[#14181f] leading-tight">
+                {faq.question}
+              </h1>
+            </header>
 
-          <div className="bg-white rounded-xl border border-slate-200 p-6 sm:p-8">
+            <div className="bg-white rounded-2xl border border-[#e2ddd3] p-6 sm:p-8">
             <div
               className="prose prose-slate max-w-none
                 prose-headings:text-slate-900
@@ -169,7 +170,7 @@ export default async function FAQPage({
 
         {relatedTools.length > 0 && (
           <section className="mt-10">
-            <h2 className="text-xl font-bold text-slate-900 mb-4">
+            <h2 className="serif-ed text-xl text-[#14181f] mb-4">
               Recommended Tools
             </h2>
             <div className="grid gap-4 sm:grid-cols-2">
@@ -177,17 +178,17 @@ export default async function FAQPage({
                 <Link
                   key={tool.slug}
                   href={`/ai-tools/${tool.slug}`}
-                  className="block bg-white rounded-xl border border-slate-200 p-5 hover:border-emerald-300 hover:shadow-md transition"
+                  className="block bg-white rounded-2xl border border-[#e2ddd3] p-5 hover:border-[#d4cebf] hover:shadow-md transition"
                 >
                   <div className="flex items-center justify-between mb-2">
-                    <h3 className="font-semibold text-slate-900">
+                    <h3 className="font-semibold text-[#14181f]">
                       {tool.name}
                     </h3>
-                    <span className="text-xs text-slate-500">
+                    <span className="text-xs text-[#8a93a1]">
                       {tool.pricing}
                     </span>
                   </div>
-                  <p className="text-sm text-slate-600 line-clamp-2">
+                  <p className="text-sm text-[#5b6472] line-clamp-2">
                     {tool.description}
                   </p>
                 </Link>
@@ -196,21 +197,22 @@ export default async function FAQPage({
           </section>
         )}
 
-        <section className="mt-12 bg-emerald-50 border border-emerald-100 rounded-xl p-6">
-          <h2 className="text-lg font-semibold text-slate-900 mb-2">
-            Browse more FAQs
-          </h2>
-          <p className="text-slate-700 mb-4">
-            Explore our full library of answers to the questions attorneys
-            actually ask about legal AI.
-          </p>
-          <Link
-            href="/faq"
-            className="inline-flex items-center px-4 py-2 bg-emerald-600 text-white text-sm font-medium rounded-lg hover:bg-emerald-700 transition"
-          >
-            All FAQs
-          </Link>
-        </section>
+          <section className="mt-12 bg-[#eeeae2] border border-[#e2ddd3] rounded-2xl p-6">
+            <h2 className="serif-ed text-lg text-[#14181f] mb-2">
+              Browse more FAQs
+            </h2>
+            <p className="text-[#5b6472] mb-4">
+              Explore our full library of answers to the questions attorneys
+              actually ask about legal AI.
+            </p>
+            <Link
+              href="/faq"
+              className="inline-flex items-center justify-center rounded-lg bg-[#1a2a4a] px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-[#12203d]"
+            >
+              All FAQs
+            </Link>
+          </section>
+        </div>
       </div>
     </>
   );

@@ -13,16 +13,16 @@ export default function ForAttorneysPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-white pt-32 pb-16 md:pt-40">
+      <section className="bg-[#f6f3ee] pt-32 pb-16 md:pt-40">
         <div className="mx-auto max-w-4xl px-6 text-center">
-          <span className="mb-6 inline-block rounded-full bg-slate-900 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-white">
+          <span className="eyebrow-ed mb-6 inline-flex items-center gap-2 rounded-full bg-[#d9ece7] px-3 py-1.5 text-[#0f7d6c]">
             For attorneys & law firms
           </span>
-          <h1 className="mb-6 text-4xl font-black leading-[1.1] tracking-tighter text-slate-900 md:text-6xl">
+          <h1 className="mb-6 text-4xl leading-[1.1] text-[#14181f] md:text-6xl">
             Win more for your clients,{" "}
-            <span className="text-emerald-600">in a fraction of the time</span>
+            <span className="text-[#0f7d6c]">in a fraction of the time</span>
           </h1>
-          <p className="mx-auto mb-10 max-w-2xl text-xl text-slate-500">
+          <p className="mx-auto mb-10 max-w-2xl text-xl text-[#5b6472]">
             You already have the clients. Shielded does the heavy lifting on every
             insurance claim — reading policies, finding underpayments, and drafting
             demand letters — so your team moves faster and settles higher.
@@ -35,7 +35,7 @@ export default function ForAttorneysPage() {
             />
             <Link
               href="/submit-attorney"
-              className="rounded-xl bg-slate-100 px-8 py-4 text-lg font-bold text-slate-900 transition-colors hover:bg-slate-200"
+              className="rounded-lg border border-[#d4cebf] bg-transparent px-8 py-4 text-lg font-semibold text-[#2a3140] transition-colors hover:bg-[#eeeae2]"
             >
               List your practice
             </Link>
@@ -44,7 +44,7 @@ export default function ForAttorneysPage() {
       </section>
 
       {/* Value props */}
-      <section className="bg-slate-50 py-20">
+      <section className="bg-[#eeeae2] py-20">
         <div className="mx-auto max-w-6xl px-8">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             {[
@@ -61,9 +61,9 @@ export default function ForAttorneysPage() {
                 d: "Comparable-settlement data and deadline tracking across your whole caseload, in one workspace.",
               },
             ].map((v) => (
-              <div key={v.t} className="rounded-2xl border border-slate-200 bg-white p-8">
-                <h3 className="mb-2 text-xl font-bold text-slate-900">{v.t}</h3>
-                <p className="text-slate-500">{v.d}</p>
+              <div key={v.t} className="rounded-2xl border border-[#e2ddd3] bg-white p-8">
+                <h3 className="mb-2 text-xl font-semibold text-[#14181f]">{v.t}</h3>
+                <p className="text-[#5b6472]">{v.d}</p>
               </div>
             ))}
           </div>
@@ -71,12 +71,12 @@ export default function ForAttorneysPage() {
       </section>
 
       {/* Who it's for */}
-      <section className="bg-white py-20">
+      <section className="bg-[#f6f3ee] py-20">
         <div className="mx-auto max-w-4xl px-8 text-center">
-          <h2 className="mb-6 text-3xl font-black tracking-tight text-slate-900">
+          <h2 className="mb-6 text-3xl text-[#14181f]">
             Built for the firms that fight insurers
           </h2>
-          <p className="mb-8 text-lg text-slate-500">
+          <p className="mb-8 text-lg text-[#5b6472]">
             Personal injury, property damage, first-party insurance, and bad-faith
             practices — Shielded turns hours of policy review and letter-drafting
             into minutes, so you can take on more cases without adding headcount.
@@ -91,7 +91,7 @@ export default function ForAttorneysPage() {
             ].map((p) => (
               <span
                 key={p}
-                className="rounded-full border border-slate-200 bg-slate-50 px-4 py-2 font-medium text-slate-700"
+                className="rounded-full border border-[#e2ddd3] bg-white px-4 py-2 font-medium text-[#5b6472]"
               >
                 {p}
               </span>
@@ -101,10 +101,10 @@ export default function ForAttorneysPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-white pb-24">
+      <section className="bg-[#eeeae2] pb-24 pt-4">
         <div className="mx-auto max-w-5xl px-8">
-          <div className="rounded-[3rem] bg-slate-900 p-16 text-center text-white">
-            <h2 className="mb-6 text-4xl font-black">Put Shielded to work on a real claim</h2>
+          <div className="rounded-[3rem] bg-[#1a2a4a] p-16 text-center text-white">
+            <h2 className="mb-6 text-4xl text-white">Put Shielded to work on a real claim</h2>
             <p className="mx-auto mb-10 max-w-xl text-xl text-white/70">
               Run one of your active claims through Shielded free and see the gap it
               finds.

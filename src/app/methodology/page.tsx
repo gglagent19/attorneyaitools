@@ -40,8 +40,9 @@ export default function MethodologyPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}
       />
 
-      <article className="max-w-3xl mx-auto px-6 lg:px-8 py-20 prose prose-slate prose-lg prose-headings:font-black prose-headings:tracking-tight">
-        <span className="not-prose inline-block px-4 py-1.5 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold tracking-widest uppercase mb-6">
+      <div className="bg-[#f6f3ee]">
+      <article className="max-w-3xl mx-auto px-6 lg:px-8 py-20 prose prose-lg prose-headings:text-[#14181f] prose-p:text-[#5b6472] prose-li:text-[#5b6472] prose-strong:text-[#14181f] prose-a:text-[#0f7d6c] hover:prose-a:underline">
+        <span className="eyebrow-ed not-prose inline-flex items-center gap-2 rounded-full bg-[#d9ece7] px-3 py-1.5 text-[#0f7d6c] mb-6">
           Editorial Standards
         </span>
         <h1>How We Test Legal AI Tools</h1>
@@ -153,6 +154,7 @@ export default function MethodologyPage() {
           hours of vendor notification.
         </p>
       </article>
+      </div>
     </>
   );
 }
