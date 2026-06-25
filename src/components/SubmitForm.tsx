@@ -49,14 +49,14 @@ const attorneySpecFields: FieldDef[] = [
 ];
 
 const inputClass =
-  "w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition";
+  "w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#0f7d6c] focus:border-[#0f7d6c] transition";
 const labelClass =
   "block text-xs font-bold uppercase tracking-widest text-slate-500 mb-2";
 
 function SectionHeader({ step, title }: { step: string; title: string }) {
   return (
     <div className="mb-5">
-      <div className="text-[11px] font-bold uppercase tracking-widest text-emerald-600 mb-1">
+      <div className="text-[11px] font-bold uppercase tracking-widest text-[#0f7d6c] mb-1">
         {step}
       </div>
       <h2 className="text-xl font-bold text-slate-900 tracking-tight">{title}</h2>
@@ -121,9 +121,9 @@ export default function SubmitForm({ type: initialType, allowTypeToggle = false 
 
   if (status === "success") {
     return (
-      <div className="bg-white border border-emerald-200 rounded-2xl p-10 text-center shadow-sm">
-        <div className="w-16 h-16 mx-auto mb-5 rounded-full bg-emerald-100 flex items-center justify-center">
-          <svg className="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <div className="bg-white border border-[#d9ece7] rounded-2xl p-10 text-center shadow-sm">
+        <div className="w-16 h-16 mx-auto mb-5 rounded-full bg-[#d9ece7] flex items-center justify-center">
+          <svg className="w-8 h-8 text-[#0f7d6c]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
           </svg>
         </div>
@@ -146,7 +146,7 @@ export default function SubmitForm({ type: initialType, allowTypeToggle = false 
       <div key={field.name}>
         <label htmlFor={field.name} className={labelClass}>
           {field.label}
-          {field.required && <span className="text-emerald-500 ml-1">*</span>}
+          {field.required && <span className="text-[#0f7d6c] ml-1">*</span>}
         </label>
 
         {field.type === "textarea" ? (
@@ -197,7 +197,7 @@ export default function SubmitForm({ type: initialType, allowTypeToggle = false 
         <SectionHeader step="Step 1" title="Classification" />
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <label
-            className={`p-6 rounded-xl bg-slate-50 border-2 border-transparent cursor-pointer hover:bg-slate-100 has-[:checked]:border-emerald-500 has-[:checked]:bg-white transition ${
+            className={`p-6 rounded-xl bg-slate-50 border-2 border-transparent cursor-pointer hover:bg-slate-100 has-[:checked]:border-[#0f7d6c] has-[:checked]:bg-white transition ${
               !allowTypeToggle && type !== "tool" ? "opacity-40 cursor-not-allowed" : ""
             }`}
           >
@@ -211,7 +211,7 @@ export default function SubmitForm({ type: initialType, allowTypeToggle = false 
               className="sr-only"
             />
             <div className="flex items-start gap-3">
-              <div className="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 rounded-lg bg-[#d9ece7] text-[#0f7d6c] flex items-center justify-center flex-shrink-0">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
@@ -226,7 +226,7 @@ export default function SubmitForm({ type: initialType, allowTypeToggle = false 
           </label>
 
           <label
-            className={`p-6 rounded-xl bg-slate-50 border-2 border-transparent cursor-pointer hover:bg-slate-100 has-[:checked]:border-emerald-500 has-[:checked]:bg-white transition ${
+            className={`p-6 rounded-xl bg-slate-50 border-2 border-transparent cursor-pointer hover:bg-slate-100 has-[:checked]:border-[#0f7d6c] has-[:checked]:bg-white transition ${
               !allowTypeToggle && type !== "attorney" ? "opacity-40 cursor-not-allowed" : ""
             }`}
           >
@@ -240,7 +240,7 @@ export default function SubmitForm({ type: initialType, allowTypeToggle = false 
               className="sr-only"
             />
             <div className="flex items-start gap-3">
-              <div className="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 rounded-lg bg-[#d9ece7] text-[#0f7d6c] flex items-center justify-center flex-shrink-0">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                 </svg>
@@ -277,12 +277,12 @@ export default function SubmitForm({ type: initialType, allowTypeToggle = false 
             type="checkbox"
             checked={agreed}
             onChange={(e) => setAgreed(e.target.checked)}
-            className="mt-1 w-4 h-4 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500"
+            className="mt-1 w-4 h-4 rounded border-slate-300 text-[#0f7d6c] focus:ring-[#0f7d6c]"
           />
           <span className="text-sm text-slate-600">
             I confirm the information submitted is accurate and agree to the
             editorial review process and directory{" "}
-            <a href="/terms" className="text-emerald-600 font-semibold hover:underline">
+            <a href="/terms" className="text-[#0f7d6c] font-semibold hover:underline">
               terms of service
             </a>
             .
@@ -301,7 +301,7 @@ export default function SubmitForm({ type: initialType, allowTypeToggle = false 
         <button
           type="submit"
           disabled={status === "loading"}
-          className="w-full py-4 bg-gradient-to-br from-emerald-500 to-emerald-600 text-white font-bold rounded-lg shadow-lg shadow-emerald-500/30 hover:shadow-xl hover:shadow-emerald-500/40 hover:from-emerald-600 hover:to-emerald-700 transition-all disabled:opacity-50 disabled:cursor-not-allowed tracking-tight"
+          className="w-full py-4 bg-[#1a2a4a] hover:bg-[#12203d] text-white font-bold rounded-lg shadow-[0_8px_32px_rgba(20,24,31,0.12)] transition-all disabled:opacity-50 disabled:cursor-not-allowed tracking-tight"
         >
           {status === "loading" ? "Submitting..." : "Complete Submission"}
         </button>

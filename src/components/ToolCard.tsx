@@ -30,21 +30,21 @@ export default function ToolCard({ tool }: ToolCardProps) {
   const reviewCount = Math.floor(tool.rating * 12 + 7);
 
   return (
-    <div className="group bg-white p-8 rounded-xl border border-slate-200 hover:shadow-xl hover:border-emerald-500/20 transition-all duration-500 flex flex-col">
+    <div className="group bg-white p-8 rounded-xl border border-slate-200 hover:shadow-xl hover:border-[#0f7d6c]/20 transition-all duration-500 flex flex-col">
       {/* Top area: logo + bookmark */}
       <div className="flex items-start justify-between mb-5">
         <div
-          className="w-16 h-16 rounded-2xl bg-emerald-50 flex items-center justify-center shrink-0"
+          className="w-16 h-16 rounded-2xl bg-[#d9ece7] flex items-center justify-center shrink-0"
           aria-hidden="true"
         >
-          <span className="text-2xl font-bold text-emerald-700">
+          <span className="text-2xl font-bold text-[#0f7d6c]">
             {tool.name.charAt(0)}
           </span>
         </div>
         <button
           type="button"
           aria-label="Bookmark"
-          className="text-slate-300 hover:text-emerald-500 transition-colors"
+          className="text-slate-300 hover:text-[#0f7d6c] transition-colors"
         >
           <svg
             className="w-5 h-5"
@@ -75,7 +75,7 @@ export default function ToolCard({ tool }: ToolCardProps) {
       </div>
 
       {/* Title */}
-      <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-emerald-600 transition-colors">
+      <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-[#0f7d6c] transition-colors">
         <Link href={`/ai-tools/${tool.slug}`}>{tool.name}</Link>
       </h3>
 
@@ -90,7 +90,7 @@ export default function ToolCard({ tool }: ToolCardProps) {
           {tool.category}
         </span>
         {tool.featured && (
-          <span className="px-3 py-1 bg-emerald-500/10 text-emerald-600 rounded-full text-[10px] font-bold uppercase tracking-wider">
+          <span className="px-3 py-1 bg-[#d9ece7] text-[#0f7d6c] rounded-full text-[10px] font-bold uppercase tracking-wider">
             FEATURED
           </span>
         )}
@@ -98,10 +98,10 @@ export default function ToolCard({ tool }: ToolCardProps) {
 
       {/* Bottom: pricing + Learn More */}
       <div className="flex items-center justify-between mb-4">
-        <span className="font-bold text-emerald-600">{tool.pricing}</span>
+        <span className="font-bold text-[#0f7d6c]">{tool.pricing}</span>
         <Link
           href={`/ai-tools/${tool.slug}`}
-          className="text-sm font-semibold text-slate-500 hover:text-emerald-600 transition-colors"
+          className="text-sm font-semibold text-slate-500 hover:text-[#0f7d6c] transition-colors"
         >
           Learn More &rarr;
         </Link>
@@ -111,13 +111,13 @@ export default function ToolCard({ tool }: ToolCardProps) {
       <div className="flex items-center gap-3">
         <Link
           href={`/ai-tools/${tool.slug}`}
-          className="flex-1 text-center py-2.5 px-4 bg-slate-900 text-white text-sm font-semibold rounded-lg hover:bg-emerald-600 transition-colors"
+          className="flex-1 text-center py-2.5 px-4 bg-[#1a2a4a] text-white text-sm font-semibold rounded-lg hover:bg-[#12203d] transition-colors"
         >
           Visit Website
         </Link>
         <Link
           href={`/ai-tools/${tool.slug}`}
-          className="flex items-center justify-center w-10 h-10 rounded-lg border border-slate-200 text-slate-400 hover:border-emerald-500 hover:text-emerald-600 transition-colors"
+          className="flex items-center justify-center w-10 h-10 rounded-lg border border-slate-200 text-slate-400 hover:border-[#0f7d6c] hover:text-[#0f7d6c] transition-colors"
           aria-label={`Go to ${tool.name}`}
         >
           <svg

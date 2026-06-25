@@ -40,7 +40,7 @@ export default function AppCTA({
       onClick={handleClick}
       className={
         className ??
-        "inline-flex items-center justify-center rounded-xl bg-emerald-600 px-8 py-4 text-lg font-bold text-white shadow-2xl shadow-emerald-500/30 transition-transform hover:scale-105"
+        "inline-flex items-center justify-center rounded-xl bg-[#1a2a4a] px-8 py-4 text-lg font-bold text-white shadow-[0_8px_32px_rgba(20,24,31,0.12)] transition-transform hover:scale-105 hover:bg-[#12203d]"
       }
     >
       {label}

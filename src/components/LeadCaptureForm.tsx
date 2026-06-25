@@ -15,7 +15,7 @@ const CLAIM_TYPES = [
 ];
 
 const inputClass =
-  "w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition";
+  "w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#0f7d6c] focus:border-[#0f7d6c] transition";
 const labelClass =
   "block text-xs font-bold uppercase tracking-widest text-slate-500 mb-2";
 
@@ -70,9 +70,9 @@ export default function LeadCaptureForm() {
 
   if (status === "success") {
     return (
-      <div className="rounded-2xl border border-emerald-200 bg-white p-10 text-center shadow-sm">
-        <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-emerald-100">
-          <svg className="h-8 w-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <div className="rounded-2xl border border-[#d9ece7] bg-white p-10 text-center shadow-sm">
+        <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-[#d9ece7]">
+          <svg className="h-8 w-8 text-[#0f7d6c]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
           </svg>
         </div>
@@ -82,7 +82,7 @@ export default function LeadCaptureForm() {
         <p className="mx-auto max-w-md text-slate-600">
           We&apos;ll match you with an attorney in your area who handles your type of
           claim. In the meantime, you can{" "}
-          <a href="/app?utm_source=lead&utm_medium=organic&utm_campaign=find-a-lawyer" className="font-semibold text-emerald-600 hover:underline">
+          <a href="/app?utm_source=lead&utm_medium=organic&utm_campaign=find-a-lawyer" className="font-semibold text-[#0f7d6c] hover:underline">
             run a free claim analysis
           </a>
           .
@@ -129,7 +129,7 @@ export default function LeadCaptureForm() {
       <button
         type="submit"
         disabled={status === "loading"}
-        className="w-full rounded-lg bg-emerald-600 py-4 font-bold text-white shadow-lg shadow-emerald-500/30 transition-all hover:bg-emerald-700 disabled:opacity-50"
+        className="w-full rounded-lg bg-[#1a2a4a] py-4 font-bold text-white shadow-[0_8px_32px_rgba(20,24,31,0.12)] transition-all hover:bg-[#12203d] disabled:opacity-50"
       >
         {status === "loading" ? "Sending..." : "Match me with an attorney"}
       </button>

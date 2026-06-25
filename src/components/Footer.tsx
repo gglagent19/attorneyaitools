@@ -23,17 +23,17 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               <li>
-                <Link href="/ai-tools" className="text-slate-400 hover:text-emerald-400 transition-all text-sm">
+                <Link href="/ai-tools" className="text-slate-400 hover:text-[#4ac2ae] transition-all text-sm">
                   AI Tools
                 </Link>
               </li>
               <li>
-                <Link href="/attorneys" className="text-slate-400 hover:text-emerald-400 transition-all text-sm">
+                <Link href="/attorneys" className="text-slate-400 hover:text-[#4ac2ae] transition-all text-sm">
                   Attorneys
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-slate-400 hover:text-emerald-400 transition-all text-sm">
+                <Link href="/blog" className="text-slate-400 hover:text-[#4ac2ae] transition-all text-sm">
                   Blog
                 </Link>
               </li>
@@ -47,12 +47,12 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               <li>
-                <Link href="/submit-tool" className="text-slate-400 hover:text-emerald-400 transition-all text-sm">
+                <Link href="/submit-tool" className="text-slate-400 hover:text-[#4ac2ae] transition-all text-sm">
                   Submit a Tool
                 </Link>
               </li>
               <li>
-                <Link href="/submit-attorney" className="text-slate-400 hover:text-emerald-400 transition-all text-sm">
+                <Link href="/submit-attorney" className="text-slate-400 hover:text-[#4ac2ae] transition-all text-sm">
                   Submit an Attorney
                 </Link>
               </li>
@@ -66,22 +66,22 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               <li>
-                <Link href="/about" className="text-slate-400 hover:text-emerald-400 transition-all text-sm">
+                <Link href="/about" className="text-slate-400 hover:text-[#4ac2ae] transition-all text-sm">
                   About
                 </Link>
               </li>
               <li>
-                <Link href="/methodology" className="text-slate-400 hover:text-emerald-400 transition-all text-sm">
+                <Link href="/methodology" className="text-slate-400 hover:text-[#4ac2ae] transition-all text-sm">
                   Methodology
                 </Link>
               </li>
               <li>
-                <Link href="/privacy" className="text-slate-400 hover:text-emerald-400 transition-all text-sm">
+                <Link href="/privacy" className="text-slate-400 hover:text-[#4ac2ae] transition-all text-sm">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/terms" className="text-slate-400 hover:text-emerald-400 transition-all text-sm">
+                <Link href="/terms" className="text-slate-400 hover:text-[#4ac2ae] transition-all text-sm">
                   Terms of Service
                 </Link>
               </li>
@@ -94,11 +94,11 @@ export default function Footer() {
                   type="email"
                   name="email"
                   placeholder="you@email.com"
-                  className="flex-1 min-w-0 rounded-md bg-slate-800 border border-slate-700 px-3 py-2 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400"
+                  className="flex-1 min-w-0 rounded-md bg-slate-800 border border-slate-700 px-3 py-2 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-[#4ac2ae]"
                 />
                 <button
                   type="submit"
-                  className="rounded-md bg-emerald-500 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-400 transition-all"
+                  className="rounded-md bg-[#0f7d6c] px-4 py-2 text-sm font-semibold text-white hover:bg-[#149683] transition-all"
                 >
                   Join
                 </button>

@@ -33,10 +33,10 @@ export default function ShieldedCTA({
 
   return (
     <section
-      className="rounded-2xl border border-emerald-200 bg-emerald-50 p-6 sm:p-8"
+      className="rounded-2xl border border-[#d9ece7] bg-[#d9ece7] p-6 sm:p-8"
       data-cta="shielded-free-analysis"
     >
-      <p className="text-xs font-semibold uppercase tracking-wider text-emerald-700">
+      <p className="text-xs font-semibold uppercase tracking-wider text-[#0f7d6c]">
         Free claim analysis
       </p>
       <h2 className="mt-2 text-2xl font-bold text-slate-900">
@@ -52,7 +52,7 @@ export default function ShieldedCTA({
         <a
           href={APP_URL}
           onClick={handleClick}
-          className="inline-flex items-center rounded-lg bg-emerald-600 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-700"
+          className="inline-flex items-center rounded-lg bg-[#1a2a4a] px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#12203d]"
         >
           Run my free 90-second analysis →
         </a>

@@ -159,7 +159,7 @@ export default async function FAQPage({
                 prose-h2:text-2xl prose-h2:font-bold prose-h2:mt-8 prose-h2:mb-4 prose-h2:text-slate-900
                 prose-h2:pb-2 prose-h2:border-b prose-h2:border-slate-200
                 prose-p:text-slate-700 prose-p:leading-relaxed
-                prose-a:text-emerald-700 prose-a:no-underline hover:prose-a:underline
+                prose-a:text-[#0f7d6c] prose-a:no-underline hover:prose-a:underline
                 prose-strong:text-slate-900
                 prose-ul:text-slate-700
                 prose-li:my-1"

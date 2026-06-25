@@ -20,11 +20,11 @@ interface AttorneyCardProps {
 
 export default function AttorneyCard({ attorney }: AttorneyCardProps) {
   return (
-    <div className="group bg-white p-6 rounded-xl transition-all duration-300 hover:shadow-[0_20px_40px_-12px_rgba(15,23,42,0.1)] border border-slate-200 hover:border-emerald-500/30">
+    <div className="group bg-white p-6 rounded-xl transition-all duration-300 hover:shadow-[0_20px_40px_-12px_rgba(15,23,42,0.1)] border border-slate-200 hover:border-[#0f7d6c]/30">
       {/* Top: Avatar + Name/Firm */}
       <div className="flex items-start gap-4 mb-4">
         <div className="w-20 h-20 rounded-xl bg-slate-100 flex items-center justify-center shrink-0">
-          <span className="text-2xl font-bold bg-gradient-to-br from-emerald-500 to-emerald-700 bg-clip-text text-transparent">
+          <span className="text-2xl font-bold bg-gradient-to-br from-[#1a2a4a] to-[#0f7d6c] bg-clip-text text-transparent">
             {attorney.name.charAt(0)}
           </span>
         </div>
@@ -34,7 +34,7 @@ export default function AttorneyCard({ attorney }: AttorneyCardProps) {
           </h3>
           <p className="text-sm text-slate-500 font-medium">{attorney.law_firm}</p>
           {attorney.featured && (
-            <span className="text-emerald-600 text-xs font-bold tracking-wider uppercase">
+            <span className="text-[#0f7d6c] text-xs font-bold tracking-wider uppercase">
               Featured Partner
             </span>
           )}

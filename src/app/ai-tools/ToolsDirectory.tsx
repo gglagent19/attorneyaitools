@@ -92,7 +92,7 @@ export default function ToolsDirectory({ tools, categories }: ToolsDirectoryProp
             setCurrentPage(1);
           }}
           placeholder="Search AI tools by name, category, or capability..."
-          className="w-full px-5 py-4 text-base bg-white border border-slate-200 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-emerald-600 placeholder:text-slate-400"
+          className="w-full px-5 py-4 text-base bg-white border border-slate-200 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-[#0f7d6c] focus:border-[#0f7d6c] placeholder:text-slate-400"
         />
       </div>
 
@@ -115,7 +115,7 @@ export default function ToolsDirectory({ tools, categories }: ToolsDirectoryProp
                       type="checkbox"
                       checked={activeFilters.category === cat}
                       onChange={() => handleCategoryToggle(cat)}
-                      className="h-4 w-4 rounded border-slate-300 text-emerald-600 focus:ring-emerald-600 accent-emerald-600"
+                      className="h-4 w-4 rounded border-slate-300 text-[#0f7d6c] focus:ring-[#0f7d6c] accent-[#0f7d6c]"
                     />
                     <span className="text-sm text-slate-700 group-hover:text-slate-900 transition-colors">
                       {cat}
@@ -139,7 +139,7 @@ export default function ToolsDirectory({ tools, categories }: ToolsDirectoryProp
                       onClick={() => handlePricingChange(opt)}
                       className={`px-4 py-2 text-xs font-semibold rounded-full transition-colors ${
                         active
-                          ? "bg-emerald-600 text-white"
+                          ? "bg-[#1a2a4a] text-white"
                           : "bg-slate-100 text-slate-600 hover:bg-slate-200"
                       }`}
                     >
@@ -162,11 +162,11 @@ export default function ToolsDirectory({ tools, categories }: ToolsDirectoryProp
                 step={0.5}
                 value={minRating}
                 onChange={(e) => handleRatingChange(e.target.value === "0" ? "" : e.target.value)}
-                className="w-full accent-emerald-600"
+                className="w-full accent-[#0f7d6c]"
               />
               <div className="flex justify-between items-center mt-3">
                 <span className="text-xs text-slate-500">Any</span>
-                <span className="text-sm font-semibold text-emerald-700">
+                <span className="text-sm font-semibold text-[#0f7d6c]">
                   {minRating > 0 ? `${minRating}+ stars` : "All ratings"}
                 </span>
                 <span className="text-xs text-slate-500">5.0</span>
@@ -175,7 +175,7 @@ export default function ToolsDirectory({ tools, categories }: ToolsDirectoryProp
 
             {/* Pro Tip */}
             <div className="bg-slate-900 text-white rounded-2xl p-6">
-              <h4 className="text-xs font-bold uppercase tracking-widest text-emerald-400 mb-3">
+              <h4 className="text-xs font-bold uppercase tracking-widest text-[#4ac2ae] mb-3">
                 Pro Tip
               </h4>
               <p className="text-sm leading-relaxed text-slate-200">
@@ -205,7 +205,7 @@ export default function ToolsDirectory({ tools, categories }: ToolsDirectoryProp
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value)}
-                className="text-sm font-medium text-slate-900 bg-white border border-slate-200 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-600"
+                className="text-sm font-medium text-slate-900 bg-white border border-slate-200 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#0f7d6c]"
               >
                 <option value="featured">Featured</option>
                 <option value="rating">Highest Rated</option>
@@ -271,7 +271,7 @@ export default function ToolsDirectory({ tools, categories }: ToolsDirectoryProp
                       onClick={() => setCurrentPage(p as number)}
                       className={`w-10 h-10 text-sm font-semibold rounded-lg transition-colors ${
                         p === currentPage
-                          ? "bg-emerald-600 text-white"
+                          ? "bg-[#1a2a4a] text-white"
                           : "text-slate-700 bg-white border border-slate-200 hover:bg-slate-50"
                       }`}
                     >
